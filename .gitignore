@@ -1,8 +1,33 @@
-# Local WordPress installation, database settings, media and plugins.
-# Keep article templates and source assets outside this directory.
-/public_html/
+# WordPress core and local server files; allow project-owned wp-content code.
+/public_html/*
+!/public_html/wp-content/
+/public_html/wp-content/*
+!/public_html/wp-content/plugins/
+!/public_html/wp-content/themes/
 
-# Local configuration and credentials.
+# Installed third-party plugins (track new project plugins separately).
+/public_html/wp-content/plugins/astra-import-export/
+/public_html/wp-content/plugins/astra-sites/
+/public_html/wp-content/plugins/elementor/
+/public_html/wp-content/plugins/header-footer-elementor/
+/public_html/wp-content/plugins/hostinger*/
+/public_html/wp-content/plugins/litespeed-cache/
+/public_html/wp-content/plugins/spectra-blocks/
+/public_html/wp-content/plugins/surecookie/
+/public_html/wp-content/plugins/sureforms/
+/public_html/wp-content/plugins/surerank/
+/public_html/wp-content/plugins/wordpress-importer/
+/public_html/wp-content/plugins/wordpress-seo/
+
+# Installed third-party themes; custom themes remain trackable.
+/public_html/wp-content/themes/astra/
+/public_html/wp-content/themes/bluehost-blueprint/
+/public_html/wp-content/themes/go/
+/public_html/wp-content/themes/hostinger-ai-theme/
+/public_html/wp-content/themes/twentysixteen/
+/public_html/wp-content/themes/twentytwenty*/
+
+# Local settings, credentials, backups and generated files.
 .env
 .env.*
 !.env.example
@@ -10,11 +35,12 @@ wp-config.php
 *.sql
 *.sql.gz
 *.log
-
-# Local tooling and operating system files.
+*.bak
 .DS_Store
 Thumbs.db
 .idea/
 .vscode/
 node_modules/
 __pycache__/
+/public_html/wp-content/plugins/index.php
+/public_html/wp-content/themes/index.php

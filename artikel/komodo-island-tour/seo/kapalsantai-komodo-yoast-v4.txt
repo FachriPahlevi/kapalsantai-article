@@ -1,0 +1,14 @@
+YOAST SEO — KOMODO ISLAND TOUR
+
+Focus keyphrase: Komodo Island tour
+SEO title: Komodo Island Tour: 2027 Guide to Komodo Dragons
+Slug: komodo-island-tour
+Meta description: Plan your Komodo Island tour in 2027. Discover Loh Liang treks, Komodo dragon safety tips, the best time to visit and what to pack.
+Social title: Komodo Island Tour: Your 2027 Travel Guide
+Social description: Plan a Komodo Island tour with tips for trekking, dragon encounters, the best season and what to pack.
+Social image: Gunakan foto Komodo dari Media Library yang sesuai; periksa hasil crop di pratinjau.
+Schema: Periksa schema Page/Article bawaan Yoast dan FAQPage yang sudah tertanam di template. Pastikan tidak ada FAQPage ganda dan isinya sesuai FAQ yang tampil.
+Advanced: Biarkan default kecuali ada keputusan khusus untuk indexing atau canonical.
+Cornerstone content: Aktifkan hanya jika artikel ini ditetapkan sebagai artikel pilar.
+
+Catatan: Masukkan dan simpan nilai ini di Yoast pada halaman tujuan. Template Elementor JSON tidak otomatis menerapkan metadata Yoast, dan skor analisis harus diperiksa langsung di situs. Jika slug sudah dipakai, periksa halaman lain dan Trash. Verifikasi tarif, kuota 1.000 pengunjung, tanggal kebijakan, jarak aman, dan pernyataan pengalaman sebelum terbit.
