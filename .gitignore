@@ -1,0 +1,20 @@
+# Local WordPress installation, database settings, media and plugins.
+# Keep article templates and source assets outside this directory.
+/public_html/
+
+# Local configuration and credentials.
+.env
+.env.*
+!.env.example
+wp-config.php
+*.sql
+*.sql.gz
+*.log
+
+# Local tooling and operating system files.
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+node_modules/
+__pycache__/
