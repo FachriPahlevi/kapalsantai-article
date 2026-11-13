@@ -1,0 +1,1201 @@
+{
+  "version": "0.4",
+  "title": "Kanawa Island · Panduan Destinasi",
+  "type": "page",
+  "page_settings": {},
+  "content": [
+    {
+      "id": "0000054",
+      "elType": "container",
+      "settings": {
+        "_title": "01 · Halaman Kanawa",
+        "content_width": "full",
+        "flex_direction": "column",
+        "css_classes": "kw-page",
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+        }
+      },
+      "elements": [
+        {
+          "id": "0000001",
+          "elType": "widget",
+          "widgetType": "html",
+          "settings": {
+            "_title": "CSS · Tampilan dan responsif Kanawa",
+            "html": "<style>\n@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');\n.kw-page{font-family:'Plus Jakarta Sans',sans-serif;color:#143b48}.kw-page .elementor-widget{margin-block-end:0!important}.kw-page h1,.kw-page h2,.kw-page h3{font-family:'Plus Jakarta Sans',sans-serif;letter-spacing:-.035em}.kw-page p,.kw-page li{line-height:1.75}.kw-page .elementor-widget-text-editor{font-size:17px;color:#3b5b66}.kw-page .elementor-heading-title{color:#143b48}.kw-page .kw-section{padding:80px max(28px,calc((100% - 1200px)/2));gap:24px}.kw-page .kw-section h2{font-size:clamp(32px,4vw,52px);line-height:1.14}.kw-page .kw-section h3{font-size:21px}.kw-page .kw-hero{min-height:100vh;position:relative;overflow:hidden;justify-content:center;padding:130px max(28px,calc((100% - 1200px)/2));gap:24px;background:#05202b}.kw-page .kw-hero:before{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(4,29,40,.82),rgba(4,29,40,.18)),linear-gradient(0deg,rgba(4,29,40,.45),transparent 50%);z-index:1;pointer-events:none}.kw-page .kw-hero>.elementor-element{position:relative;z-index:2}.kw-page .kw-hero .kw-backdrop{position:absolute;inset:0;z-index:0;pointer-events:none}.kw-backdrop,.kw-backdrop .elementor-widget-container{height:100%;width:100%}.kw-backdrop img{width:100%;height:100%;object-fit:cover;animation:kw-drift 18s ease-in-out infinite alternate}.kw-backdrop img.kw-paused{animation-play-state:paused}@keyframes kw-drift{from{scale:1.01}to{scale:1.07}}.kw-page .kw-hero h1{max-width:820px;color:white;font-size:clamp(38px,4vw,62px);line-height:1.1}.kw-page .kw-hero p{color:white;max-width:640px}.kw-page .kw-hero a{color:white}.kw-page .kw-muted{background:#eef8f7}.kw-page .kw-group{display:flex;flex-direction:column;gap:12px;padding:20px 0;border-top:1px solid #d8e9e7}.kw-page .kw-photo img{width:100%;max-height:650px;object-fit:cover;border-radius:16px}.kw-page .kw-photo figcaption{font-size:13px;color:#587480;margin-top:8px;border-left:2px solid #e6bd4c;padding-left:10px}.kw-page .kw-checklist label{display:flex;gap:12px;padding:14px 0;border-bottom:1px solid #d8e9e7}.kw-page .elementor-button{border-radius:999px;background:#0077b6;padding:14px 22px}.kw-page .kw-cta{background:#eaf6f7}.kw-page .kw-nav{display:flex;flex-wrap:wrap;gap:12px}.kw-page .kw-nav a{color:#087b9b}.kw-page .kw-grid{display:flex;flex-direction:row;gap:32px}.kw-page .kw-grid>div{flex:1;min-width:0}@media(max-width:767px){.kw-page .kw-section{padding:56px 20px}.kw-page .kw-hero{padding:110px 20px 80px;min-height:90vh}.kw-page .kw-grid{flex-direction:column;gap:12px}.kw-page .elementor-widget-text-editor{font-size:16px}}@media(prefers-reduced-motion:reduce){.kw-backdrop img{animation:none}}\n\n/* Kanawa preview: hero, editorial navigation and editable activity tabs. */\n.kw-page .kw-hero{min-height:100svh;padding:145px max(28px,calc((100% - 1224px)/2)) 130px;gap:0}\n.kw-page .kw-hero:before{background:linear-gradient(90deg,rgba(4,29,40,.84),rgba(4,29,40,.67) 30%,rgba(4,29,40,.18) 70%),linear-gradient(0deg,rgba(4,29,40,.52),transparent 45%)}\n.kw-page .kw-hero h1.elementor-heading-title{font-size:clamp(38px,3.5vw,57px);font-weight:600;line-height:1.13;letter-spacing:-.035em;text-shadow:0 4px 30px #05202b59;color:#fff}\n.kw-page .kw-hero .elementor-widget-heading{max-width:820px}\n.kw-page .kw-hero .elementor-widget-text-editor p{margin:22px 0 0;font-size:18px;font-weight:500;line-height:1.65;color:#f4fbfb}\n.kw-page .kw-hero-meta{display:flex;align-items:center;flex-wrap:wrap;gap:12px 18px;margin-top:24px;color:#fff;font-size:13px}\n.kw-page .kw-author{display:flex;align-items:center;gap:10px;font-weight:600}.kw-page .kw-author img{width:32px;height:32px;border-radius:50%;background:#fff;padding:3px}.kw-page .kw-reading{padding-left:18px;border-left:1px solid #ffffff55}\n.kw-page .kw-share{display:flex;align-items:center;gap:6px}.kw-page .kw-share a,.kw-page .kw-share button{display:grid;place-items:center;width:36px;height:36px;border:1px solid #ffffff8c;border-radius:50%;padding:0;background:transparent;color:#fff;text-decoration:none;cursor:pointer}.kw-page .kw-share a:hover,.kw-page .kw-share button:hover{background:#fff;color:#087b9b}\n.kw-page .kw-hero-button{margin-top:24px}.kw-page .kw-hero-button .elementor-button{border:1px solid #ffffffbf;background:rgba(5,35,47,.52);color:#fff;font-size:15px;padding:14px 21px}\n.kw-page .kw-nav{padding:10px 0;gap:8px}.kw-page .kw-nav a{padding:8px 18px;border-radius:99px;background:#eef8f7;color:#56717b;font-weight:600;font-size:14px;text-decoration:none}\n.kw-page .kw-section{padding:100px max(28px,calc((100% - 1320px)/2));gap:24px}.kw-page .kw-section h2.elementor-heading-title{font-size:clamp(32px,3.8vw,56px);line-height:1.05}.kw-page .kw-section h3.elementor-heading-title{font-size:22px;line-height:1.25}.kw-page .kw-section .elementor-widget-text-editor{font-size:18px;line-height:1.78}\n.kw-page .kw-tabs{display:flex;gap:34px;border-bottom:1px solid #cde2e4;overflow-x:auto}.kw-page .kw-tabs button{flex:none;border:0;border-bottom:2px solid transparent;padding:0 0 16px;background:transparent;color:#5d7983;font:700 16px 'Plus Jakarta Sans',sans-serif;cursor:pointer}.kw-page .kw-tabs button[aria-selected=true]{color:#143b48;border-color:#168ca8}.kw-page .kw-panel{padding:24px 0 0;border:0}.kw-page.kw-tabs-ready .kw-panel[hidden]{display:none!important}\n.kw-page .kw-photo{margin:0}.kw-page .kw-photo img{display:block;aspect-ratio:21/9;max-height:none;object-fit:cover;object-position:center 46%}.kw-page .kw-grid .kw-group{border-top:1px solid #cde2e4}.kw-page .kw-group .elementor-widget-text-editor p{margin:0}\n@media(max-width:767px){.kw-page .kw-hero{padding:125px 20px 100px}.kw-page .kw-hero h1.elementor-heading-title{font-size:clamp(32px,8vw,46px)}.kw-page .kw-hero h1 br{display:none}.kw-page .kw-section{padding:56px 20px}.kw-page .kw-photo img{aspect-ratio:4/3}.kw-page .kw-tabs{gap:22px}.kw-page .kw-nav{flex-wrap:nowrap;overflow-x:auto}.kw-page .kw-nav a{white-space:nowrap}}\n.kw-page .kw-share svg{width:16px;height:16px;display:block}.kw-page .kw-hero-button .elementor-button-text::after{content:\"↓\";margin-left:15px;font-size:18px;line-height:1}\n/* Kanawa preview: editorial structure, responsive layouts and section navigation. */\n.kw-page{--kw-ink:#143b48;--kw-blue:#087b9b;--kw-line:#d8e9e7;--kw-teal:#168ca8;--kw-gold:#e6bd4c;--kw-pad:max(28px,calc((100vw - 1320px)/2));font-family:'Plus Jakarta Sans',sans-serif}\n.kw-page .elementor-widget-heading .elementor-heading-title{font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;color:var(--kw-ink)}\n.kw-page .kw-hero{min-height:100svh;justify-content:center;align-items:flex-start;padding:145px max(28px,calc((100% - 1224px)/2)) 130px;gap:0}\n.kw-page .kw-hero .elementor-widget-heading h1{max-width:820px;font-size:clamp(38px,3.5vw,57px);font-weight:600;line-height:1.13;color:white;letter-spacing:-.035em}\n.kw-page .kw-hero .elementor-widget-heading h1 br{display:block}\n.kw-page .kw-guide-nav{position:sticky;top:60px;z-index:30;background:rgba(255,255,255,.96);border-block:1px solid var(--kw-line);box-shadow:0 12px 28px rgba(20,59,72,.06);padding:0 var(--kw-pad)}\n.kw-page .kw-guide-nav .kw-nav{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none}.kw-page .kw-nav a{flex:none;transition:background .3s,color .3s}.kw-page .kw-nav a:hover,.kw-page .kw-nav a[aria-current=location]{background:var(--kw-blue);color:#fff}\n.kw-page .kw-intro{padding:clamp(56px,7vw,96px) var(--kw-pad) 0;gap:20px}.kw-page .kw-intro .elementor-widget-text-editor{max-width:740px}.kw-page .kw-intro .elementor-widget-text-editor:first-child p{font-family:Fraunces,Georgia,serif;font-size:clamp(24px,2.5vw,34px);font-weight:600;line-height:1.4;color:var(--kw-ink)}\n.kw-page .kw-section:not(.kw-intro){padding:clamp(72px,8vw,120px) var(--kw-pad);gap:48px}.kw-page .kw-section-head{display:grid;grid-template-columns:1fr 1fr;align-items:end;gap:0 72px}.kw-page .kw-section-head .elementor-widget-text-editor p{margin:0;max-width:460px}.kw-page .kw-section-head .elementor-heading-title{margin:0}\n.kw-page .kw-special{display:grid;grid-template-columns:1fr 1fr;gap:72px}.kw-page .kw-special .kw-section-head{display:flex;flex-direction:column;align-items:stretch;gap:16px}.kw-page .kw-special .kw-grid{display:flex;flex-direction:column;gap:0}.kw-page .kw-special .kw-group{display:grid;grid-template-columns:minmax(150px,.75fr) 1fr;gap:20px;padding:24px 0}.kw-page .kw-special .kw-group .elementor-heading-title{font-size:19px}.kw-page .kw-special .kw-group .elementor-widget-text-editor{font-size:16px}\n.kw-page .kw-experiences,.kw-page .kw-season{background:#eef8f7}.kw-page .kw-experiences .kw-section-head{direction:rtl}.kw-page .kw-experiences .kw-section-head>*{direction:ltr}.kw-page .kw-experiences .kw-photo{margin:0}.kw-page .kw-experiences .kw-photo img{aspect-ratio:21/9;width:100%;object-fit:cover;object-position:center 46%;border-radius:20px}\n.kw-page .kw-tabs{display:flex;gap:34px;border-bottom:1px solid #cde2e4}.kw-page .kw-tabs button{padding:0 0 16px;border:0;border-bottom:2px solid transparent;background:none;color:#5d7983}.kw-page .kw-tabs button[aria-selected=true]{border-color:#168ca8;color:#143b48}.kw-page .kw-panel{padding:0;border:0}.kw-page.kw-tabs-ready .kw-panel[hidden]{display:none!important}\n.kw-page .kw-access .kw-grid,.kw-page .kw-season .kw-grid{gap:32px}.kw-page .kw-access .kw-group,.kw-page .kw-season .kw-group{position:relative;border-top:1px solid #cde2e4;padding-top:24px}.kw-page .kw-access .kw-group:before,.kw-page .kw-season .kw-group:before{content:'';position:absolute;top:-1px;left:0;width:36px;height:2px;background:var(--kw-gold)}\n.kw-page .months{display:grid;grid-template-columns:repeat(12,1fr);gap:6px}.kw-page .month{padding:20px 0;text-align:center;font-size:15px;font-weight:600;color:#5d7983;border:1px solid #dfebeb;border-radius:12px;background:#fff}.kw-page .month.on{background:var(--kw-blue);border-color:var(--kw-blue);color:#fff}.kw-page .kw-month-legend{font-weight:600;color:var(--kw-ink);margin:16px 0 0}\n.kw-page .kw-packing{display:grid;grid-template-columns:1fr 1fr;align-items:start;gap:72px;background:#fff}.kw-page .kw-packing .kw-section-head{display:flex;flex-direction:column;align-items:stretch;gap:16px}.kw-page .kw-checklist label{display:flex;align-items:center;gap:16px;padding:18px 0;border-bottom:1px solid #dfebeb;font-weight:600;cursor:pointer}.kw-page .kw-checklist input{accent-color:#168ca8;width:22px;height:22px;flex:none}.kw-page .kw-checklist input:checked+span{text-decoration:line-through;color:#587480}.kw-page .kw-check-progress{display:flex;align-items:center;gap:14px;margin-bottom:20px;font-size:14px;font-weight:700}.kw-page .kw-progress-track{display:block;width:180px;height:4px;background:#dfebeb;border-radius:99px}.kw-page .kw-progress-track i{display:block;width:0;height:100%;background:#168ca8;transition:width .4s}\n.kw-page .kw-closing-photo{position:relative;isolation:isolate;overflow:hidden;background:linear-gradient(270deg,rgba(4,29,40,.88),rgba(4,29,40,.5) 55%,rgba(4,29,40,.15)),url('https://sandybrown-turkey-356844.hostingersite.com/wp-content/uploads/2026/11/kanawa-island-aerial-shoreline.jpg') center 70%/cover;padding:clamp(88px,11vw,170px) var(--kw-pad)!important;align-items:flex-end;gap:24px!important}.kw-page .kw-closing-photo>.elementor-element{width:min(100%,700px)}.kw-page .kw-closing-photo h2.elementor-heading-title,.kw-page .kw-closing-photo .elementor-widget-text-editor{color:#fff}.kw-page .kw-closing-photo .elementor-button{background:#fff;color:#143b48}\n@media(max-width:900px){.kw-page .kw-guide-nav{top:60px}.kw-page .kw-section-head,.kw-page .kw-special,.kw-page .kw-packing{display:flex;flex-direction:column;gap:24px}.kw-page .kw-special .kw-group{grid-template-columns:1fr;gap:8px}.kw-page .kw-experiences .kw-section-head{direction:ltr}.kw-page .kw-access .kw-grid,.kw-page .kw-season .kw-grid{flex-wrap:wrap}.kw-page .kw-access .kw-grid>div,.kw-page .kw-season .kw-grid>div{flex:1 1 45%}.kw-page .months{grid-template-columns:repeat(6,1fr)}}\n@media(max-width:600px){.kw-page .kw-hero h1 br{display:none}.kw-page .kw-hero{padding:125px 20px 100px}.kw-page .kw-intro{padding:56px 20px 0}.kw-page .kw-section:not(.kw-intro){padding:64px 20px;gap:32px}.kw-page .kw-experiences .kw-photo img{aspect-ratio:4/3}.kw-page .kw-access .kw-grid>div,.kw-page .kw-season .kw-grid>div{flex-basis:100%}.kw-page .months{grid-template-columns:repeat(4,1fr)}.kw-page .kw-guide-nav{padding:0 20px}.kw-page .kw-closing-photo{padding:80px 20px!important}}\n@media(prefers-reduced-motion:reduce){.kw-page *{animation:none!important;transition:none!important}}\n\n\n/* This header belongs only to the Kanawa page. */\nbody:has(.kw-page) #masthead{display:none}\nbody:has(.kw-page) .site-content>.ast-container{max-width:none;width:100%;padding:0}\nbody:has(.kw-page) .site-content>.ast-container>#primary{margin:0;width:100%}\nbody:has(.kw-page) .entry-content>.elementor>.elementor-element{margin:0}\n.kw-page{width:100%;max-width:none;gap:0!important}\n.kw-page .kw-site-header{position:fixed;top:12px;left:0;right:0;z-index:100;pointer-events:none;transition:background .35s}\n.kw-page .kw-header-shell{width:fit-content;max-width:calc(100% - 40px);height:58px;margin:auto;padding:0 6px 0 22px;border:1px solid #ffffffb3;border-radius:99px;background:rgba(255,255,255,.94);box-shadow:0 8px 28px rgba(5,32,43,.13);display:flex;align-items:center;justify-content:center;gap:28px;pointer-events:auto;transition:all .35s}\n.kw-page .kw-header-shell>a{display:flex;align-items:center}.kw-page .kw-header-shell img{width:140px;height:auto}.kw-page .kw-header-shell nav{display:flex;align-items:center;gap:20px}.kw-page .kw-header-shell nav a{color:#143b48;font-size:14px;font-weight:600;text-decoration:none;white-space:nowrap}.kw-page .kw-header-shell nav a:last-child{display:flex;align-items:center;min-height:44px;padding:0 20px;border-radius:99px;background:#0077b6;color:white}\n.kw-page .kw-site-header.kw-solid{top:0;background:rgba(255,255,255,.96);box-shadow:0 2px 8px #143b4814}.kw-page .kw-site-header.kw-solid .kw-header-shell{width:100%;max-width:none;height:60px;padding:0 var(--kw-pad);border:0;border-radius:0;background:transparent;box-shadow:none;justify-content:space-between}\n.kw-page .kw-hero{width:100%;min-height:100svh}.kw-page .kw-hero-button .elementor-button{text-transform:none;letter-spacing:0}.kw-page .kw-hero-meta{font-weight:500}.kw-page .kw-site-header a:focus-visible{outline:2px solid #0077b6;outline-offset:3px}\nbody.admin-bar:has(.kw-page) .kw-site-header{top:44px}body.admin-bar:has(.kw-page) .kw-site-header.kw-solid{top:32px}\n@media(max-width:782px){body.admin-bar:has(.kw-page) .kw-site-header{top:58px}body.admin-bar:has(.kw-page) .kw-site-header.kw-solid{top:46px}}\n@media(max-width:600px){body.admin-bar:has(.kw-page) .kw-site-header.kw-solid{top:0}.kw-page .kw-header-shell{gap:12px;padding-left:14px}.kw-page .kw-header-shell img{width:100px}.kw-page .kw-header-shell nav{gap:12px}.kw-page .kw-header-shell nav a{font-size:12px}.kw-page .kw-header-shell nav a:last-child{padding:0 14px;min-height:42px}}\n\n/* Three ways: match the preview's split panel and tab rhythm. */\n.kw-page .kw-experiences .kw-section-head{direction:ltr;display:grid;grid-template-columns:1fr 1fr;gap:0 72px;align-items:end}\n.kw-page .kw-experiences .kw-section-head>.elementor-widget-heading{grid-column:2;grid-row:1}.kw-page .kw-experiences .kw-section-head>.elementor-widget-text-editor{grid-column:1;grid-row:1}\n.kw-page .kw-experiences .kw-photo{margin:0 0 8px}.kw-page .kw-experiences .kw-photo img{aspect-ratio:21/9;object-fit:cover;object-position:center 46%;border-radius:20px}\n.kw-page .kw-experiences .kw-tabs{gap:34px}.kw-page .kw-experiences .kw-panel{display:grid;grid-template-columns:1fr 1fr;gap:0 72px;align-items:start;padding:8px 0 0}\n.kw-page .kw-experiences .kw-panel-copy,.kw-page .kw-experiences .kw-panel-list{display:flex;flex-direction:column;gap:0;min-width:0}\n.kw-page .kw-experiences .kw-panel h3.elementor-heading-title{font-size:26px;line-height:1.25;margin:0 0 6px}\n.kw-page .kw-experiences .kw-panel-time p{font-size:11px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:#087f98;margin:0 0 14px!important}\n.kw-page .kw-experiences .kw-panel-copy .elementor-widget-text-editor:not(.kw-panel-time) p{font-size:17.5px;line-height:1.85;margin:0 0 6px}\n.kw-page .kw-experiences .kw-panel-copy p.note{margin:22px 0 0!important;padding-left:16px;border-left:2px solid #e6bd4c;font-size:15.5px!important}\n.kw-page .kw-experiences .kw-panel-list ul{list-style:none;margin:0;padding:0;border-top:1px solid #cde2e4}\n.kw-page .kw-experiences .kw-panel-list li{position:relative;padding:16px 0 16px 20px;border-bottom:1px solid #dfebeb;font-size:16px;line-height:1.6;color:#365665}\n.kw-page .kw-experiences .kw-panel-list li:before{content:\"\";position:absolute;left:0;top:27px;width:6px;height:6px;border-radius:50%;background:#e6bd4c}\n.kw-page.kw-tabs-ready .kw-experiences .kw-panel[hidden]{display:none!important}\n@media(max-width:900px){.kw-page .kw-experiences .kw-section-head{display:flex;flex-direction:column;align-items:stretch;gap:16px}.kw-page .kw-experiences .kw-panel{grid-template-columns:1fr;gap:24px}}\n@media(max-width:600px){.kw-page .kw-experiences .kw-photo img{aspect-ratio:4/5;object-position:center}.kw-page .kw-experiences .kw-panel h3.elementor-heading-title{font-size:23px}}\n\n/* Final preview layout: portrait photo left, tabs and details right. */\n.kw-page .kw-experiences-body{display:grid;grid-template-columns:minmax(230px,.75fr) minmax(0,1.25fr);gap:clamp(32px,5vw,72px);align-items:start}\n.kw-page .kw-experiences-body>.elementor-element{min-width:0;width:100%}.kw-page .kw-experiences-detail{display:flex;flex-direction:column;gap:32px}\n.kw-page .kw-experiences .kw-photo img{aspect-ratio:4/5;object-position:center;max-height:none}.kw-page .kw-experiences .kw-panel{grid-template-columns:1fr;gap:24px}\n@media(max-width:900px){.kw-page .kw-experiences-body{grid-template-columns:1fr;gap:28px}.kw-page .kw-experiences-body>.elementor-widget-html{max-width:520px}}\n\n/* Kanawa saja: hilangkan ruang bawaan tema dan container Elementor. */\nbody:has(.kw-page) { margin: 0 !important; }\nbody:has(.kw-page) #content > .ast-container,\nbody:has(.kw-page) #primary,\nbody:has(.kw-page) #main,\nbody:has(.kw-page) #main > .ast-article-single,\nbody:has(.kw-page) #main > .ast-article-single > .entry-content,\nbody:has(.kw-page) .entry-content > .elementor {\n  box-sizing: border-box;\n  width: 100%;\n  max-width: none;\n  margin: 0 !important;\n  padding: 0 !important;\n}\nbody:has(.kw-page) .kw-page.e-con {\n  --padding-top: 0px; --padding-right: 0px;\n  --padding-bottom: 0px; --padding-left: 0px;\n  box-sizing: border-box;\n  width: 100%;\n  max-width: none;\n  margin: 0 !important;\n  padding: 0 !important;\n}\n\n/* Anchor, layout, dan navigasi: diselaraskan dengan preview Kanawa. */\n.kw-page [id^=\"kw-\"] { scroll-margin-top: 135px; }\n.kw-page .kw-intro { align-items: flex-start; }\n.kw-page .kw-intro > .elementor-widget-text-editor { width: min(100%, 740px) !important; max-width: 740px; }\n.kw-page .kw-intro > .elementor-widget-text-editor:first-child .elementor-widget-container p { font-family: 'Plus Jakarta Sans', sans-serif; font-size: clamp(24px,2.5vw,34px); font-weight: 600; line-height: 1.4; }\n.kw-page .kw-nav a[aria-current=\"location\"] { background: #087b9b !important; color: #fff !important; }\n.kw-page .kw-access .kw-section-head, .kw-page .kw-season .kw-section-head { width: 100%; }\n.kw-page .kw-access .kw-grid, .kw-page .kw-season .kw-grid { display: grid; width: 100%; gap: 32px; }\n.kw-page .kw-access .kw-grid { grid-template-columns: repeat(4,minmax(0,1fr)); }\n.kw-page .kw-season .kw-grid { grid-template-columns: repeat(3,minmax(0,1fr)); }\n.kw-page .kw-access .kw-grid > .kw-group, .kw-page .kw-season .kw-grid > .kw-group { width: 100%; min-width: 0; gap: 10px; padding: 24px 0 0; }\n.kw-page .kw-access .kw-group:before, .kw-page .kw-season .kw-group:before { top: -1px; }\n.kw-page .kw-access .kw-group:after { order: -1; color: #066c82; font-size: 12px; font-weight: 700; letter-spacing: .08em; }\n.kw-page .kw-access .kw-group:nth-child(1):after {content:'01'}\n.kw-page .kw-access .kw-group:nth-child(2):after {content:'02'}\n.kw-page .kw-access .kw-group:nth-child(3):after {content:'03'}\n.kw-page .kw-access .kw-group:nth-child(4):after {content:'04'}\n.kw-page .kw-season .kw-group:after {order:-1;color:#066c82;font-size:12px;font-weight:700;letter-spacing:.08em}\n.kw-page .kw-season .kw-group:nth-child(1):after {content:'AM'}\n.kw-page .kw-season .kw-group:nth-child(2):after {content:'SEA'}\n.kw-page .kw-season .kw-group:nth-child(3):after {content:'PM'}\n.kw-page .kw-season .kw-section-head > :first-child {grid-column:2;grid-row:1}\n.kw-page .kw-season .kw-section-head > :nth-child(2) {grid-column:1;grid-row:1}\n.kw-page .kw-access .kw-group h3, .kw-page .kw-season .kw-group h3 {font-size:21px;line-height:1.3}\n.kw-page .kw-access .kw-group p, .kw-page .kw-season .kw-group p {font-size:16.5px;line-height:1.8}\n@media(max-width:900px){\n .kw-page .kw-access .kw-grid,.kw-page .kw-season .kw-grid{grid-template-columns:repeat(2,minmax(0,1fr))}\n .kw-page .kw-season .kw-section-head > :first-child,.kw-page .kw-season .kw-section-head > :nth-child(2){grid-column:auto;grid-row:auto}\n}\n@media(max-width:600px){\n .kw-page .kw-access .kw-grid,.kw-page .kw-season .kw-grid{grid-template-columns:1fr}\n .kw-page [id^=\"kw-\"]{scroll-margin-top:120px}\n}\n\n\n/* Navigasi artikel berada di bawah header sticky, termasuk saat login. */\n.kw-page .kw-site-header.kw-solid { z-index: 1000 !important; }\n.kw-page .kw-guide-nav.e-con { position: sticky !important; top: 60px !important; z-index: 999 !important; background: #fff !important; }\nbody.admin-bar:has(.kw-page) .kw-guide-nav.e-con { top: 92px !important; }\n@media (max-width: 782px) { body.admin-bar:has(.kw-page) .kw-guide-nav.e-con { top: 106px !important; } }\n@media (max-width: 600px) { body.admin-bar:has(.kw-page) .kw-guide-nav.e-con { top: 60px !important; } }\n\n/* Tab aktivitas: reset gaya tombol Astra, samakan penanda dengan preview. */\n.kw-page .kw-experiences .kw-tabs { position:relative; display:flex; gap:34px; border-bottom:1px solid #cde2e4; overflow-x:auto; scrollbar-width:none; }\n.kw-page .kw-experiences .kw-tabs::-webkit-scrollbar { display:none; }\n.kw-page .kw-experiences .kw-tabs button { appearance:none; flex:none; min-height:44px; margin:0; padding:10px 0 10px !important; border:0 !important; border-radius:0 !important; box-shadow:none !important; background:transparent !important; font:700 16px/1.2 'Plus Jakarta Sans',sans-serif !important; letter-spacing:-.01em; text-transform:none !important; color:#5d7983 !important; cursor:pointer; transition:color .3s; }\n.kw-page .kw-experiences .kw-tabs button:hover { color:#087b9b !important; }\n.kw-page .kw-experiences .kw-tabs button[aria-selected=\"true\"] { color:#143b48 !important; }\n.kw-page .kw-experiences .kw-tabs button:focus-visible { outline:2px solid #087b9b; outline-offset:-2px; }\n.kw-page .kw-experiences .kw-tab-indicator { position:absolute; left:0; bottom:0; height:2px; background:#168ca8; pointer-events:none; transition:transform .55s cubic-bezier(.22,1,.36,1),width .55s cubic-bezier(.22,1,.36,1); }\n@media(max-width:767px){.kw-page .kw-experiences .kw-tabs{gap:20px}}\n@media(prefers-reduced-motion:reduce){.kw-page .kw-experiences .kw-tab-indicator{transition:none}}\n</style>"
+          },
+          "elements": []
+        },
+        {
+          "id": "7ffffa1",
+          "elType": "widget",
+          "widgetType": "html",
+          "settings": {
+            "_title": "Header · Navigasi halaman Kanawa",
+            "html": "<header class=\"kw-site-header\"><div class=\"kw-header-shell\"><a href=\"https://kapalsantai.com/\" aria-label=\"Kapalsantai home\"><img src=\"https://sandybrown-turkey-356844.hostingersite.com/wp-content/uploads/2026/11/logo.svg\" alt=\"Kapalsantai by GuideSantai\" width=\"140\" height=\"40\"></a><nav aria-label=\"Main navigation\"><a href=\"https://kapalsantai.com/en/about-us\">About Us</a><a href=\"https://kapalsantai.com/en/product\">Book a Boat</a></nav></div></header>"
+          },
+          "elements": []
+        },
+        {
+          "id": "0000007",
+          "elType": "container",
+          "settings": {
+            "_title": "Hero · Kanawa Island",
+            "content_width": "full",
+            "flex_direction": "column",
+            "css_classes": "kw-hero"
+          },
+          "elements": [
+            {
+              "id": "0000002",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "_title": "Gambar · Latar Kanawa Media Library",
+                "html": "<div class=\"kw-backdrop\"><img src=\"https://sandybrown-turkey-356844.hostingersite.com/wp-content/uploads/2026/11/kanawa-island-aerial-shoreline.jpg\" alt=\"Aerial view of an island, shoreline, jetty and surrounding reef\"></div>",
+                "_css_classes": "kw-backdrop"
+              },
+              "elements": []
+            },
+            {
+              "id": "0000003",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "_title": "H1 · Judul artikel",
+                "title": "Kanawa Island:<br>A Peaceful Coast That Feels<br>Like Your Private Escape",
+                "header_size": "h1"
+              },
+              "elements": []
+            },
+            {
+              "id": "0000004",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "_title": "Teks · Deskripsi pembuka",
+                "editor": "<p>A quiet beach, clear water, and room to slow down in Labuan Bajo.</p>"
+              },
+              "elements": []
+            },
+            {
+              "id": "0000005",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "_title": "Metadata · Penulis, waktu baca dan bagikan",
+                "html": "<div class=\"kw-hero-meta\"><span class=\"kw-author\"><img alt=\"\" src=\"data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhLS0gQ3JlYXRlZCB3aXRoIElua3NjYXBlIChodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy8pIC0tPgoKPHN2ZwogICB3aWR0aD0iMTgzLjMwMDIybW0iCiAgIGhlaWdodD0iMTgxLjk1NzY2bW0iCiAgIHZpZXdCb3g9IjAgMCAxODMuMzAwMjIgMTgxLjk1NzY2IgogICB2ZXJzaW9uPSIxLjEiCiAgIGlkPSJzdmcxIgogICB4bWw6c3BhY2U9InByZXNlcnZlIgogICB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxkZWZzCiAgICAgaWQ9ImRlZnMxIiAvPjxnCiAgICAgaWQ9ImxheWVyMSIKICAgICB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTMuMzQ5ODk1LC01OS4xMjU0MjYpIj48cmVjdAogICAgICAgc3R5bGU9ImZpbGw6bm9uZTtzdHJva2U6bm9uZTtzdHJva2Utd2lkdGg6MC4yMzgxNDIiCiAgICAgICBpZD0icmVjdDMiCiAgICAgICB3aWR0aD0iMjEwIgogICAgICAgaGVpZ2h0PSIyMTAiCiAgICAgICB4PSIwIgogICAgICAgeT0iNDUuMTA0MjQ4IiAvPjxyZWN0CiAgICAgICBzdHlsZT0iZmlsbDpub25lO3N0cm9rZTpub25lO3N0cm9rZS13aWR0aDowLjI2NDU4MyIKICAgICAgIGlkPSJyZWN0MzAiCiAgICAgICB3aWR0aD0iMjEwIgogICAgICAgaGVpZ2h0PSIyMTAiCiAgICAgICB4PSIwIgogICAgICAgeT0iNDUuMTA0MjQ4IiAvPjxnCiAgICAgICBpZD0iZzMwIgogICAgICAgdHJhbnNmb3JtPSJtYXRyaXgoMS40NDIzODMyLDAsMCwxLjQ0MjM4MzIsNzQ0LjY3NDkzLC01MzkuNjc3MjgpIj48cGF0aAogICAgICAgICBkPSJtIC00ODEuMDI2NDUsNTA2LjQzMTMgdiAtMzkuNDk1ODIgYyAxMy4wMjU4OCwwLjQ5ODcyIDE5Ljk0MzM4LDMuMTE4MjMgMjEuNzc0MDYsNC4zNjUyMSB2IDM1LjEzMDYxIHoiCiAgICAgICAgIGZpbGw9IiMxZDdhYmIiCiAgICAgICAgIGlkPSJwYXRoMjYiCiAgICAgICAgIHN0eWxlPSJzdHJva2Utd2lkdGg6My44NjMwMSIgLz48cGF0aAogICAgICAgICBkPSJtIC00ODEuMDI2NDUsNDU1LjAwMTA5IHYgLTM5Ljg1Mjk1IGggMTQuNTYzMzYgYyA0LjIwNjA1LDAgNy42MTU1NCwzLjQzNjYyIDcuNjE1NTQsNy42Nzg1MSB2IDIwLjgyNzYyIGMgMCwxLjQ1Mjg4IDAuMDY0NSwzLjA0NDA1IDEuOTM0MjEsMy43MzU5MiAxLjQ5NTc2LDAuNTUzNTcgMi44MTUzNywtMC40NjEyNCAzLjI4ODIsLTEuMDM3NjEgbCAzMC4zNjcxMywtMzEuMjA0NDQgaCAxNy4wNzQxMyBjIDMuNDA3NTYsMCA1LjEyODUzLDQuMTQxNTQgMi43Mzk2NSw2LjU5MTgxIGwgLTM0LjMyMDE2LDM1LjE5ODQ0IHoiCiAgICAgICAgIGZpbGw9IiNmNWI3M2UiCiAgICAgICAgIGlkPSJwYXRoMjciCiAgICAgICAgIHN0eWxlPSJzdHJva2Utd2lkdGg6My44NjMwMSIgLz48cGF0aAogICAgICAgICBkPSJtIC00MzAuNDU5NDMsNTA3LjE3Njg2IGMgLTMuODIzMjMsLTQ2LjI1OTE4IC01Mi42Mjc0NywtNDYuMzAzNiAtNzYuNTY2MDUsLTQwLjE3MTA3IDE1LjM3MDY1LC0xMC45OTc2MSAzMy45MDU4NSwtMjIuMTMzNTEgNzEuMTY5ODEsLTExLjk2NjA3IDI2LjE1MDI3LDcuMTM1MzcgMzcuNzAxMDYsMzQuOTIxMjQgMzcuNzAxMDYsNDUuNjU1NzggeiIKICAgICAgICAgZmlsbD0iIzFkN2FiYiIKICAgICAgICAgaWQ9InBhdGgyOCIKICAgICAgICAgc3R5bGU9InN0cm9rZS13aWR0aDozLjg2MzAxIiAvPjxwYXRoCiAgICAgICAgIGQ9Im0gLTQ2NS41NzkyMyw1MTcuMDYxMTUgNzkuMDcwODIsLTE2LjI4MTQ0IGMgMS4wMjkxMSwtMC4yMTE2OSAxLjg5NTU4LDAuNzc0MTUgMS41MDg5LDEuNzU5MjIgLTQuNjc4NSwxMS45MTQ2OCAtMTQuMDY3OTMsMTYuNzEzNyAtMjQuMjA1NjMsMTkuMzgxMTEgLTEwLjc0ODgzLDIuODI4MTEgLTI1Ljc0MTU3LDIuODYxMzQgLTM0LjE4Njg4LDEuNjIxMzEgLTYuMTA4OTcsLTAuODk2OTkgLTE0LjM1MTg2LDAuNTQwODIgLTE4LjI4NDgsMS43MTQ3OSAtMC42NDAxLDAuMTkxMjIgLTEuMzQwMDcsLTAuMDY0OSAtMS42NzM0NSwtMC42NDc4MyBsIC0zLjE0MzMzLC01LjUwMDE1IGMgLTAuNDY3NDMsLTAuODE4MTkgLTAuMDAzLC0xLjg1ODExIDAuOTE0MzcsLTIuMDQ3MDEgeiIKICAgICAgICAgZmlsbD0iIzFkN2FiYiIKICAgICAgICAgaWQ9InBhdGgyOSIKICAgICAgICAgc3R5bGU9InN0cm9rZS13aWR0aDozLjg2MzAxIiAvPjxwYXRoCiAgICAgICAgIGQ9Im0gLTM5Ny45NDQwOCw1MjIuNzUzMjkgYyAxNS4xMzIxOSwtNy4zNTQ0IDE3LjA2Nzk1LC0xNi42NDQxNyAxNy4xOTExOCwtMjMuOTE0MzUgNS40NTQxOCwyNi44NDc1NCAtMTguMDU0MTgsMzYuNzU3MzIgLTI5LjE2MDMzLDM4LjQyMDc0IC0xMS4xMDYxNiwxLjY2MzQxIC0yNS4xNzI1NSwtMS41ODQyMyAtNDQuMTQ0NTcsLTMuNDUxOTkgLTE1LjE3NzczLC0xLjQ5NDIxIC0yNi4zODIxNiw0LjM3MTM4IC0zMC4wODcxNCw3LjQ5MTE1IDcuNzQ5NywtMTAuNTc0NjEgMTkuMDE0OTgsLTEyLjI0MTUgMjkuOTY4MTYsLTEzLjU4MTE5IDEwLjk1MzU3LC0xLjMzOTY5IDM3LjMxNzQ3LDQuMjI5MjMgNTYuMjMyNywtNC45NjQzNiB6IgogICAgICAgICBmaWxsPSIjMWQ3YWJiIgogICAgICAgICBpZD0icGF0aDMwIgogICAgICAgICBzdHlsZT0ic3Ryb2tlLXdpZHRoOjMuODYzMDEiIC8+PC9nPjwvZz48L3N2Zz4K\"/>By Kapalsantai</span><span class=\"kw-reading\">3 min read</span><div aria-label=\"Share this article\" class=\"kw-share\"><a aria-label=\"Share on WhatsApp\" data-kw-share=\"whatsapp\" href=\"https://wa.me/?text=https%3A%2F%2Fkapalsantai.com%2F\"><svg aria-hidden=\"true\" viewbox=\"0 0 24 24\"><path d=\"M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-2.9.8.8-2.8-.2-.3A8 8 0 1 1 12 20Zm4.4-5.8c-.2-.1-1.2-.6-1.4-.7-.2-.1-.3-.1-.4.1l-.6.7c-.1.1-.3.2-.5.1a6.6 6.6 0 0 1-3.2-2.8c-.2-.3.2-.4.5-1 .1-.1.1-.3 0-.4l-.6-1.5c-.2-.4-.3-.4-.5-.4h-.4c-.2 0-.4.1-.6.3-.2.2-.7.7-.7 1.7s.7 2 .8 2.2c.1.1 1.4 2.2 3.5 3.1 1.3.5 1.8.6 2.5.5.4-.1 1.2-.5 1.4-1 .2-.5.2-.9.2-1 0-.1-.1-.2-.3-.3Z\" fill=\"currentColor\"></path></svg></a><a aria-label=\"Share on Facebook\" data-kw-share=\"facebook\" href=\"https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fkapalsantai.com%2F\"><svg aria-hidden=\"true\" viewbox=\"0 0 24 24\"><path d=\"M13.5 21v-8h2.7l.4-3h-3.1V8c0-.9.3-1.5 1.6-1.5h1.7V3.8c-.8-.1-1.6-.1-2.4-.1-2.4 0-4.1 1.5-4.1 4.2V10H7.6v3h2.7v8h3.2Z\" fill=\"currentColor\"></path></svg></a><button aria-label=\"Copy article link\" class=\"kw-copy\" type=\"button\"><svg aria-hidden=\"true\" viewbox=\"0 0 24 24\"><path d=\"M10 13a4 4 0 0 0 5.7 0l2.8-2.8a4 4 0 0 0-5.7-5.7l-1.6 1.6M14 11a4 4 0 0 0-5.7 0l-2.8 2.8a4 4 0 0 0 5.7 5.7l1.6-1.6\" fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-width=\"1.8\"></path></svg></button><span aria-live=\"polite\" class=\"kw-share-status\"></span></div></div>"
+              },
+              "elements": []
+            },
+            {
+              "id": "0000006",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "_title": "Tombol · Jelajahi panduan",
+                "text": "Explore the guide",
+                "link": {
+                  "url": "#kw-article"
+                },
+                "_css_classes": "kw-hero-button"
+              },
+              "elements": []
+            }
+          ],
+          "isInner": false
+        },
+        {
+          "id": "7900011",
+          "elType": "container",
+          "settings": {
+            "_title": "Navigasi · Bagian panduan",
+            "content_width": "full",
+            "flex_direction": "column",
+            "css_classes": "kw-guide-nav"
+          },
+          "elements": [
+            {
+              "id": "0000008",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "_title": "Navigasi · Bagian artikel",
+                "html": "<nav class=\"kw-nav\" aria-label=\"Article contents\"><a href=\"#kw-special\">Why Kanawa?</a><a href=\"#kw-experiences\">Things to do</a><a href=\"#kw-getting-there\">Getting there</a><a href=\"#kw-best-time\">When to visit</a><a href=\"#kw-packing\">What to bring</a></nav>"
+              },
+              "elements": []
+            }
+          ],
+          "isInner": false
+        },
+        {
+          "id": "000000b",
+          "elType": "container",
+          "settings": {
+            "_title": "Pengantar · Navigasi dan teks",
+            "content_width": "full",
+            "flex_direction": "column",
+            "css_classes": "kw-section  kw-intro",
+            "_element_id": "kw-article"
+          },
+          "elements": [
+            {
+              "id": "0000009",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "_title": "Paragraf · Pengantar 1",
+                "editor": "<p class=\"intro\">A stretch of pale sand, clear shallows, and a hill rising above the shore. Kanawa Island invites you to slow down and enjoy the space between one adventure and the next.</p>"
+              },
+              "elements": []
+            },
+            {
+              "id": "000000a",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "_title": "Paragraf · Pengantar 2",
+                "editor": "<p>Spend the morning looking beneath the surface, take a short walk for a wider view, or simply settle in by the water. Here’s what to know before adding Kanawa to your boat trip.</p>"
+              },
+              "elements": []
+            }
+          ],
+          "isInner": false
+        },
+        {
+          "id": "0000018",
+          "elType": "container",
+          "settings": {
+            "_title": "Section 01 · Keistimewaan Kanawa",
+            "content_width": "full",
+            "flex_direction": "column",
+            "css_classes": "kw-section  kw-special",
+            "_element_id": "kw-special"
+          },
+          "elements": [
+            {
+              "id": "7900018",
+              "elType": "container",
+              "settings": {
+                "_title": "Header · Section 01 · Keistimewaan Kanawa",
+                "content_width": "full",
+                "flex_direction": "column",
+                "css_classes": "kw-section-head"
+              },
+              "elements": [
+                {
+                  "id": "0000015",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "_title": "H2 · Keistimewaan Kanawa",
+                    "title": "Three reasons to stop at Kanawa",
+                    "header_size": "h2"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "0000016",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "_title": "Teks · Pengantar keistimewaan",
+                    "editor": "<p>From the shoreline to the hill, each perspective reveals a different side of the island.</p>"
+                  },
+                  "elements": []
+                }
+              ],
+              "isInner": true
+            },
+            {
+              "id": "0000017",
+              "elType": "container",
+              "settings": {
+                "_title": "Baris · Tiga keistimewaan",
+                "content_width": "full",
+                "flex_direction": "column",
+                "css_classes": "kw-grid"
+              },
+              "elements": [
+                {
+                  "id": "000000e",
+                  "elType": "container",
+                  "settings": {
+                    "_title": "Sorotan · Water worth looking into",
+                    "content_width": "full",
+                    "flex_direction": "column",
+                    "css_classes": "kw-group"
+                  },
+                  "elements": [
+                    {
+                      "id": "000000c",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "_title": "H3 · Water worth looking into",
+                        "title": "Water worth looking into",
+                        "header_size": "h3"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "000000d",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "_title": "Teks · Water worth looking into",
+                        "editor": "<p>Clear shallows offer a chance to see fish and coral. Visibility and sightings vary with conditions.</p>"
+                      },
+                      "elements": []
+                    }
+                  ],
+                  "isInner": false
+                },
+                {
+                  "id": "0000011",
+                  "elType": "container",
+                  "settings": {
+                    "_title": "Sorotan · Time to do less",
+                    "content_width": "full",
+                    "flex_direction": "column",
+                    "css_classes": "kw-group"
+                  },
+                  "elements": [
+                    {
+                      "id": "000000f",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "_title": "H3 · Time to do less",
+                        "title": "Time to do less",
+                        "header_size": "h3"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "0000010",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "_title": "Teks · Time to do less",
+                        "editor": "<p>A sandy shoreline makes space for a slower pause between destinations.</p>"
+                      },
+                      "elements": []
+                    }
+                  ],
+                  "isInner": false
+                },
+                {
+                  "id": "0000014",
+                  "elType": "container",
+                  "settings": {
+                    "_title": "Sorotan · A view from above",
+                    "content_width": "full",
+                    "flex_direction": "column",
+                    "css_classes": "kw-group"
+                  },
+                  "elements": [
+                    {
+                      "id": "0000012",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "_title": "H3 · A view from above",
+                        "title": "A view from above",
+                        "header_size": "h3"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "0000013",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "_title": "Teks · A view from above",
+                        "editor": "<p>The island’s hill offers a wider perspective across the water and nearby islands.</p>"
+                      },
+                      "elements": []
+                    }
+                  ],
+                  "isInner": false
+                }
+              ],
+              "isInner": false
+            }
+          ],
+          "isInner": false
+        },
+        {
+          "id": "000002a",
+          "elType": "container",
+          "settings": {
+            "_title": "Section 02 · Aktivitas di Kanawa",
+            "content_width": "full",
+            "flex_direction": "column",
+            "css_classes": "kw-section kw-muted kw-experiences",
+            "_element_id": "kw-experiences"
+          },
+          "elements": [
+            {
+              "id": "790002a",
+              "elType": "container",
+              "settings": {
+                "_title": "Header · Section 02 · Aktivitas di Kanawa",
+                "content_width": "full",
+                "flex_direction": "column",
+                "css_classes": "kw-section-head"
+              },
+              "elements": [
+                {
+                  "id": "0000019",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "_title": "H2 · Aktivitas di Kanawa",
+                    "title": "Three ways to spend your time",
+                    "header_size": "h2"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "000001a",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "_title": "Teks · Pengantar aktivitas",
+                    "editor": "<p class=\"rv from-l\">Pick one, or mix them all. Kanawa can be as active or as unhurried as your itinerary allows.</p>"
+                  },
+                  "elements": []
+                }
+              ],
+              "isInner": true
+            },
+            {
+              "id": "7fb0101",
+              "elType": "container",
+              "settings": {
+                "_title": "Aktivitas · Gambar dan pilihan",
+                "content_width": "full",
+                "flex_direction": "row",
+                "css_classes": "kw-experiences-body"
+              },
+              "elements": [
+                {
+                  "id": "000001b",
+                  "elType": "widget",
+                  "widgetType": "html",
+                  "settings": {
+                    "_title": "Gambar · Pantai Kanawa Media Library",
+                    "html": "<figure class=\"kw-photo\"><img src=\"https://sandybrown-turkey-356844.hostingersite.com/wp-content/uploads/2026/11/kanawa-island-beach-relaxing.jpg\" alt=\"A person relaxing on a beach while two people enjoy the water\"><figcaption>A relaxed beach moment beside the water.</figcaption></figure>"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "7fb0100",
+                  "elType": "container",
+                  "settings": {
+                    "_title": "Aktivitas · Tab dan detail",
+                    "content_width": "full",
+                    "flex_direction": "column",
+                    "css_classes": "kw-experiences-detail"
+                  },
+                  "elements": [
+                    {
+                      "id": "7ab0011",
+                      "elType": "widget",
+                      "widgetType": "html",
+                      "settings": {
+                        "_title": "Tab · Pilihan aktivitas Kanawa",
+                        "html": "<div class=\"kw-tabs\" role=\"tablist\" aria-label=\"Things to do on Kanawa\"><button type=\"button\" role=\"tab\" aria-selected=\"true\" data-panel=\"0\">By the shore</button><button type=\"button\" role=\"tab\" aria-selected=\"false\" data-panel=\"1\">In the water</button><button type=\"button\" role=\"tab\" aria-selected=\"false\" data-panel=\"2\">Up the hill</button></div>"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "000001f",
+                      "elType": "container",
+                      "settings": {
+                        "_title": "Aktivitas · Stay a little longer",
+                        "content_width": "full",
+                        "flex_direction": "column",
+                        "css_classes": "kw-group kw-panel kw-panel-0"
+                      },
+                      "elements": [
+                        {
+                          "id": "7fc0000",
+                          "elType": "container",
+                          "settings": {
+                            "_title": "Isi · Best for unhurried time",
+                            "content_width": "full",
+                            "flex_direction": "column",
+                            "css_classes": "kw-panel-copy"
+                          },
+                          "elements": [
+                            {
+                              "id": "000001c",
+                              "elType": "widget",
+                              "widgetType": "heading",
+                              "settings": {
+                                "_title": "H3 · Stay a little longer",
+                                "title": "Stay a little longer",
+                                "header_size": "h3"
+                              },
+                              "elements": []
+                            },
+                            {
+                              "id": "7fd0000",
+                              "elType": "widget",
+                              "widgetType": "text-editor",
+                              "settings": {
+                                "_title": "Label · Best for unhurried time",
+                                "_css_classes": "kw-panel-time",
+                                "editor": "<p>Best for unhurried time</p>"
+                              },
+                              "elements": []
+                            },
+                            {
+                              "id": "000001d",
+                              "elType": "widget",
+                              "widgetType": "text-editor",
+                              "settings": {
+                                "_title": "Paragraf · Stay a little longer 1",
+                                "editor": "<p>Settle on the sand, enjoy the view, or watch the light change across the water. Sunrise and sunset are especially appealing when your itinerary allows an early or late stop.</p>"
+                              },
+                              "elements": []
+                            }
+                          ],
+                          "isInner": true
+                        },
+                        {
+                          "id": "7fb0000",
+                          "elType": "container",
+                          "settings": {
+                            "_title": "Daftar · Best for unhurried time",
+                            "content_width": "full",
+                            "flex_direction": "column",
+                            "css_classes": "kw-panel-list"
+                          },
+                          "elements": [
+                            {
+                              "id": "000001e",
+                              "elType": "widget",
+                              "widgetType": "text-editor",
+                              "settings": {
+                                "_title": "Daftar · Stay a little longer",
+                                "editor": "<ul><li>Bring a towel and find a spot at the water’s edge.</li><li>Use the beach and hilltop for different photo perspectives.</li><li>Take your time and leave the shoreline as you found it.</li></ul>"
+                              },
+                              "elements": []
+                            }
+                          ],
+                          "isInner": true
+                        }
+                      ],
+                      "isInner": false
+                    },
+                    {
+                      "id": "0000024",
+                      "elType": "container",
+                      "settings": {
+                        "_title": "Aktivitas · Explore the shallows",
+                        "content_width": "full",
+                        "flex_direction": "column",
+                        "css_classes": "kw-group kw-panel kw-panel-1"
+                      },
+                      "elements": [
+                        {
+                          "id": "7fc0001",
+                          "elType": "container",
+                          "settings": {
+                            "_title": "Isi · Best for snorkeling",
+                            "content_width": "full",
+                            "flex_direction": "column",
+                            "css_classes": "kw-panel-copy"
+                          },
+                          "elements": [
+                            {
+                              "id": "0000020",
+                              "elType": "widget",
+                              "widgetType": "heading",
+                              "settings": {
+                                "_title": "H3 · Explore the shallows",
+                                "title": "Explore the shallows",
+                                "header_size": "h3"
+                              },
+                              "elements": []
+                            },
+                            {
+                              "id": "7fd0001",
+                              "elType": "widget",
+                              "widgetType": "text-editor",
+                              "settings": {
+                                "_title": "Label · Best for snorkeling",
+                                "_css_classes": "kw-panel-time",
+                                "editor": "<p>Best for snorkeling</p>"
+                              },
+                              "elements": []
+                            },
+                            {
+                              "id": "0000021",
+                              "elType": "widget",
+                              "widgetType": "text-editor",
+                              "settings": {
+                                "_title": "Paragraf · Explore the shallows 1",
+                                "editor": "<p>Snorkel when conditions and your guide allow, looking for fish and coral along the way. Sightings vary with the day, so treat anything you see as a bonus.</p>"
+                              },
+                              "elements": []
+                            },
+                            {
+                              "id": "0000022",
+                              "elType": "widget",
+                              "widgetType": "text-editor",
+                              "settings": {
+                                "_title": "Paragraf · Explore the shallows 2",
+                                "editor": "<p class=\"note\"><b>Ask your operator</b> about diving options and the day’s conditions before you enter the water.</p>"
+                              },
+                              "elements": []
+                            }
+                          ],
+                          "isInner": true
+                        },
+                        {
+                          "id": "7fb0001",
+                          "elType": "container",
+                          "settings": {
+                            "_title": "Daftar · Best for snorkeling",
+                            "content_width": "full",
+                            "flex_direction": "column",
+                            "css_classes": "kw-panel-list"
+                          },
+                          "elements": [
+                            {
+                              "id": "0000023",
+                              "elType": "widget",
+                              "widgetType": "text-editor",
+                              "settings": {
+                                "_title": "Daftar · Explore the shallows",
+                                "editor": "<ul><li>Wear a life jacket or snorkel vest if you’re not a confident swimmer.</li><li>Avoid touching or standing on the reef.</li><li>Use reef-safe sunscreen to protect the coral.</li></ul>"
+                              },
+                              "elements": []
+                            }
+                          ],
+                          "isInner": true
+                        }
+                      ],
+                      "isInner": false
+                    },
+                    {
+                      "id": "0000029",
+                      "elType": "container",
+                      "settings": {
+                        "_title": "Aktivitas · Walk up for the view",
+                        "content_width": "full",
+                        "flex_direction": "column",
+                        "css_classes": "kw-group kw-panel kw-panel-2"
+                      },
+                      "elements": [
+                        {
+                          "id": "7fc0002",
+                          "elType": "container",
+                          "settings": {
+                            "_title": "Isi · Around 10–20 minutes",
+                            "content_width": "full",
+                            "flex_direction": "column",
+                            "css_classes": "kw-panel-copy"
+                          },
+                          "elements": [
+                            {
+                              "id": "0000025",
+                              "elType": "widget",
+                              "widgetType": "heading",
+                              "settings": {
+                                "_title": "H3 · Walk up for the view",
+                                "title": "Walk up for the view",
+                                "header_size": "h3"
+                              },
+                              "elements": []
+                            },
+                            {
+                              "id": "7fd0002",
+                              "elType": "widget",
+                              "widgetType": "text-editor",
+                              "settings": {
+                                "_title": "Label · Around 10–20 minutes",
+                                "_css_classes": "kw-panel-time",
+                                "editor": "<p>Around 10–20 minutes</p>"
+                              },
+                              "elements": []
+                            },
+                            {
+                              "id": "0000026",
+                              "elType": "widget",
+                              "widgetType": "text-editor",
+                              "settings": {
+                                "_title": "Paragraf · Walk up for the view 1",
+                                "editor": "<p>A short hill walk may offer panoramic views across the water and nearby islands. It is a gentle way to add a different perspective to your beach day.</p>"
+                              },
+                              "elements": []
+                            },
+                            {
+                              "id": "0000027",
+                              "elType": "widget",
+                              "widgetType": "text-editor",
+                              "settings": {
+                                "_title": "Paragraf · Walk up for the view 2",
+                                "editor": "<p class=\"note\"><b>Check with your guide</b> about access, the route, and current trail conditions.</p>"
+                              },
+                              "elements": []
+                            }
+                          ],
+                          "isInner": true
+                        },
+                        {
+                          "id": "7fb0002",
+                          "elType": "container",
+                          "settings": {
+                            "_title": "Daftar · Around 10–20 minutes",
+                            "content_width": "full",
+                            "flex_direction": "column",
+                            "css_classes": "kw-panel-list"
+                          },
+                          "elements": [
+                            {
+                              "id": "0000028",
+                              "elType": "widget",
+                              "widgetType": "text-editor",
+                              "settings": {
+                                "_title": "Daftar · Walk up for the view",
+                                "editor": "<ul><li>Wear sturdy sandals or shoes with good grip.</li><li>Carry water and a hat for the exposed sections.</li><li>Go earlier or later in the day to avoid the strongest sun.</li></ul>"
+                              },
+                              "elements": []
+                            }
+                          ],
+                          "isInner": true
+                        }
+                      ],
+                      "isInner": false
+                    }
+                  ],
+                  "isInner": true
+                }
+              ],
+              "isInner": true
+            }
+          ],
+          "isInner": false
+        },
+        {
+          "id": "000003b",
+          "elType": "container",
+          "settings": {
+            "_title": "Section 03 · Cara menuju Kanawa",
+            "content_width": "full",
+            "flex_direction": "column",
+            "css_classes": "kw-section  kw-access",
+            "_element_id": "kw-getting-there"
+          },
+          "elements": [
+            {
+              "id": "790003b",
+              "elType": "container",
+              "settings": {
+                "_title": "Header · Section 03 · Cara menuju Kanawa",
+                "content_width": "full",
+                "flex_direction": "column",
+                "css_classes": "kw-section-head"
+              },
+              "elements": [
+                {
+                  "id": "000002b",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "_title": "H2 · Cara menuju Kanawa",
+                    "title": "How to get to Kanawa Island",
+                    "header_size": "h2"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "000002c",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "_title": "Teks · Pengantar Cara menuju Kanawa",
+                    "editor": "<p class=\"rv from-r\">Kanawa is reached by sea, so the trip itself becomes part of the day.</p>"
+                  },
+                  "elements": []
+                }
+              ],
+              "isInner": true
+            },
+            {
+              "id": "000003a",
+              "elType": "container",
+              "settings": {
+                "_title": "Baris · Cara menuju Kanawa",
+                "content_width": "full",
+                "flex_direction": "column",
+                "css_classes": "kw-grid"
+              },
+              "elements": [
+                {
+                  "id": "000002f",
+                  "elType": "container",
+                  "settings": {
+                    "_title": "Info · Board in Labuan Bajo",
+                    "content_width": "full",
+                    "flex_direction": "column",
+                    "css_classes": "kw-group"
+                  },
+                  "elements": [
+                    {
+                      "id": "000002d",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "_title": "H3 · Board in Labuan Bajo",
+                        "title": "Board in Labuan Bajo",
+                        "header_size": "h3"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "000002e",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "_title": "Teks · Board in Labuan Bajo",
+                        "editor": "<p>Join your boat at the harbor and set out across the water.</p>"
+                      },
+                      "elements": []
+                    }
+                  ],
+                  "isInner": false
+                },
+                {
+                  "id": "0000033",
+                  "elType": "container",
+                  "settings": {
+                    "_title": "Info · Cross by speedboat",
+                    "content_width": "full",
+                    "flex_direction": "column",
+                    "css_classes": "kw-group"
+                  },
+                  "elements": [
+                    {
+                      "id": "0000030",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "_title": "H3 · Cross by speedboat",
+                        "title": "Cross by speedboat",
+                        "header_size": "h3"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "0000031",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "_title": "Info · Durasi",
+                        "editor": "<p>~60 min</p>"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "0000032",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "_title": "Teks · Cross by speedboat",
+                        "editor": "<p>Travel time depends on the vessel, route, and sea conditions.</p>"
+                      },
+                      "elements": []
+                    }
+                  ],
+                  "isInner": false
+                },
+                {
+                  "id": "0000036",
+                  "elType": "container",
+                  "settings": {
+                    "_title": "Info · Possible stops nearby",
+                    "content_width": "full",
+                    "flex_direction": "column",
+                    "css_classes": "kw-group"
+                  },
+                  "elements": [
+                    {
+                      "id": "0000034",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "_title": "H3 · Possible stops nearby",
+                        "title": "Possible stops nearby",
+                        "header_size": "h3"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "0000035",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "_title": "Teks · Possible stops nearby",
+                        "editor": "<p>Some trips may also visit Manjarite, Siaba, or Sebayur. Confirm your itinerary with your operator.</p>"
+                      },
+                      "elements": []
+                    }
+                  ],
+                  "isInner": false
+                },
+                {
+                  "id": "0000039",
+                  "elType": "container",
+                  "settings": {
+                    "_title": "Info · Arrive at Kanawa",
+                    "content_width": "full",
+                    "flex_direction": "column",
+                    "css_classes": "kw-group"
+                  },
+                  "elements": [
+                    {
+                      "id": "0000037",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "_title": "H3 · Arrive at Kanawa",
+                        "title": "Arrive at Kanawa",
+                        "header_size": "h3"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "0000038",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "_title": "Teks · Arrive at Kanawa",
+                        "editor": "<p>Step onto the sand and spend the time that suits your itinerary.</p>"
+                      },
+                      "elements": []
+                    }
+                  ],
+                  "isInner": false
+                }
+              ],
+              "isInner": false
+            }
+          ],
+          "isInner": false
+        },
+        {
+          "id": "000004a",
+          "elType": "container",
+          "settings": {
+            "_title": "Section 04 · Waktu berkunjung",
+            "content_width": "full",
+            "flex_direction": "column",
+            "css_classes": "kw-section  kw-season",
+            "_element_id": "kw-best-time"
+          },
+          "elements": [
+            {
+              "id": "790004a",
+              "elType": "container",
+              "settings": {
+                "_title": "Header · Section 04 · Waktu berkunjung",
+                "content_width": "full",
+                "flex_direction": "column",
+                "css_classes": "kw-section-head"
+              },
+              "elements": [
+                {
+                  "id": "000003c",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "_title": "H2 · Waktu berkunjung",
+                    "title": "Best time to visit Kanawa Island",
+                    "header_size": "h2"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "000003d",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "_title": "Teks · Pengantar Waktu berkunjung",
+                    "editor": "<p class=\"rv from-l\">April to October is generally the dry season, which tends to suit boat days best.</p>"
+                  },
+                  "elements": []
+                }
+              ],
+              "isInner": true
+            },
+            {
+              "id": "000003e",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "_title": "Kalender · Musim kering",
+                "html": "<div aria-label=\"Generally dry season runs from April to October\" class=\"months\" role=\"img\"><div class=\"month\">Jan</div><div class=\"month\">Feb</div><div class=\"month\">Mar</div><div class=\"month on\">Apr</div><div class=\"month on\">May</div><div class=\"month on\">Jun</div><div class=\"month on\">Jul</div><div class=\"month on\">Aug</div><div class=\"month on\">Sep</div><div class=\"month on\">Oct</div><div class=\"month\">Nov</div><div class=\"month\">Dec</div></div><p class=\"kw-month-legend\">Generally dry season · April – October</p>"
+              },
+              "elements": []
+            },
+            {
+              "id": "0000048",
+              "elType": "container",
+              "settings": {
+                "_title": "Baris · Waktu berkunjung",
+                "content_width": "full",
+                "flex_direction": "column",
+                "css_classes": "kw-grid"
+              },
+              "elements": [
+                {
+                  "id": "0000041",
+                  "elType": "container",
+                  "settings": {
+                    "_title": "Info · Early morning",
+                    "content_width": "full",
+                    "flex_direction": "column",
+                    "css_classes": "kw-group"
+                  },
+                  "elements": [
+                    {
+                      "id": "000003f",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "_title": "H3 · Early morning",
+                        "title": "Early morning",
+                        "header_size": "h3"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "0000040",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "_title": "Teks · Early morning",
+                        "editor": "<p>Softer light and a calmer start to the day, good for the beach and a first look at the water.</p>"
+                      },
+                      "elements": []
+                    }
+                  ],
+                  "isInner": false
+                },
+                {
+                  "id": "0000044",
+                  "elType": "container",
+                  "settings": {
+                    "_title": "Info · Snorkeling",
+                    "content_width": "full",
+                    "flex_direction": "column",
+                    "css_classes": "kw-group"
+                  },
+                  "elements": [
+                    {
+                      "id": "0000042",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "_title": "H3 · Snorkeling",
+                        "title": "Snorkeling",
+                        "header_size": "h3"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "0000043",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "_title": "Teks · Snorkeling",
+                        "editor": "<p>Visibility depends on weather, currents, and tides, so there is no fixed best hour. Ask your crew.</p>"
+                      },
+                      "elements": []
+                    }
+                  ],
+                  "isInner": false
+                },
+                {
+                  "id": "0000047",
+                  "elType": "container",
+                  "settings": {
+                    "_title": "Info · Late afternoon",
+                    "content_width": "full",
+                    "flex_direction": "column",
+                    "css_classes": "kw-group"
+                  },
+                  "elements": [
+                    {
+                      "id": "0000045",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "_title": "H3 · Late afternoon",
+                        "title": "Late afternoon",
+                        "header_size": "h3"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "0000046",
+                      "elType": "widget",
+                      "widgetType": "text-editor",
+                      "settings": {
+                        "_title": "Teks · Late afternoon",
+                        "editor": "<p>Warm, soft light over the water, lovely for photographs if your itinerary allows a later stop.</p>"
+                      },
+                      "elements": []
+                    }
+                  ],
+                  "isInner": false
+                }
+              ],
+              "isInner": false
+            },
+            {
+              "id": "0000049",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "_title": "Catatan · Kondisi laut",
+                "editor": "<p class=\"note rv\"><b>Conditions can change.</b> Ask your boat crew about the day’s weather and follow their advice before entering the water.</p>"
+              },
+              "elements": []
+            }
+          ],
+          "isInner": false
+        },
+        {
+          "id": "000004e",
+          "elType": "container",
+          "settings": {
+            "_title": "Section 05 · Daftar barang",
+            "content_width": "full",
+            "flex_direction": "column",
+            "css_classes": "kw-section kw-muted kw-packing",
+            "_element_id": "kw-packing"
+          },
+          "elements": [
+            {
+              "id": "790004e",
+              "elType": "container",
+              "settings": {
+                "_title": "Header · Section 05 · Daftar barang",
+                "content_width": "full",
+                "flex_direction": "column",
+                "css_classes": "kw-section-head"
+              },
+              "elements": [
+                {
+                  "id": "000004b",
+                  "elType": "widget",
+                  "widgetType": "heading",
+                  "settings": {
+                    "_title": "H2 · Daftar barang",
+                    "title": "Pack light, pack ready",
+                    "header_size": "h2"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "000004c",
+                  "elType": "widget",
+                  "widgetType": "text-editor",
+                  "settings": {
+                    "_title": "Teks · Petunjuk checklist",
+                    "editor": "<p>Tick things off as you gather them. Nothing here is saved.</p>"
+                  },
+                  "elements": []
+                }
+              ],
+              "isInner": true
+            },
+            {
+              "id": "000004d",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "_title": "Checklist · Barang bawaan",
+                "html": "<div class=\"kw-check-progress\" aria-live=\"polite\"><span class=\"kw-count\">0 / 6 packed</span><span class=\"kw-progress-track\"><i></i></span></div><div class=\"kw-checklist\"><label><input type=\"checkbox\"> <span>Swimwear and quick-dry clothing</span></label><label><input type=\"checkbox\"> <span>Reef-safe sunscreen</span></label><label><input type=\"checkbox\"> <span>Snorkel, mask and fins</span></label><label><input type=\"checkbox\"> <span>Life jacket or snorkel vest</span></label><label><input type=\"checkbox\"> <span>Dry bag</span></label><label><input type=\"checkbox\"> <span>Small towel and a change of clothes</span></label></div>"
+              },
+              "elements": []
+            }
+          ],
+          "isInner": false
+        },
+        {
+          "id": "0000052",
+          "elType": "container",
+          "settings": {
+            "_title": "Section 06 · Ajakan perjalanan",
+            "content_width": "full",
+            "flex_direction": "column",
+            "css_classes": "kw-section kw-cta kw-closing kw-closing-photo",
+            "_element_id": "kw-closing"
+          },
+          "elements": [
+            {
+              "id": "000004f",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "_title": "H2 · Ajakan perjalanan",
+                "title": "Save a little time for Kanawa",
+                "header_size": "h2"
+              },
+              "elements": []
+            },
+            {
+              "id": "0000050",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "_title": "Teks · Ajakan perjalanan",
+                "editor": "<p>Whether you’re here for the clear shallows or a quiet moment on the beach, find a boat trip with space for the experiences you enjoy.</p>"
+              },
+              "elements": []
+            },
+            {
+              "id": "0000051",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "_title": "Tombol · Jelajahi perjalanan",
+                "text": "Explore boat trips",
+                "link": {
+                  "url": "https://kapalsantai.com/en/product"
+                }
+              },
+              "elements": []
+            }
+          ],
+          "isInner": false
+        },
+        {
+          "id": "0000053",
+          "elType": "widget",
+          "widgetType": "html",
+          "settings": {
+            "_title": "Interaksi · Hero, tab aktivitas dan tombol berbagi",
+            "html": "<script>(function(){function init(){document.querySelectorAll('.kw-page').forEach(function(root){if(root.dataset.ready)return;root.dataset.ready='1';var hero=root.querySelector('.kw-hero'),img=root.querySelector('.kw-backdrop img');if(hero&&img){var visible=true;function sync(){img.classList.toggle('kw-paused',!visible||document.hidden)}if('IntersectionObserver'in window)new IntersectionObserver(function(es){visible=es[0].isIntersecting;sync()}).observe(hero);document.addEventListener('visibilitychange',sync);sync()}var tabs=Array.from(root.querySelectorAll('.kw-tabs button')),panels=Array.from(root.querySelectorAll('.kw-panel'));if(tabs.length&&panels.length){root.classList.add('kw-tabs-ready');var tabBar=tabs[0].parentElement,indicator=document.createElement('span');indicator.className='kw-tab-indicator';indicator.setAttribute('aria-hidden','true');tabBar.appendChild(indicator);function moveIndicator(n){indicator.style.width=tabs[n].offsetWidth+'px';indicator.style.transform='translateX('+tabs[n].offsetLeft+'px)'}window.addEventListener('resize',function(){var active=tabs.findIndex(function(t){return t.getAttribute('aria-selected')==='true'});if(active>=0)moveIndicator(active)});function pick(n,focus){moveIndicator(n);tabs.forEach(function(t,i){t.setAttribute('aria-selected',i===n?'true':'false');t.tabIndex=i===n?0:-1});panels.forEach(function(p,i){p.hidden=i!==n});if(focus)tabs[n].focus()}tabs.forEach(function(t,i){t.addEventListener('click',function(){pick(i,false)});t.addEventListener('keydown',function(e){var n;if(e.key==='ArrowRight')n=(i+1)%tabs.length;else if(e.key==='ArrowLeft')n=(i+tabs.length-1)%tabs.length;else if(e.key==='Home')n=0;else if(e.key==='End')n=tabs.length-1;if(n!==undefined){e.preventDefault();pick(n,true)}})});pick(0,false)}root.querySelectorAll('[data-kw-share]').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();var u=encodeURIComponent(location.href);window.open(a.dataset.kwShare==='whatsapp'?'https://wa.me/?text='+u:'https://www.facebook.com/sharer/sharer.php?u='+u,'_blank','noopener,noreferrer')})});var copy=root.querySelector('.kw-copy'),status=root.querySelector('.kw-share-status');if(copy)copy.addEventListener('click',async function(){try{await navigator.clipboard.writeText(location.href);status.textContent='Link copied.'}catch(e){status.textContent='Copy the URL from your browser.'}})})}if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init()})();</script><script>(function(){function init(){document.querySelectorAll('.kw-page').forEach(function(root){if(root.dataset.kwEnhance)return;root.dataset.kwEnhance='1';var boxes=Array.from(root.querySelectorAll('.kw-checklist input')),count=root.querySelector('.kw-count'),bar=root.querySelector('.kw-progress-track i');function update(){if(!count||!bar)return;var n=boxes.filter(function(b){return b.checked}).length;count.textContent=n===boxes.length?'All packed. See you on Kanawa!':n+' / '+boxes.length+' packed';bar.style.width=(boxes.length?n/boxes.length*100:0)+'%'}boxes.forEach(function(b){b.addEventListener('change',update)});update();var links=Array.from(root.querySelectorAll('.kw-nav a'));function active(){var current='';links.forEach(function(a){var id=a.getAttribute('href');var el=id&&root.querySelector(id);if(el&&el.getBoundingClientRect().top<innerHeight*.4)current=id});links.forEach(function(a){if(a.getAttribute('href')===current)a.setAttribute('aria-current','location');else a.removeAttribute('aria-current')})}window.addEventListener('scroll',active,{passive:true});window.addEventListener('hashchange',active);window.addEventListener('load',active);active()})}if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init()})();</script><script>(function(){function init(){document.querySelectorAll('.kw-page').forEach(function(root){if(root.dataset.kwHeaderReady)return;root.dataset.kwHeaderReady='1';var h=root.querySelector('.kw-site-header');if(!h)return;function update(){h.classList.toggle('kw-solid',window.scrollY>60)}window.addEventListener('scroll',update,{passive:true});update()})}if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init()})();</script>"
+          },
+          "elements": []
+        }
+      ],
+      "isInner": false
+    }
+  ]
+}

@@ -1,0 +1,1025 @@
+{
+  "version": "0.4",
+  "title": "Komodo Island Tour · Preview",
+  "type": "page",
+  "content": [
+    {
+      "id": "0000001",
+      "elType": "container",
+      "settings": {
+        "_title": "01 · Artikel Komodo Island",
+        "content_width": "full",
+        "css_classes": "ks-komodo",
+        "html_tag": "div",
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+        }
+      },
+      "elements": [
+        {
+          "id": "0000002",
+          "elType": "widget",
+          "widgetType": "html",
+          "settings": {
+            "_title": "CSS · Tampilan preview Komodo",
+            "css_classes": "ks-leaf",
+            "html": "<style>\n/* Tanpa JS, tanpa animasi. Tiap blok = container/widget Elementor bawaan. */\n.ks-komodo{--main:#0077B6;--primary:#0A77FF;--sun:#F1C40F;--ink:#192434;--body:#1B2B41;--mist:#EAF4FA;--sand:#FBF3DC;--line:#D3E3ED;--muted:#53667A}\n.ks-komodo *{box-sizing:border-box}\n.ks-komodo{margin:0;background:#fff;color:var(--body);font:18px/1.85 Inter,system-ui,-apple-system,Arial,sans-serif}\n.ks-komodo img{max-width:100%;display:block}.ks-komodo a{color:var(--primary)}\n.ks-komodo p{margin:0 0 24px}\n\n/* header tema (bukan bagian template) */\n.ks-komodo .site-header{border-bottom:1px solid #eef2f5}\n.ks-komodo .bar{max-width:1280px;height:80px;margin:auto;padding:12px 28px;display:flex;justify-content:space-between;align-items:center}\n.ks-komodo .site-logo{width:160px;height:auto}\n.ks-komodo .nav a{color:var(--ink);text-decoration:none;margin-left:30px;font-size:14px;font-weight:500}\n\n/* 1. Kepala artikel: breadcrumb, judul, standfirst, meta, cover */\n.ks-komodo .wrap{max-width:1120px;margin:0 auto;padding:0 28px}\n.ks-komodo .head{padding-top:40px}\n.ks-komodo .crumb{font-size:14px;color:var(--muted);margin-bottom:20px}.ks-komodo .crumb a{color:var(--muted);text-decoration:none}\n.ks-komodo h1{font-size:54px;line-height:1.1;letter-spacing:-2px;font-weight:800;color:var(--ink);margin:0 0 20px;max-width:900px}\n.ks-komodo .stand{font-size:21px;line-height:1.65;color:#31445A;max-width:820px;margin:0 0 28px}\n.ks-komodo .meta{display:flex;flex-wrap:wrap;align-items:center;gap:10px 0;padding:16px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);font-size:14.5px;color:var(--muted);line-height:1.4}\n.ks-komodo .meta>*{padding:0 18px;border-left:1px solid var(--line)}\n.ks-komodo .meta>*:first-child{padding-left:0;border-left:0}\n.ks-komodo .by{display:flex;align-items:center;gap:10px;color:var(--ink);font-weight:600}\n.ks-komodo .av{width:34px;height:34px;border-radius:50%;background:var(--main);color:#fff;display:grid;place-items:center;font-size:13px;font-weight:700}\n.ks-komodo .meta b{color:var(--ink);font-weight:600}\n.ks-komodo .cover{margin:28px 0 0}\n.ks-komodo .cover img{width:100%;height:auto;aspect-ratio:2/1;object-fit:cover;border-radius:20px 20px 20px 140px}\n.ks-komodo .cover figcaption{font-size:14px;color:var(--muted);margin-top:10px}\n\n/* 2. Isi: kolom artikel 720px + kolom samping 300px */\n.ks-komodo .body{display:flex;gap:64px;align-items:flex-start;padding-top:56px}\n.ks-komodo .main{flex:0 1 720px;min-width:0}\n.ks-komodo .side{flex:1;min-width:260px;display:flex;flex-direction:column;gap:20px}\n.ks-komodo .main img{width:100%;height:auto;border-radius:14px}\n.ks-komodo .sec{margin-top:72px;padding-top:56px;border-top:1px solid var(--line)}\n.ks-komodo .sec:first-child{margin-top:0;padding-top:0;border-top:0}\n.ks-komodo h2{font-size:34px;line-height:1.2;letter-spacing:-1px;font-weight:800;color:var(--ink);margin:0 0 14px}\n.ks-komodo .bar-y{width:56px;height:4px;background:var(--sun);border-radius:4px;margin:0 0 30px}\n.ks-komodo h3{font-size:23px;line-height:1.35;letter-spacing:-.4px;font-weight:700;color:var(--ink);margin:44px 0 12px}\n.ks-komodo h3.first{margin-top:0}\n.ks-komodo .main strong{color:var(--ink)}\n.ks-komodo .note{border-left:4px solid var(--sun);background:#FFFBEA;padding:18px 22px;border-radius:0 10px 10px 0;margin:0 0 56px}\n.ks-komodo .note p{margin:0;font-size:16.5px;line-height:1.7}\n.ks-komodo .note b{display:block;color:var(--ink);margin-bottom:2px;font-size:16px}\n\n/* aktivitas: satu kolom, garis biru di kiri */\n.ks-komodo .act{border-left:3px solid var(--main);padding-left:24px;margin:0 0 36px}\n.ks-komodo .act h3{margin-top:0}\n.ks-komodo .pair{display:flex;gap:14px;margin:36px 0 0;align-items:flex-end}\n.ks-komodo .pair .a{flex:0 0 58%}.ks-komodo .pair .b{flex:1}.ks-komodo .pair.flip .a{flex:0 0 40%}.ks-komodo .pair.flip .b{flex:1}\n.ks-komodo .pair img{aspect-ratio:4/3;object-fit:cover}.ks-komodo .pair .tall img{aspect-ratio:3/4}\n.ks-komodo figure{margin:40px 0 0}\n\n/* pasang surut: dua container berdampingan */\n.ks-komodo .tides{display:flex;gap:14px;margin:8px 0 28px}\n.ks-komodo .tide{flex:1;border-radius:14px;padding:22px 24px}\n.ks-komodo .tide.low{background:var(--sand)}.ks-komodo .tide.high{background:#E1F0FA}\n.ks-komodo .tide b{display:block;font-size:19px;color:var(--ink);margin-bottom:4px}\n.ks-komodo .tide p{margin:0;font-size:17px;line-height:1.6}\n\n/* daftar bawaan: widget Icon List */\n.ks-komodo .pack{list-style:none;margin:0 0 28px;padding:0}\n.ks-komodo .pack li{padding:13px 0 13px 36px;border-bottom:1px solid var(--line);position:relative;line-height:1.6}\n.ks-komodo .pack li::before{content:\"\";position:absolute;left:4px;top:19px;width:12px;height:7px;border-left:3px solid var(--main);border-bottom:3px solid var(--main);transform:rotate(-45deg)}\n\n/* FAQ: widget Accordion */\n.ks-komodo details{border-top:1px solid var(--line)}.ks-komodo details:last-of-type{border-bottom:1px solid var(--line)}\n.ks-komodo summary{list-style:none;cursor:pointer;padding:20px 44px 20px 0;font-weight:700;color:var(--ink);position:relative;line-height:1.45;font-size:18px}\n.ks-komodo summary::-webkit-details-marker{display:none}\n.ks-komodo summary::after{content:\"+\";position:absolute;right:4px;top:16px;font-size:28px;font-weight:400;color:var(--main);line-height:1}\n.ks-komodo details[open] summary::after{content:\"−\"}\n.ks-komodo details p{margin:0 0 22px}\n\n/* baca berikutnya */\n.ks-komodo .next{display:block;text-decoration:none;margin-top:64px;border:1px solid var(--line);border-radius:14px;padding:22px 26px}\n.ks-komodo .next small{display:block;color:var(--muted);font-size:14px}\n.ks-komodo .next b{display:block;color:var(--ink);font-size:20px;line-height:1.4;margin-top:2px}\n\n/* kolom samping */\n.ks-komodo .card{border:1px solid var(--line);border-radius:16px;padding:24px}\n.ks-komodo .card h4{margin:0 0 10px;font-size:17px;font-weight:700;color:var(--ink);line-height:1.3}\n.ks-komodo .toc{list-style:none;margin:0;padding:0}\n.ks-komodo .toc li{padding:9px 0;border-bottom:1px solid var(--line);font-size:15.5px;line-height:1.45}.ks-komodo .toc li:last-child{border:0}\n.ks-komodo .toc a{color:var(--body);text-decoration:none;font-weight:500}.ks-komodo .toc a:hover{color:var(--primary)}\n.ks-komodo .cta{background:var(--main);border:0;color:#fff}.ks-komodo .cta h4{color:#fff;font-size:19px}\n.ks-komodo .cta p{font-size:15.5px;line-height:1.6;margin:0 0 18px;color:#e6f3fb}\n.ks-komodo .btn{display:inline-block;padding:13px 22px;border-radius:8px;background:var(--sun);color:var(--ink);font-weight:700;font-size:15px;text-decoration:none;line-height:1.4}\n.ks-komodo .btn.blue{background:var(--main);color:#fff}\n\n/* 3. CTA penutup */\n.ks-komodo .band{background:var(--main);color:#fff;margin-top:88px}\n.ks-komodo .band-in{max-width:1120px;margin:auto;padding:68px 28px}\n.ks-komodo .band p{font-size:30px;line-height:1.35;font-weight:700;letter-spacing:-.6px;max-width:760px;margin:0 0 28px}\n.ks-komodo .band small{display:block;margin-top:34px;font-size:14px;font-weight:500;color:#cfe6f4}\n.ks-komodo footer{text-align:center;color:#728996;font-size:13px;padding:25px}\n\n@media(max-width:960px){\n .ks-komodo .body{flex-direction:column;gap:48px}.ks-komodo .main{flex:none;width:100%}.ks-komodo .side{width:100%;flex:none}\n .ks-komodo h1{font-size:40px;letter-spacing:-1.4px}.ks-komodo .stand{font-size:19px}.ks-komodo .cover img{border-radius:16px 16px 16px 80px}}\n@media(max-width:600px){\n .ks-komodo .bar{height:65px;padding:10px 18px}.ks-komodo .site-logo{width:130px}.ks-komodo .nav{display:none}\n .ks-komodo .wrap{padding:0 20px}.ks-komodo{font-size:17px}.ks-komodo h1{font-size:33px}.ks-komodo h2{font-size:28px}.ks-komodo h3{font-size:21px}\n .ks-komodo .meta>*{padding:0 12px}.ks-komodo .meta{row-gap:8px}.ks-komodo .cover img{aspect-ratio:4/3}\n .ks-komodo .tides{flex-direction:column}.ks-komodo .pair .a,.ks-komodo .pair.flip .a{flex:1}.ks-komodo .sec{margin-top:56px;padding-top:44px}.ks-komodo .band p{font-size:24px}}\n\n\n/* Taka Makassar: editorial yang terinspirasi sandbar dan laut dangkal. */\n.ks-komodo{--main:#087cad;--primary:#086db1;--ink:#152b35;--body:#344e57;--sand:#f8f3e8;--line:#dce8e7;--muted:#617a80}\n.ks-komodo{scroll-behavior:smooth;scroll-padding-top:24px}.ks-komodo{font-family:Inter,system-ui,sans-serif;font-size:17px;line-height:1.82}.ks-komodo h1,.ks-komodo h2,.ks-komodo h3,.ks-komodo h4,.ks-komodo .band p{font-family:\"Plus Jakarta Sans\",Inter,sans-serif}.ks-komodo a:focus-visible,.ks-komodo summary:focus-visible{outline:3px solid #e3ba36;outline-offset:4px}\n.ks-komodo .site-header{background:#fff;border-bottom:1px solid #e8f0ef}.ks-komodo .bar{max-width:1320px;height:76px}.ks-komodo .nav a:hover{color:#0077b6}.ks-komodo .wrap{max-width:1200px;padding-inline:32px}\n.ks-komodo .head{padding-top:36px}.ks-komodo .crumb{font-size:13px;margin-bottom:30px;color:#6f888b}.ks-komodo .crumb a{color:#6f888b}.ks-komodo .head h1{max-width:920px;font-size:clamp(42px,5vw,65px);line-height:1.12;letter-spacing:-.045em;margin-bottom:24px}.ks-komodo .stand{font-size:19px;line-height:1.75;max-width:770px;margin-bottom:25px}.ks-komodo .meta{border:0;padding:0;gap:10px 0;font-size:13px}.ks-komodo .meta>*{padding-inline:16px}.ks-komodo .av{width:32px;height:32px;background:#e6f4f4;color:#086e83}.ks-komodo .head-label{font-size:11px;letter-spacing:.19em;font-weight:800;color:#087c91;margin:40px 0 14px}.ks-komodo .cover{margin:0}.ks-komodo .cover img{aspect-ratio:2.15/1;border-radius:16px;object-fit:cover}\n.ks-komodo .body{gap:72px;padding-top:76px}.ks-komodo .main{flex-basis:730px}.ks-komodo .side{min-width:260px;gap:20px}.ks-komodo .main img{border-radius:12px}.ks-komodo .main .sec:first-child>p{font-family:\"Plus Jakarta Sans\",Inter,sans-serif;color:#183c44;font-size:21px;line-height:1.75}.ks-komodo .sec{margin-top:76px;padding-top:60px;border-color:#e0eae8}.ks-komodo h2{font-size:clamp(28px,3vw,37px);line-height:1.25;letter-spacing:-.035em;max-width:660px;margin-bottom:18px}.ks-komodo .bar-y{width:45px;height:3px;background:#e5bd43;margin-bottom:30px}.ks-komodo h3{font-size:22px;margin-top:40px}.ks-komodo .note{background:#f1f8f6;border-left:3px solid #77bdb2;padding:20px 24px;border-radius:0 10px 10px 0;margin:34px 0 60px}.ks-komodo .note p{font-size:15px}.ks-komodo .note b{font-size:14px;color:#087487}\n.ks-komodo .act{border-left:0;padding:0 0 26px;margin:0 0 28px;border-bottom:1px solid #e1eceb}.ks-komodo .act h3{margin-bottom:12px}.ks-komodo .act p:last-child{margin-bottom:0}.ks-komodo .pair{gap:18px;margin-top:40px}.ks-komodo .pair img{border-radius:12px}.ks-komodo .tides{gap:16px}.ks-komodo .tide{padding:25px 26px}.ks-komodo .tide.low{background:#fbf6e9}.ks-komodo .tide.high{background:#eaf6f7}.ks-komodo .tide b{font:700 18px \"Plus Jakarta Sans\",sans-serif;margin-bottom:8px}.ks-komodo .tide p{font-size:15px}.ks-komodo .pack li{padding-block:15px}.ks-komodo .pack li:before{top:22px;border-color:#078999}\n.ks-komodo details{border-color:#dce9e7}.ks-komodo summary{font-size:16px;padding:23px 44px 23px 0}.ks-komodo .card{border-color:#e1ecea;border-radius:14px;padding:26px;background:#fff}.ks-komodo .card h4{font-family:\"Plus Jakarta Sans\",sans-serif}.ks-komodo .side .card:first-child{background:#f3f9f8;border:0}.ks-komodo .toc li{border-color:#dbeae7}.ks-komodo .cta{background:#0879a6}.ks-komodo .cta h4{font-size:19px}.ks-komodo .btn{background:#f3ca48;border-radius:7px}.ks-komodo .band{background:#0879a6;margin-top:96px}.ks-komodo .band-in{max-width:1200px;padding:70px 32px}.ks-komodo .band p{font-size:clamp(25px,3vw,34px);font-weight:700}.ks-komodo .next{background:#f7fbfa;border-color:#e0ece9}.ks-komodo .next:hover{border-color:#087cad}.ks-komodo footer{padding:30px}\n@media(max-width:960px){.ks-komodo .body{gap:48px;padding-top:54px}.ks-komodo .side{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}.ks-komodo .head h1{font-size:clamp(36px,6vw,52px)}}\n@media(max-width:600px){.ks-komodo .wrap{padding-inline:20px}.ks-komodo .head{padding-top:28px}.ks-komodo .crumb{margin-bottom:24px}.ks-komodo .head h1{font-size:36px}.ks-komodo .stand{font-size:17px}.ks-komodo .head-label{margin-top:32px}.ks-komodo .cover img{aspect-ratio:4/3;border-radius:12px}.ks-komodo .body{padding-top:44px}.ks-komodo .main .sec:first-child>p{font-size:19px}.ks-komodo .sec{margin-top:56px;padding-top:44px}.ks-komodo .side{display:flex}.ks-komodo .pair{gap:10px}.ks-komodo .band{margin-top:60px}.ks-komodo .band-in{padding:46px 20px}.ks-komodo .meta>*{padding-inline:10px}}\n@media(prefers-reduced-motion:reduce){.ks-komodo{scroll-behavior:auto}}\n\n\n/* Pasangan foto sejajar dan tetap responsif. */\n.ks-komodo .pair,.ks-komodo .pair.flip{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:stretch}\n.ks-komodo .pair .a,.ks-komodo .pair .b,.ks-komodo .pair.flip .a,.ks-komodo .pair.flip .b{min-width:0}\n.ks-komodo .pair img,.ks-komodo .pair .tall img{width:100%;height:100%;aspect-ratio:4/3;object-fit:cover}\n@media(max-width:600px){.ks-komodo .pair,.ks-komodo .pair.flip{gap:10px}.ks-komodo .pair img,.ks-komodo .pair .tall img{aspect-ratio:1/1}}\n\n\n/* Navigasi mobile dan foto editorial. */\n.ks-komodo .mobile-nav{display:none;position:relative;border:0!important}.ks-komodo .mobile-nav summary{font:600 14px Inter,sans-serif;padding:9px 14px;border:1px solid #dce8e7;border-radius:8px;color:#152b35}.ks-komodo .mobile-nav summary:after{content:none}.ks-komodo .mobile-nav nav{position:absolute;right:0;top:calc(100% + 8px);z-index:10;width:190px;padding:8px;background:white;border:1px solid #dce8e7;border-radius:10px;box-shadow:0 12px 30px #152b3520}.ks-komodo .mobile-nav nav a{display:block;padding:10px 12px;color:#152b35;text-decoration:none;font-size:14px}.ks-komodo .mobile-nav nav a:hover{background:#f1f8f6}.ks-komodo .pair img,.ks-komodo .pair .tall img{object-position:center}\n@media(max-width:600px){.ks-komodo .mobile-nav{display:block}.ks-komodo .pair,.ks-komodo .pair.flip{grid-template-columns:1fr 1fr}.ks-komodo .pair img,.ks-komodo .pair .tall img{height:auto;aspect-ratio:4/3}}\n\n\n/* Tipografi editorial: ritme baca dan hierarki yang lebih tenang. */\n.ks-komodo{font-family:Inter,system-ui,-apple-system,\"Segoe UI\",sans-serif;font-size:17px;line-height:1.8;color:#344b5e;-webkit-font-smoothing:antialiased}\n.ks-komodo h1,.ks-komodo h2,.ks-komodo h3,.ks-komodo .card h4{font-family:\"Plus Jakarta Sans\",Inter,system-ui,sans-serif;color:#192e3c;letter-spacing:-.025em;text-wrap:balance}\n.ks-komodo h1{font-size:clamp(38px,4.3vw,56px);line-height:1.18;font-weight:700;letter-spacing:-.035em}\n.ks-komodo h2{font-size:clamp(27px,2.7vw,34px);line-height:1.28;font-weight:700}.ks-komodo h3{font-size:21px;line-height:1.4;font-weight:700;letter-spacing:-.015em}\n.ks-komodo .main{max-width:720px}.ks-komodo .main p,.ks-komodo .main li{font-size:17px;line-height:1.82}.ks-komodo .main p{margin-bottom:1.35em}.ks-komodo .stand{font-size:18px;line-height:1.75;color:#3f5364}.ks-komodo .lead,.ks-komodo .main .sec:first-child>p{font-family:Inter,system-ui,sans-serif;font-size:19px;line-height:1.8;font-weight:400;color:#304958}.ks-komodo .card h4{font-size:17px;line-height:1.4}.ks-komodo .card p,.ks-komodo .card li,.ks-komodo .card a{line-height:1.6}.ks-komodo .meta,.ks-komodo .byline,.ks-komodo .crumb,.ks-komodo figcaption{color:#526979}.ks-komodo .close h2,.ks-komodo .cta h4{color:white}.ks-komodo .close p,.ks-komodo .cta p{color:#f0f8fc}\n@media(max-width:600px){.ks-komodo{font-size:16px;line-height:1.75}.ks-komodo h1,.ks-komodo .head h1{font-size:clamp(32px,8.5vw,38px);line-height:1.2;letter-spacing:-.03em}.ks-komodo h2{font-size:27px;line-height:1.3}.ks-komodo h3{font-size:20px}.ks-komodo .main p,.ks-komodo .main li{font-size:16px;line-height:1.78}.ks-komodo .stand{font-size:16px;line-height:1.75}.ks-komodo .lead,.ks-komodo .main .sec:first-child>p{font-size:18px;line-height:1.75}}\n\n\n/* Perbandingan pasang surut yang ringkas. */\n.ks-komodo .tides{display:block;margin:26px 0 30px;padding:2px 0;border-top:1px solid #dce8e7;border-bottom:1px solid #dce8e7}\n.ks-komodo .tide,.ks-komodo .tide.low,.ks-komodo .tide.high{display:grid;grid-template-columns:150px 1fr;gap:16px;align-items:baseline;padding:15px 4px;background:transparent;border-radius:0}\n.ks-komodo .tide+.tide{border-top:1px solid #e9f0ef}.ks-komodo .tide b{font:700 15px \"Plus Jakarta Sans\",Inter,sans-serif;color:#08749d;margin:0}.ks-komodo .tide p{font-size:16px;line-height:1.6;color:#344b5e;margin:0}\n@media(max-width:600px){.ks-komodo .tide,.ks-komodo .tide.low,.ks-komodo .tide.high{grid-template-columns:110px 1fr;gap:12px;padding:13px 2px}.ks-komodo .tide b{font-size:14px}.ks-komodo .tide p{font-size:15px}}\n\n\n/* Keterangan foto terlihat, tetap terpisah dari alt text. */\n.ks-komodo .main figure figcaption,.ks-komodo .cover figcaption{font:400 13px/1.5 Inter,system-ui,sans-serif;color:#536b7b;margin-top:9px}\n.ks-komodo .main .pair figure{margin:0;display:flex;flex-direction:column;height:100%}.ks-komodo .main .pair figure img{height:auto;aspect-ratio:4/3;object-fit:cover}.ks-komodo .main .pair figcaption{margin-top:9px}\n@media(max-width:600px){.ks-komodo .main figure figcaption,.ks-komodo .cover figcaption{font-size:12px;line-height:1.5}}\n\n\n.ks-komodo .main figure figcaption,.ks-komodo .cover figcaption{font-size:13px;line-height:1.55;color:#627987;margin-top:10px}\n.ks-komodo .caption-label{font-weight:700;font-size:11px;letter-spacing:.07em;text-transform:uppercase;color:#497283}\n@media(max-width:600px){.ks-komodo .main figure figcaption,.ks-komodo .cover figcaption{font-size:12px}.ks-komodo .caption-label{font-size:10px}}\n\n\n/* Caption editorial: keterangan singkat di bawah foto. */\n.ks-komodo .main figure figcaption,.ks-komodo .cover figcaption{font:400 13px/1.55 Inter,system-ui,sans-serif;color:#586d7a;margin-top:9px;letter-spacing:0}\n@media(max-width:600px){.ks-komodo .main figure figcaption,.ks-komodo .cover figcaption{font-size:12px;line-height:1.55}}\n\n\n/* Garis kuning kecil di awal keterangan foto. */\n.ks-komodo .main figure figcaption,.ks-komodo .cover figcaption{position:relative;padding-left:10px}\n.ks-komodo .main figure figcaption::before,.ks-komodo .cover figcaption::before{content:\"\";position:absolute;left:0;top:.35em;width:2px;height:1em;background:#f1c40f}\n\n\n/* Metadata dan share mengikuti gaya Manta Point. */\n.ks-komodo .taka-byline{display:flex;flex-wrap:wrap;align-items:center;gap:10px 0;padding:18px 22px;background:#eaf4fa;border:0;border-radius:10px;font-size:14.5px;line-height:1.4;color:#53667a}\n.ks-komodo .taka-byline .av{width:36px;height:36px;background:#0077b6;color:#fff;font-size:14px;font-weight:700}.ks-komodo .taka-byline .by{color:#192434;font-weight:600}\n.ks-komodo .taka-byline>*{padding:0 16px;border-left:1px solid #c5d7e4}.ks-komodo .taka-byline>*:first-child{padding-left:0;border:0}\n.ks-komodo .taka-byline b{color:#192434;font-weight:600}.ks-komodo .taka-byline .share-inline a,.ks-komodo .taka-byline .share-inline button{color:#0077b6;font:600 14px Inter,sans-serif;text-decoration:none;margin-left:12px}\n.ks-komodo .taka-byline .share-inline button{padding:0;border:0;background:transparent;cursor:pointer}.ks-komodo .taka-byline .share-inline a:hover,.ks-komodo .taka-byline .share-inline button:hover{text-decoration:underline}\n@media(max-width:600px){.ks-komodo .taka-byline>*{padding:0 10px}.ks-komodo .taka-byline .share-inline{line-height:2}}\n/* Metadata editorial Taka: biru lembut, pemisah halus, dan tautan berbagi yang jelas. */\n.ks-komodo .taka-byline{padding:16px 20px;gap:12px 0;border:1px solid #dcece9;border-radius:12px;background:#f1f8f7;line-height:1.5}\n.ks-komodo .taka-byline>*{padding-inline:14px;border-color:#d3e5e3;white-space:nowrap}\n.ks-komodo .taka-byline .by{gap:10px;font-size:14px}.ks-komodo .taka-byline .av{width:36px;height:36px;flex:none;background:#087c91}\n.ks-komodo .taka-byline .share-inline{display:flex;align-items:center;gap:11px;flex-wrap:wrap;color:#647985}\n.ks-komodo .taka-byline .share-inline a,.ks-komodo .taka-byline .share-inline button{margin:0;color:#0077a8;font-size:13px;line-height:1.5}\n.ks-komodo .taka-byline .share-inline a:hover,.ks-komodo .taka-byline .share-inline button:hover{color:#005e84;text-decoration:underline}\n.ks-komodo .taka-byline .share-inline a:focus-visible,.ks-komodo .taka-byline .share-inline button:focus-visible{outline:2px solid #087c91;outline-offset:3px;border-radius:2px}\n@media(max-width:700px){.ks-komodo .taka-byline{padding:16px;gap:12px 0}.ks-komodo .taka-byline>*{padding-inline:10px;font-size:13px}.ks-komodo .taka-byline .by{width:100%;padding:0;border:0}.ks-komodo .taka-byline .by+.byline-date{padding-left:0;border:0}.ks-komodo .taka-byline .share-inline{width:100%;padding:12px 0 0;border:0;border-top:1px solid #d3e5e3;gap:8px 14px;white-space:normal}}\n\n.ks-komodo .share-trigger{display:inline-flex;align-items:center;gap:7px;padding:8px 12px!important;margin:0!important;background:#fff!important;border:1px solid #d2e5e4!important;border-radius:8px;color:#08749d!important;cursor:pointer}.ks-komodo .share-trigger:hover{background:#e2f3f3!important;text-decoration:none!important}\n.ks-komodo .share-dialog{width:min(390px,calc(100vw - 32px));max-width:none;padding:24px;border:1px solid #e0eae8;border-radius:16px;background:white;color:#192e3c;box-shadow:0 20px 60px #173b4c33}.ks-komodo .share-dialog::backdrop{background:rgba(12,32,44,.3)}.ks-komodo .share-dialog-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px}.ks-komodo .share-dialog-head h2{font-size:17px;line-height:1.4;margin:0}.ks-komodo .share-close{border:0;background:none;font-size:26px;line-height:1;color:#53667a;cursor:pointer}.ks-komodo .share-networks{display:flex;gap:10px;margin-bottom:24px}.ks-komodo .share-networks a{display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:#edf5f5;color:#0077b6;font:700 17px Inter,sans-serif;text-decoration:none}.ks-komodo .share-networks a:hover{background:#d8edee}.ks-komodo .share-dialog label{display:block;margin-bottom:8px;color:#53667a;font-size:13px}.ks-komodo .share-copy{display:flex;gap:8px}.ks-komodo .share-copy input{min-width:0;flex:1;padding:10px;border:1px solid #d5e3e3;border-radius:8px;font:13px Inter,sans-serif;color:#405461}.ks-komodo .share-copy button{border:0;border-radius:8px;padding:10px 15px;background:#0077b6;color:white;font:600 13px Inter,sans-serif;cursor:pointer}.ks-komodo .share-dialog :focus-visible{outline:2px solid #087c91;outline-offset:3px}.ks-komodo .share-status{display:block;margin-top:8px;overflow-wrap:anywhere}\n\n/* Logo penulis di baris metadata. */\n.ks-komodo .taka-byline .av{overflow:hidden;background:#fff;flex:none}\n.ks-komodo .taka-byline .av img{width:100%;height:100%;object-fit:contain}\n/* Baris artikel yang ringan mengikuti referensi pengguna. */\n.ks-komodo .taka-byline{background:transparent;border:0;border-radius:0;padding:0;gap:12px 0;color:#526979;font-size:13px}\n.ks-komodo .taka-byline>*{padding-inline:16px;border-left:1px solid #dce7e7}\n.ks-komodo .taka-byline .by{font-family:Inter,system-ui,sans-serif;font-size:13px;line-height:1.5;color:#304b5a;font-weight:500;letter-spacing:.01em}\n.ks-komodo .taka-byline .av{width:32px;height:32px;background:#e1f2f2;color:#087c91;font-size:13px}\n.ks-komodo .taka-byline .share-inline{gap:0}.ks-komodo .taka-byline .share-trigger{margin:0!important;padding:6px 12px!important;border:1px solid #d7e9e8!important;border-radius:8px;background:#fff!important;font-size:13px}\n@media(max-width:700px){.ks-komodo .taka-byline{gap:12px 0}.ks-komodo .taka-byline .by{width:auto;padding-right:12px}.ks-komodo .taka-byline .by+.byline-date{padding-left:12px;border-left:1px solid #dce7e7}.ks-komodo .taka-byline .share-inline{width:auto;padding:0 0 0 12px;border:0;border-left:1px solid #dce7e7}}\n/* Informasi artikel dan tombol share berada di kedua ujung baris. */\n.ks-komodo .taka-byline .share-inline{margin-left:auto;border-left:0;padding-right:0}\n.ks-komodo .share-networks a{width:44px;height:44px;border-radius:50%;background:#edf4f4;color:#0077b6;font-size:16px;font-weight:700}\n@media(max-width:700px){.ks-komodo .taka-byline .share-inline{margin-left:auto;padding-left:12px;border-left:0}}\n/* Ikon berbagi langsung di baris metadata. */\n.ks-komodo .taka-byline .direct-share{display:flex;gap:8px;align-items:center}\n.ks-komodo .taka-byline .direct-share a,.ks-komodo .taka-byline .direct-share button{display:grid;place-items:center;width:36px;height:36px;margin:0;padding:0;border:0;border-radius:50%;background:#eaf4f4;color:#0077b6;cursor:pointer}\n.ks-komodo .taka-byline .direct-share a:hover,.ks-komodo .taka-byline .direct-share button:hover{background:#d8eded;color:#005f88}\n.ks-komodo .taka-byline .direct-share svg{width:18px;height:18px}\n@media(max-width:700px){.ks-komodo .taka-byline .direct-share{width:100%;margin:2px 0 0;padding:10px 0 0;border:0;border-top:1px solid #e3eeee}}\n/* Label editorial di atas foto utama. */\n.ks-komodo .head .head-label{display:flex;align-items:center;gap:10px;margin:36px 0 14px;color:#087c91;font:700 11px/1.5 Inter,system-ui,sans-serif;letter-spacing:.12em;text-transform:uppercase}\n.ks-komodo .head .head-label::before{content:\"\";width:24px;height:2px;flex:none;background:#e5bd43;border-radius:2px}\n@media(max-width:600px){.ks-komodo .head .head-label{margin:28px 0 12px;font-size:10px;letter-spacing:.09em;gap:8px}.ks-komodo .head .head-label::before{width:18px}}\n/* Taka 2: navigasi, berbagi, dan ringkasan perjalanan. */\n.ks-komodo .read-progress{position:fixed;inset:0 auto auto 0;height:3px;width:0;background:#f1c40f;z-index:100;pointer-events:none}\n.ks-komodo .quick-guide{margin:0 0 44px;padding:24px 26px;background:#f3f9f8;border:1px solid #dcece8;border-radius:14px}.ks-komodo .quick-guide h2{font-size:19px;margin:0 0 14px}.ks-komodo .quick-guide dl{display:grid;grid-template-columns:1fr 1fr;gap:14px 24px;margin:0}.ks-komodo .quick-guide dt{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:#08749d}.ks-komodo .quick-guide dd{margin:3px 0 0;font-size:15px;line-height:1.55}\n.ks-komodo .share-row{display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin:24px 0 0}.ks-komodo .share-row strong{font-size:13px;color:#405b68;margin-right:5px}.ks-komodo .share-row a,.ks-komodo .share-row button{display:inline-flex;align-items:center;justify-content:center;min-height:38px;padding:7px 13px;border:1px solid #d5e6e8;border-radius:999px;color:#17647a;background:#fff;font:600 13px Inter,sans-serif;text-decoration:none;cursor:pointer}.ks-komodo .share-row a:hover,.ks-komodo .share-row button:hover{background:#eaf5fb;color:#0077b6}.ks-komodo .share-status{font-size:13px;color:#17647a}.ks-komodo .meta .meta-placeholder{color:#667d87;font-size:13px}\n@media(min-width:961px){.ks-komodo .side{position:sticky;top:24px;max-height:calc(100vh - 48px);overflow:auto}.ks-komodo .toc a[aria-current=\"location\"]{color:#0077b6;font-weight:700}.ks-komodo .toc a[aria-current=\"location\"]:before{content:\"\";display:inline-block;width:3px;height:1em;background:#f1c40f;margin-right:8px;vertical-align:middle}}\n.ks-komodo .mobile-toc{display:none}.ks-komodo .share-row button:focus-visible{outline:3px solid #e3ba36;outline-offset:3px}\n@media(max-width:960px){.ks-komodo .mobile-toc{display:block;margin:24px 0 0;padding:0 18px;border:1px solid #dce9e7!important;border-radius:12px;background:#f3f9f8}.ks-komodo .mobile-toc summary{padding:14px 36px 14px 0;font-size:15px}.ks-komodo .mobile-toc summary:after{top:10px}.ks-komodo .mobile-toc .toc{padding-bottom:12px}.ks-komodo .side nav.card{display:none}.ks-komodo .side{display:block}.ks-komodo .side .cta{margin-top:0}}\n@media(max-width:600px){.ks-komodo .quick-guide{padding:20px}.ks-komodo .quick-guide dl{grid-template-columns:1fr 1fr;gap:14px}.ks-komodo .quick-guide dd{font-size:14px}.ks-komodo .share-row{gap:7px}}\n\n/* Pengantar adalah section pertama meskipun didahului daftar isi mobile. */\n.ks-komodo .main #intro{margin-top:0;padding-top:0;border-top:0}\n/* Tata letak artikel untuk ponsel. */\n@media(max-width:700px){\n .ks-komodo .bar{height:68px;padding:10px 20px}.ks-komodo .site-logo{width:140px}.ks-komodo .head{padding-top:26px}\n .ks-komodo .crumb{font-size:12px;line-height:1.5;margin-bottom:20px;overflow-wrap:anywhere}\n .ks-komodo .head h1{font-size:clamp(30px,8vw,38px);line-height:1.18;margin-bottom:16px}\n .ks-komodo .stand{font-size:16px;line-height:1.7;margin-bottom:22px}\n .ks-komodo .taka-byline{display:flex;align-items:center;gap:10px 0;line-height:1.4}\n .ks-komodo .taka-byline .by{width:100%;border:0;padding:0;margin-bottom:2px}\n .ks-komodo .taka-byline .by+.byline-date{border:0;padding-left:0}\n .ks-komodo .taka-byline>span:not(.by):not(.direct-share){padding-inline:10px;font-size:12px}\n .ks-komodo .taka-byline>span.byline-date{padding-left:0!important}\n .ks-komodo .taka-byline .direct-share{width:100%;margin:2px 0 0;padding:12px 0 0;border:0;border-top:1px solid #e3eeee;gap:10px;justify-content:flex-start}\n .ks-komodo .taka-byline .direct-share a,.ks-komodo .taka-byline .direct-share button{width:40px;height:40px}\n .ks-komodo .head .head-label{margin-top:24px;line-height:1.5}.ks-komodo .cover img{aspect-ratio:4/3}\n .ks-komodo .body{padding-top:28px;gap:36px}.ks-komodo .body .main{flex:0 1 auto;width:100%;min-width:0}.ks-komodo .body .side{min-width:0;width:100%}\n .ks-komodo .mobile-toc{margin:0 0 20px}.ks-komodo .quick-guide{margin-bottom:32px}\n .ks-komodo .quick-guide dl{grid-template-columns:repeat(2,minmax(0,1fr))}.ks-komodo .quick-guide dd{overflow-wrap:anywhere}\n .ks-komodo .sec{margin-top:48px;padding-top:36px}.ks-komodo .sec h2{font-size:26px}.ks-komodo .sec h3{font-size:19px}\n .ks-komodo .pair,.ks-komodo .pair.flip{gap:12px}.ks-komodo .main figure figcaption{line-height:1.5}\n}\n@media(max-width:360px){.ks-komodo .wrap{padding-inline:16px}.ks-komodo .taka-byline>span:not(.by):not(.direct-share){font-size:11.5px;padding-inline:7px}.ks-komodo .quick-guide{padding:18px 16px}.ks-komodo .quick-guide dl{gap:14px 12px}}\n\n\n/* Judul editorial mengikuti Taka-2. */\n.ks-komodo .head h1{font-family:\"Plus Jakarta Sans\",Inter,system-ui,sans-serif;font-size:clamp(40px,4vw,52px);font-weight:700;line-height:1.16;letter-spacing:-.035em;max-width:850px;text-align:left;text-wrap:balance}\n@media(max-width:700px){.ks-komodo .head h1{font-size:clamp(30px,8vw,34px);line-height:1.18;letter-spacing:-.03em;margin-bottom:16px}}\n\n\n/* Komodo editorial: suasana hangat dan fotografi satwa. */\n.ks-komodo .head{position:relative;padding-top:42px}\n.ks-komodo .head::before{content:\"\";position:absolute;z-index:-1;inset:0 0 25%;background:linear-gradient(140deg,#f8f5ed,#fff 78%);pointer-events:none}\n.ks-komodo .head .crumb{margin-bottom:25px;color:#6c7c7a}\n.ks-komodo .head .head-label{color:#49726d;letter-spacing:.1em}\n.ks-komodo .head h1{max-width:850px;color:#173541}\n.ks-komodo .head .stand{max-width:700px;color:#53686b}\n.ks-komodo .head .cover img{aspect-ratio:2.2/1;object-position:center 55%;border-radius:14px}\n.ks-komodo .head .taka-byline{padding:14px 0;border-top:1px solid #e7e9e1;border-bottom:1px solid #e7e9e1}\n.ks-komodo .body{padding-top:58px;gap:64px}\n.ks-komodo .main #intro>p:first-child{font-family:\"Plus Jakarta Sans\",Inter,sans-serif;font-size:clamp(19px,1.8vw,22px);line-height:1.75;color:#23454d}\n.ks-komodo .komodo-photo-pair{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:36px 0 0}\n.ks-komodo .main .komodo-photo-pair figure{margin:0;min-width:0}.ks-komodo .main .komodo-photo-pair img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:10px}\n.ks-komodo .main .komodo-photo-pair figcaption{font-size:13px;line-height:1.55}\n.ks-komodo .main>section[id^=\"section-\"]>h2{color:#173b45}.ks-komodo .main>section[id^=\"section-\"]>.bar-y{background:#d4ad45}\n.ks-komodo .side .card:first-child{background:#f7f8f3;border:1px solid #e5e9dc}\n.ks-komodo .side .cta{background:#31635f}.ks-komodo .side .cta .btn{background:#f0ca58;color:#203d3d}\n.ks-komodo .main figure img{object-fit:cover}.ks-komodo .main table{max-width:100%}\n@media(max-width:960px){.ks-komodo .body{padding-top:42px;gap:40px}}\n@media(max-width:700px){.ks-komodo .head{padding-top:26px}.ks-komodo .head::before{bottom:30%}.ks-komodo .head .cover img{aspect-ratio:4/3}.ks-komodo .body{padding-top:28px}.ks-komodo .komodo-photo-pair{gap:12px;margin-top:26px}.ks-komodo .main .komodo-photo-pair img{aspect-ratio:1/1}.ks-komodo .main .komodo-photo-pair figcaption{font-size:12px}}\n\n\n/* Komodo field journal: fotografi satwa membuka cerita, nuansa savana yang terang. */\n.ks-komodo .head{display:flex;flex-direction:column;align-items:stretch;padding-top:32px;padding-bottom:0}\n.ks-komodo .head::before{content:none}\n.ks-komodo .head .crumb{order:0;margin:0 0 20px;color:#73786e}\n.ks-komodo .head .cover{order:1;width:100%;margin:0}\n.ks-komodo .head .cover img{width:100%;aspect-ratio:2.35/1;object-fit:cover;object-position:center 58%;border-radius:12px}\n.ks-komodo .head .cover figcaption{color:#65746f;margin-top:10px}\n.ks-komodo .head .head-label{order:2;margin:34px 0 13px;color:#637a61;letter-spacing:.12em}\n.ks-komodo .head .head-label::before{background:#c5a555}\n.ks-komodo .head h1{order:3;max-width:900px;margin:0 0 18px;color:#233b38;line-height:1.16}\n.ks-komodo .head .stand{order:4;max-width:750px;margin:0 0 25px;color:#5b6b65}\n.ks-komodo .head .taka-byline{order:5;margin:0;padding:15px 0;border-top:1px solid #e1e7dc;border-bottom:1px solid #e1e7dc}\n.ks-komodo .head .share-status{order:6}\n.ks-komodo .body{padding-top:52px}\n.ks-komodo .main #intro>p:first-child{font-family:\"Plus Jakarta Sans\",Inter,sans-serif;font-weight:600;font-size:clamp(20px,2vw,24px);line-height:1.7;letter-spacing:-.015em;color:#31564b;border-left:3px solid #bd9b50;padding-left:22px;margin-bottom:26px}\n.ks-komodo .main .komodo-photo-pair{grid-template-columns:1.15fr 1fr;gap:18px;margin:38px 0 0}\n.ks-komodo .main .komodo-photo-pair img{aspect-ratio:4/3;border-radius:8px}\n.ks-komodo .main>section[id^=\"section-\"]>h2{color:#263f38;letter-spacing:-.025em}\n.ks-komodo .main>section[id^=\"section-\"]>.bar-y{width:32px;height:3px;background:#c3a05a}\n.ks-komodo .side nav.card:first-child{background:#f7f8f2;border:1px solid #e5eadc;border-radius:10px}\n.ks-komodo .side nav.card h4{color:#314b40}\n@media(max-width:700px){.ks-komodo .head{padding-top:22px}.ks-komodo .head .crumb{margin-bottom:16px}.ks-komodo .head .cover img{aspect-ratio:4/3;object-position:center 50%}.ks-komodo .head .head-label{margin:26px 0 12px}.ks-komodo .head h1{font-size:clamp(30px,8vw,34px)}.ks-komodo .head .stand{margin-bottom:20px}.ks-komodo .head .taka-byline{padding:14px 0}.ks-komodo .body{padding-top:30px}.ks-komodo .main #intro>p:first-child{padding-left:16px;font-size:19px}.ks-komodo .main .komodo-photo-pair{grid-template-columns:1fr 1fr;gap:12px;margin-top:26px}.ks-komodo .main .komodo-photo-pair img{aspect-ratio:1/1}}\n\n\n/* Field journal: susunan artikel, subjudul, dan navigasi khas Komodo. */\n.ks-komodo .main{counter-reset:field-section}\n.ks-komodo .main>section[id^=\"section-\"]{counter-increment:field-section;margin-top:64px;padding-top:36px;border-top:1px solid #dfe6dd}\n.ks-komodo .main>section[id^=\"section-\"]>h2{display:block;position:relative;max-width:none;margin:0 0 28px;padding:0;color:#263e36;font-size:clamp(27px,2.5vw,34px);line-height:1.25}\n.ks-komodo .main>section[id^=\"section-\"]>h2::before{content:\"FIELD NOTES  /  \" counter(field-section,decimal-leading-zero);display:block;margin:0 0 12px;color:#69856d;font:700 10px/1.5 Inter,system-ui,sans-serif;letter-spacing:.12em}\n.ks-komodo .main>section[id^=\"section-\"]>.bar-y{display:none}\n.ks-komodo .main>section[id^=\"section-\"]>h3{margin:32px 0 12px;color:#34554a;font-size:20px;line-height:1.4}\n.ks-komodo .main #section-3 ol{display:grid;grid-template-columns:1fr 1fr;gap:0 24px;counter-reset:safety;list-style:none!important;margin:22px 0 0!important;padding:0!important}\n.ks-komodo .main #section-3 ol li{counter-increment:safety;position:relative;padding:16px 0 16px 34px;border-top:1px solid #dfe8dd;line-height:1.65}\n.ks-komodo .main #section-3 ol li::before{content:counter(safety,decimal-leading-zero);position:absolute;left:0;top:18px;color:#a1844b;font:700 11px/1.5 Inter,sans-serif;letter-spacing:.06em}\n.ks-komodo .main #section-3 ol li strong{color:#294a3c}\n.ks-komodo .main #section-6 details{border:0;border-bottom:1px solid #e1e9df!important;border-radius:0!important;padding:0!important;background:transparent!important;box-shadow:none!important}\n.ks-komodo .main #section-6 details summary{padding:18px 38px 18px 0!important;font-size:16px;color:#304b41}\n.ks-komodo .main #section-6 details p{padding:0 0 18px!important;margin:0!important}\n@media(min-width:961px){.ks-komodo .side{gap:28px}.ks-komodo .side nav.card:first-child{background:transparent;border:0;border-top:2px solid #718b6b;border-radius:0;padding:18px 0 0}.ks-komodo .side nav.card h4{margin:0 0 12px;color:#58745c;font:700 11px/1.5 Inter,sans-serif;letter-spacing:.12em;text-transform:uppercase}.ks-komodo .side .toc{counter-reset:field-nav}.ks-komodo .side .toc li{counter-increment:field-nav;position:relative;padding:9px 0 9px 32px;border-bottom:1px solid #e5eae1}.ks-komodo .side .toc li::before{content:counter(field-nav,decimal-leading-zero);position:absolute;left:0;color:#92a294;font:600 11px/1.8 Inter,sans-serif}.ks-komodo .side .toc a{font-size:14px;line-height:1.5}.ks-komodo .side .toc a[aria-current=\"location\"]::before{display:none}}\n.ks-komodo .field-related{padding-top:20px;border-top:1px solid #dfe8dd}.ks-komodo .field-related-label{display:block;margin-bottom:12px;color:#718b6b;font:700 10px/1.5 Inter,sans-serif;letter-spacing:.11em}.ks-komodo .field-related a{display:grid;grid-template-columns:76px minmax(0,1fr);gap:3px 12px;text-decoration:none;color:#304b41}.ks-komodo .field-related img{grid-row:1/3;width:76px;height:70px;object-fit:cover;border-radius:6px}.ks-komodo .field-related strong{font:700 13px/1.45 \"Plus Jakarta Sans\",Inter,sans-serif}.ks-komodo .field-related a span{color:#08749d;font:600 12px/1.4 Inter,sans-serif}.ks-komodo .field-related a:hover span{text-decoration:underline}\n@media(max-width:700px){.ks-komodo .main>section[id^=\"section-\"]{margin-top:48px;padding-top:28px}.ks-komodo .main>section[id^=\"section-\"]>h2{font-size:26px;margin-bottom:22px}.ks-komodo .main #section-3 ol{grid-template-columns:1fr}.ks-komodo .field-related{margin-top:0}}\n\n\n/* Komodo: judul dan pengantar mendahului foto utama. */\n.ks-komodo .head .crumb{order:0}\n.ks-komodo .head .head-label{order:1;margin:0 0 13px}\n.ks-komodo .head h1{order:2}\n.ks-komodo .head .stand{order:3}\n.ks-komodo .head .taka-byline{order:4}\n.ks-komodo .head .share-status{order:5}\n.ks-komodo .head .cover{order:6;margin:24px 0 0}\n@media(max-width:700px){.ks-komodo .head .head-label{margin:0 0 12px}.ks-komodo .head .cover{margin-top:20px}}\n\n\n/* Pengantar editorial bergaya kutipan. */\n.ks-komodo .main #intro .komodo-opening{font-family:Georgia,\"Times New Roman\",serif;font-style:italic;font-weight:400;font-size:clamp(21px,2.1vw,25px);line-height:1.65;letter-spacing:0;color:#415e4e;border-left:3px solid #c3a05a;padding-left:22px;margin:0 0 30px}\n@media(max-width:700px){.ks-komodo .main #intro .komodo-opening{font-size:21px;line-height:1.6;padding-left:16px}}\n\n\n/* Sidebar Komodo: field guide dengan navigasi jalur vertikal. */\n.ks-komodo .komodo-guide{padding:24px;border:1px solid #e3e8d8;border-radius:12px;background:#f8f8f1}\n.ks-komodo .komodo-guide-head{padding-bottom:18px;border-bottom:1px solid #e0e7d9}\n.ks-komodo .komodo-guide-head>span{display:block;color:#76896a;font:700 10px/1.5 Inter,sans-serif;letter-spacing:.12em}\n.ks-komodo .komodo-guide-head h4{margin:8px 0 5px;color:#2d483a;font:700 19px/1.35 \"Plus Jakarta Sans\",Inter,sans-serif}\n.ks-komodo .komodo-guide-head p{margin:0;color:#718076;font:13px/1.55 Inter,sans-serif}\n.ks-komodo .komodo-guide .toc{position:relative;margin:18px 0 0;padding:0 0 0 18px;list-style:none;border-left:1px solid #d0ddcd}\n.ks-komodo .komodo-guide .toc li{position:relative;margin:0;padding:0 0 15px;border:0;font-size:14px;line-height:1.5}\n.ks-komodo .komodo-guide .toc li:last-child{padding-bottom:0}.ks-komodo .komodo-guide .toc li::before{content:\"\";position:absolute;left:-22px;top:8px;width:7px;height:7px;border-radius:50%;background:#a9bda5}\n.ks-komodo .komodo-guide .toc a{color:#4a6253;text-decoration:none}.ks-komodo .komodo-guide .toc a:hover,.ks-komodo .komodo-guide .toc a[aria-current=\"location\"]{color:#276b56;font-weight:700}\n.ks-komodo .komodo-guide .toc a[aria-current=\"location\"]::before{display:none}.ks-komodo .komodo-guide .toc li:has(a[aria-current=\"location\"])::before{background:#c5a555}\n@media(max-width:960px){.ks-komodo .side .komodo-guide{display:none}}\n\n\n/* Foto Komodo: kedalaman halus tanpa menggelapkan satwa atau caption. */\n.ks-komodo .head .cover img{box-shadow:0 18px 42px rgba(30,49,37,.16),0 4px 12px rgba(30,49,37,.08)}\n.ks-komodo .main figure:not(.wp-block-table) img{box-shadow:0 12px 28px rgba(30,49,37,.12),0 2px 8px rgba(30,49,37,.06)}\n/* Sidebar: susunan editorial yang lebih ringan dengan state aktif. */\n@media(min-width:961px){\n .ks-komodo .side{gap:30px}\n .ks-komodo .side .komodo-guide{padding:0;border:0;border-radius:0;background:transparent}\n .ks-komodo .komodo-guide-head{padding:0 0 16px;border-bottom:1px solid #dce5db}\n .ks-komodo .komodo-guide-head>span{color:#879a7c;font-size:10px;letter-spacing:.13em}\n .ks-komodo .komodo-guide-head h4{margin:6px 0 4px;color:#293f36;font-size:19px}\n .ks-komodo .komodo-guide-head p{font-size:13px;color:#758177}\n .ks-komodo .komodo-guide .toc{border:0;margin:10px 0 0;padding:0}\n .ks-komodo .komodo-guide .toc li{margin:0;padding:0;border:0}\n .ks-komodo .komodo-guide .toc li::before{display:none}\n .ks-komodo .komodo-guide .toc a{display:block;margin:2px 0;padding:9px 12px;border-left:2px solid transparent;border-radius:0 6px 6px 0;color:#51685b;font-size:14px;line-height:1.45}\n .ks-komodo .komodo-guide .toc a:hover{background:#f5f8f2;color:#2b6b54}\n .ks-komodo .komodo-guide .toc a[aria-current=\"location\"]{border-left-color:#bb9950;background:#f3f7ef;color:#2b624d;font-weight:700}\n .ks-komodo .field-related{padding-top:20px;border-top:1px solid #dce5db}\n .ks-komodo .field-related img{box-shadow:0 4px 12px rgba(30,49,37,.1)}\n}\n@media(max-width:700px){.ks-komodo .head .cover img{box-shadow:0 12px 28px rgba(30,49,37,.14)}.ks-komodo .main figure:not(.wp-block-table) img{box-shadow:0 8px 20px rgba(30,49,37,.1)}}\n\n\n/* Tone foto Komodo: hangat dan sedikit redup, dengan subjek tetap terlihat. */\n.ks-komodo .head .cover img{filter:sepia(.13) saturate(.9) brightness(.93) contrast(1.04)}\n.ks-komodo .main figure:not(.wp-block-table) img{filter:sepia(.08) saturate(.94) brightness(.97)}\n\n\n/* Dua foto berdampingan: kolom, lebar, dan tinggi sama. */\n.ks-komodo .main .komodo-photo-pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;align-items:start}\n.ks-komodo .main .komodo-photo-pair figure{width:100%;min-width:0;margin:0}\n.ks-komodo .main .komodo-photo-pair img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover}\n@media(max-width:700px){.ks-komodo .main .komodo-photo-pair{gap:12px}.ks-komodo .main .komodo-photo-pair img{aspect-ratio:1/1}}\n\n\n/* Subjudul Komodo: penanda hangat di samping, tanpa label berulang. */\n.ks-komodo .main>section[id^=\"section-\"]>h2{display:flex;align-items:center;gap:16px;margin:0 0 28px;padding:0;color:#263f38;font:700 clamp(27px,2.5vw,34px)/1.25 \"Plus Jakarta Sans\",Inter,sans-serif;letter-spacing:-.025em}\n.ks-komodo .main>section[id^=\"section-\"]>h2::before{content:\"\";display:block;flex:0 0 5px;align-self:stretch;min-height:1em;margin:2px 0;background:#bd9b50;border-radius:3px}\n.ks-komodo .main>section[id^=\"section-\"]{border-top:0;padding-top:0}\n@media(max-width:700px){.ks-komodo .main>section[id^=\"section-\"]>h2{font-size:26px;gap:12px;margin-bottom:22px}}\n\n\n/* Subjudul editorial terinspirasi referensi National Geographic. */\n.ks-komodo .main>section[id^=\"section-\"]>h2{display:block;max-width:680px;margin:0 0 28px;padding:0;color:#202e2a;font:700 clamp(28px,2.8vw,36px)/1.2 Georgia,\"Times New Roman\",serif;letter-spacing:-.02em}\n.ks-komodo .main>section[id^=\"section-\"]>h2::before{content:\"\";display:block;width:34px;height:3px;min-height:0;margin:0 0 16px;border-radius:0;background:#f1c40f}\n.ks-komodo .main>section[id^=\"section-\"]>h3{font-family:Inter,system-ui,sans-serif;font-weight:700;letter-spacing:-.01em}\n@media(max-width:700px){.ks-komodo .main>section[id^=\"section-\"]>h2{font-size:28px;line-height:1.25;margin-bottom:22px}.ks-komodo .main>section[id^=\"section-\"]>h2::before{width:28px;margin-bottom:13px}}\n\n\n/* Tabel rute: nuansa kertas dan garis halus ala catatan perjalanan. */\n.ks-komodo .main .trek-table{margin:28px 0;max-width:100%;overflow-x:auto;border:1px solid #e3e9df;border-radius:12px;background:#fff;box-shadow:0 6px 20px rgba(38,63,56,.04)}\n.ks-komodo .main .trek-table table{width:100%;min-width:540px;margin:0;border:0;border-collapse:collapse;font:15px/1.6 Inter,system-ui,sans-serif}\n.ks-komodo .main .trek-table th{padding:15px 18px;border:0;border-bottom:1px solid #dce6d8;background:#f3f6ef;color:#516a54;text-align:left;font:700 11px/1.5 Inter,system-ui,sans-serif;letter-spacing:.07em;text-transform:uppercase}\n.ks-komodo .main .trek-table td{padding:16px 18px;border:0;border-bottom:1px solid #edf1eb;background:#fff;color:#4a625a;vertical-align:top}\n.ks-komodo .main .trek-table tbody tr:last-child td{border-bottom:0}.ks-komodo .main .trek-table td:first-child{color:#263f38;font-weight:700}\n@media(max-width:700px){.ks-komodo .main .trek-table{margin:22px 0}.ks-komodo .main .trek-table th,.ks-komodo .main .trek-table td{padding:13px 14px}.ks-komodo .main .trek-table table{font-size:14px}}\n\n.ks-komodo {--main:#0077B6;--primary:#0A77FF;--sun:#F1C40F;--ink:#192434;--body:#1B2B41;--mist:#EAF4FA;--sand:#FBF3DC;--line:#D3E3ED;--muted:#53667A; font:18px/1.85 Inter,system-ui,Arial,sans-serif;color:var(--body);background:#fff} .ks-komodo *{box-sizing:border-box}.ks-komodo.e-con{display:block!important;width:100%;max-width:none;margin:0!important;padding:0!important;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px}.ks-komodo .ks-node.e-con{display:block;min-height:0;min-width:0;--padding-top:0px;--padding-bottom:0px;--padding-left:0px;--padding-right:0px}.ks-komodo .elementor-widget.ks-leaf,.ks-komodo .ks-leaf>.elementor-widget-container{display:contents}.ks-komodo .body.e-con{display:flex}.ks-komodo .komodo-photo-pair.e-con{display:grid}.ks-komodo .side.e-con{display:flex}.ks-komodo .sec.e-con{display:block}.ks-komodo .main.e-con{display:block}.ks-komodo .head.e-con{display:block}.ks-komodo .ks-heading.e-con{display:contents}.ks-komodo .ks-heading .elementor-widget-container{display:contents}.ks-komodo [id^=\"section-\"]{scroll-margin-top:100px} body:has(.ks-komodo) #masthead{display:none}body:has(.ks-komodo) #content>.ast-container,body:has(.ks-komodo) #primary,body:has(.ks-komodo) #main,body:has(.ks-komodo) #main>.ast-article-single,body:has(.ks-komodo) .entry-content,body:has(.ks-komodo) .entry-content>.elementor{max-width:none;width:100%;margin:0!important;padding:0!important}@media(max-width:960px){.ks-komodo .body.e-con{display:flex;flex-direction:column}.ks-komodo .side.e-con{width:100%}}\n\n/* Layout Elementor: lebar kolom eksplisit agar sidebar tidak menumpuk. */\n@media(min-width:961px){\n.ks-komodo .wrap.body.e-con{display:flex!important;flex-direction:row!important;align-items:flex-start!important;gap:64px!important}\n.ks-komodo .wrap.body.e-con > .main.e-con{position:relative!important;display:block!important;flex:1 1 0!important;width:auto!important;max-width:720px!important;min-width:0!important}\n.ks-komodo .wrap.body.e-con > .side.e-con{position:sticky!important;top:100px!important;display:flex!important;flex:0 0 300px!important;width:300px!important;max-width:300px!important;min-width:0!important;align-self:flex-start!important}\n}\n@media(max-width:960px){\n.ks-komodo .wrap.body.e-con{display:flex!important;flex-direction:column!important;gap:32px!important}\n.ks-komodo .wrap.body.e-con > .main.e-con,.ks-komodo .wrap.body.e-con > .side.e-con{position:static!important;display:block!important;width:100%!important;max-width:none!important;flex:none!important;min-width:0!important}\n.ks-komodo .wrap.body.e-con > .side.e-con{display:none!important}\n}\n.ks-komodo .elementor-widget-html.ks-leaf,.ks-komodo .elementor-widget-html.ks-leaf>.elementor-widget-container,.ks-komodo .elementor-widget-heading.ks-leaf,.ks-komodo .elementor-widget-heading.ks-leaf>.elementor-widget-container{display:contents}\n.ks-komodo .byline-date[hidden],.ks-komodo .ks-views-slot[hidden]{display:none!important}\n.ks-komodo .ks-views-slot .elementor-widget-container,.ks-komodo .ks-views-slot .elementor-shortcode{display:inline}\n.ks-komodo .ks-views-source{display:none}\n.ks-komodo .ks-views-slot .ks-views-source{display:inline!important}\n\n</style>",
+            "_css_classes": "ks-leaf"
+          },
+          "elements": []
+        },
+        {
+          "id": "0000003",
+          "elType": "widget",
+          "widgetType": "html",
+          "settings": {
+            "_title": "Navigasi · Header Kapalsantai",
+            "css_classes": "ks-leaf",
+            "html": "<header class=\"site-header\"><div class=\"bar\"><a aria-label=\"Kapalsantai home\" href=\"https://kapalsantai.com/\"><img alt=\"Kapalsantai\" class=\"site-logo\" src=\"https://sandybrown-turkey-356844.hostingersite.com/wp-content/uploads/2026/10/logo-kapalsantai.png\"/></a><nav class=\"nav\"><a href=\"https://kapalsantai.com/en\">Home</a><a href=\"https://kapalsantai.com/en/product\">Explore</a><a href=\"https://kapalsantai.com/en/about-us\">About Us</a></nav><details class=\"mobile-nav\"><summary aria-label=\"Open navigation\">Menu</summary><nav aria-label=\"Mobile navigation\"><a href=\"https://kapalsantai.com/en\">Home</a><a href=\"https://kapalsantai.com/en/product\">Explore</a><a href=\"https://kapalsantai.com/en/about-us\">About Us</a></nav></details></div></header>",
+            "_css_classes": "ks-leaf"
+          },
+          "elements": []
+        },
+        {
+          "id": "0000004",
+          "elType": "widget",
+          "widgetType": "html",
+          "settings": {
+            "_title": "Indikator · Progres membaca",
+            "css_classes": "ks-leaf",
+            "html": "<div aria-hidden=\"true\" class=\"read-progress\"></div>",
+            "_css_classes": "ks-leaf"
+          },
+          "elements": []
+        },
+        {
+          "id": "0000005",
+          "elType": "container",
+          "settings": {
+            "_title": "Hero · Judul, metadata dan foto utama",
+            "content_width": "full",
+            "css_classes": "ks-node wrap head",
+            "html_tag": "div"
+          },
+          "elements": [
+            {
+              "id": "0000006",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "_title": "Elemen · Home / Travel Guides / Komodo Island",
+                "css_classes": "ks-leaf",
+                "html": "<div class=\"crumb\">Home / Travel Guides / Komodo Island</div>",
+                "_css_classes": "ks-leaf"
+              },
+              "elements": []
+            },
+            {
+              "id": "0000007",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "_title": "H1 · Komodo Island Tour: The 2027 Guide to Meet Komodo Dragons",
+                "title": "Komodo Island Tour: The 2027 Guide to Meet Komodo Dragons",
+                "header_size": "h1",
+                "css_classes": "ks-leaf",
+                "_css_classes": "ks-leaf"
+              },
+              "elements": []
+            },
+            {
+              "id": "0000008",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "_title": "Paragraf · Explore Komodo Island, meet its famous dragon",
+                "css_classes": "ks-leaf",
+                "html": "<p class=\"stand\">Explore Komodo Island, meet its famous dragons with a ranger, and plan a sailing trip through Komodo National Park.</p>",
+                "_css_classes": "ks-leaf"
+              },
+              "elements": []
+            },
+            {
+              "id": "0000009",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "_title": "Elemen · By Kapalsantai Published — — read — views",
+                "css_classes": "ks-leaf",
+                "html": "<div class=\"meta taka-byline\">\n<span class=\"by\"><span class=\"av\"><img alt=\"\" src=\"https://sandybrown-turkey-356844.hostingersite.com/wp-content/uploads/2026/10/Icon-kapalsantai.png\"/></span>By Kapalsantai</span>\n<span class=\"byline-date\" hidden>Published <b></b></span>\n<span><b id=\"reading-time\">—</b> read</span><span class=\"ks-views-slot\" hidden></span>\n<span aria-label=\"Share this guide\" class=\"share-inline direct-share\"><a aria-label=\"Share on WhatsApp\" href=\"https://wa.me/?text=https://sandybrown-turkey-356844.hostingersite.com/komodo-island-tour-the-2027-guide-to-meet-komodo-dragons/\" rel=\"noopener noreferrer\" target=\"_blank\"><svg aria-hidden=\"true\" viewbox=\"0 0 24 24\"><path d=\"M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-2.9.8.8-2.8-.2-.3A8 8 0 1 1 12 20Zm4.4-5.8c-.2-.1-1.2-.6-1.4-.7-.2-.1-.3-.1-.4.1l-.6.7c-.1.1-.3.2-.5.1a6.6 6.6 0 0 1-3.2-2.8c-.2-.3.2-.4.5-1 .1-.1.1-.3 0-.4l-.6-1.5c-.2-.4-.3-.4-.5-.4h-.4c-.2 0-.4.1-.6.3-.2.2-.7.7-.7 1.7s.7 2  .8 2.2c.1.1 1.4 2.2 3.5 3.1 1.3.5 1.8.6 2.5.5.4-.1 1.2-.5 1.4-1 .2-.5.2-.9.2-1 0-.1-.1-.2-.3-.3Z\" fill=\"currentColor\"></path></svg></a><a aria-label=\"Share on Facebook\" href=\"https://www.facebook.com/sharer/sharer.php?u=https://sandybrown-turkey-356844.hostingersite.com/komodo-island-tour-the-2027-guide-to-meet-komodo-dragons/\" rel=\"noopener noreferrer\" target=\"_blank\"><svg aria-hidden=\"true\" viewbox=\"0 0 24 24\"><path d=\"M13.5 21v-8h2.7l.4-3h-3.1V8c0-.9.3-1.5 1.6-1.5h1.7V3.8c-.8-.1-1.6-.1-2.4-.1-2.4 0-4.1 1.5-4.1 4.2V10H7.6v3h2.7v8h3.2Z\" fill=\"currentColor\"></path></svg></a><a aria-label=\"Visit Kapalsantai on Instagram\" href=\"https://www.instagram.com/kapalsantai\" rel=\"noopener noreferrer\" target=\"_blank\"><svg aria-hidden=\"true\" viewbox=\"0 0 24 24\"><rect fill=\"none\" height=\"18\" rx=\"5\" stroke=\"currentColor\" stroke-width=\"1.8\" width=\"18\" x=\"3\" y=\"3\"></rect><circle cx=\"12\" cy=\"12\" fill=\"none\" r=\"4\" stroke=\"currentColor\" stroke-width=\"1.8\"></circle><circle cx=\"17.5\" cy=\"6.5\" fill=\"currentColor\" r=\"1\"></circle></svg></a><button aria-label=\"Copy article link\" id=\"copy-link\" type=\"button\"><svg aria-hidden=\"true\" viewbox=\"0 0 24 24\"><path d=\"M10 13a4 4 0 0 0 5.7 0l2.8-2.8a4 4 0 0 0-5.7-5.7l-1.6 1.6M14 11a4 4 0 0 0-5.7 0l-2.8 2.8a4 4 0 0 0 5.7 5.7l1.6-1.6\" fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.8\"></path></svg></button></span>\n</div>",
+                "_css_classes": "ks-leaf"
+              },
+              "elements": []
+            },
+            {
+              "id": "eaf4391",
+              "elType": "widget",
+              "widgetType": "shortcode",
+              "settings": {
+                "_title": "Metadata · WP-PostViews",
+                "_css_classes": "ks-views-source",
+                "shortcode": "[views]"
+              },
+              "elements": []
+            },
+            {
+              "id": "000000a",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "_title": "Label · share-status",
+                "css_classes": "ks-leaf",
+                "html": "<span aria-live=\"polite\" class=\"share-status\" role=\"status\"></span>",
+                "_css_classes": "ks-leaf"
+              },
+              "elements": []
+            },
+            {
+              "id": "000000b",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "_title": "Elemen · KOMODO NATIONAL PARK / DESTINATION GUIDE",
+                "css_classes": "ks-leaf",
+                "html": "<div class=\"head-label\">KOMODO NATIONAL PARK / DESTINATION GUIDE</div>",
+                "_css_classes": "ks-leaf"
+              },
+              "elements": []
+            },
+            {
+              "id": "000000c",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "_title": "Gambar · Komodo dragons resting together on Komodo Isl",
+                "css_classes": "ks-leaf",
+                "html": "<figure class=\"cover\"><img alt=\"Komodo dragons resting together on rocky ground\" src=\"https://sandybrown-turkey-356844.hostingersite.com/wp-content/uploads/2026/11/komodo-dragons-resting-komodo-island.webp\"/><figcaption>Komodo dragons resting together on Komodo Island.</figcaption></figure>",
+                "_css_classes": "ks-leaf"
+              },
+              "elements": []
+            }
+          ],
+          "isInner": false
+        },
+        {
+          "id": "000000d",
+          "elType": "container",
+          "settings": {
+            "_title": "Konten · Artikel dan sidebar",
+            "content_width": "full",
+            "css_classes": "ks-node wrap body",
+            "html_tag": "div"
+          },
+          "elements": [
+            {
+              "id": "000004a",
+              "elType": "container",
+              "settings": {
+                "_title": "Bagian · Why Is a Komodo Island Tour So Special? · 2",
+                "content_width": "full",
+                "css_classes": "ks-node main",
+                "html_tag": "main"
+              },
+              "elements": [
+                {
+                  "id": "000000e",
+                  "elType": "widget",
+                  "widgetType": "html",
+                  "settings": {
+                    "_title": "FAQ · In this guide Why Is a Komodo Island Tour So",
+                    "css_classes": "ks-leaf",
+                    "html": "<details class=\"mobile-toc\"><summary>In this guide</summary><ul class=\"toc\"><li><a href=\"#section-1\">Why Is a Komodo Island Tour So Special?</a></li><li><a href=\"#section-2\">Things to Do on a Komodo Island Tour</a></li><li><a href=\"#section-3\">Komodo Island Tour Safety Rules</a></li><li><a href=\"#section-4\">When Is the Best Time for a Komodo Island Tour?</a></li><li><a href=\"#section-5\">Komodo National Park Fees and Visitor Quota</a></li><li><a href=\"#section-6\">Frequently Asked Questions</a></li><li><a href=\"#section-7\">What to Pack for a Komodo Island Tour</a></li><li><a href=\"#section-8\">Ready to Walk With the Dragons?</a></li></ul></details>",
+                    "_css_classes": "ks-leaf"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "0000015",
+                  "elType": "container",
+                  "settings": {
+                    "_title": "Bagian · intro",
+                    "content_width": "full",
+                    "css_classes": "ks-node sec",
+                    "html_tag": "section",
+                    "_element_id": "intro"
+                  },
+                  "elements": [
+                    {
+                      "id": "000000f",
+                      "elType": "widget",
+                      "widgetType": "html",
+                      "settings": {
+                        "_title": "Paragraf · “The boat slows down. Ahead, golden hills ris",
+                        "css_classes": "ks-leaf",
+                        "html": "<p class=\"komodo-opening\">“The boat slows down. Ahead, golden hills rise straight out of the sea, and a wooden jetty waits at Loh Liang. Somewhere on that savanna, a three-meter lizard is warming up in the morning sun.”</p>",
+                        "_css_classes": "ks-leaf"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "0000010",
+                      "elType": "widget",
+                      "widgetType": "html",
+                      "settings": {
+                        "_title": "Paragraf · A Komodo Island tour is the one experience yo",
+                        "css_classes": "ks-leaf",
+                        "html": "<p>A <strong>Komodo Island tour</strong> is the one experience you cannot get anywhere else on earth. Komodo dragons live in the wild only on a few islands in East Nusa Tenggara, and Komodo Island is home to the largest population. Join a sailing trip from Labuan Bajo with <a href=\"https://kapalsantai.com/\">Kapalsantai</a>, and you will walk the same trails as these prehistoric predators, guided by a local ranger.</p>",
+                        "_css_classes": "ks-leaf"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "0000011",
+                      "elType": "widget",
+                      "widgetType": "html",
+                      "settings": {
+                        "_title": "Paragraf · Here is everything you need to plan your Komo",
+                        "css_classes": "ks-leaf",
+                        "html": "<p>Here is everything you need to plan your Komodo Island tour in 2027: trekking routes, safety rules, best season, fees, and what to pack.</p>",
+                        "_css_classes": "ks-leaf"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "0000014",
+                      "elType": "container",
+                      "settings": {
+                        "_title": "Bagian · div",
+                        "content_width": "full",
+                        "css_classes": "ks-node komodo-photo-pair",
+                        "html_tag": "div"
+                      },
+                      "elements": [
+                        {
+                          "id": "0000012",
+                          "elType": "widget",
+                          "widgetType": "html",
+                          "settings": {
+                            "_title": "Gambar · Komodo dragons resting among rocks and tree r",
+                            "css_classes": "ks-leaf",
+                            "html": "<figure><img alt=\"two komodo dragons resting on rocks\" loading=\"lazy\" src=\"https://sandybrown-turkey-356844.hostingersite.com/wp-content/uploads/2026/11/two-komodo-dragons-resting-on-rocks.webp\"/><figcaption>Komodo dragons resting among rocks and tree roots.</figcaption></figure>",
+                            "_css_classes": "ks-leaf"
+                          },
+                          "elements": []
+                        },
+                        {
+                          "id": "0000013",
+                          "elType": "widget",
+                          "widgetType": "html",
+                          "settings": {
+                            "_title": "Gambar · A Komodo dragon walking across a forest floor",
+                            "css_classes": "ks-leaf",
+                            "html": "<figure><img alt=\"komodo dragon walking on dry leaves\" loading=\"lazy\" src=\"https://sandybrown-turkey-356844.hostingersite.com/wp-content/uploads/2026/11/komodo-dragon-walking-on-dry-leaves.webp\"/><figcaption>A Komodo dragon walking across a forest floor.</figcaption></figure>",
+                            "_css_classes": "ks-leaf"
+                          },
+                          "elements": []
+                        }
+                      ],
+                      "isInner": false
+                    }
+                  ],
+                  "isInner": false
+                },
+                {
+                  "id": "000001d",
+                  "elType": "container",
+                  "settings": {
+                    "_title": "Bagian · Why Is a Komodo Island Tour So Special?",
+                    "content_width": "full",
+                    "css_classes": "ks-node sec",
+                    "html_tag": "section",
+                    "_element_id": "section-1"
+                  },
+                  "elements": [
+                    {
+                      "id": "0000016",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "_title": "H2 · Why Is a Komodo Island Tour So Special?",
+                        "title": "Why Is a Komodo Island Tour So Special?",
+                        "header_size": "h2",
+                        "css_classes": "ks-leaf",
+                        "_css_classes": "ks-leaf"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "0000017",
+                      "elType": "widget",
+                      "widgetType": "html",
+                      "settings": {
+                        "_title": "Elemen · bar-y",
+                        "css_classes": "ks-leaf",
+                        "html": "<div class=\"bar-y\"></div>",
+                        "_css_classes": "ks-leaf"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "0000018",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "_title": "H3 · The Home of the World's Largest Lizard",
+                        "title": "The Home of the World's Largest Lizard",
+                        "header_size": "h3",
+                        "css_classes": "ks-leaf",
+                        "_css_classes": "ks-leaf"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "0000019",
+                      "elType": "widget",
+                      "widgetType": "html",
+                      "settings": {
+                        "_title": "Paragraf · Komodo dragons ( Varanus komodoensis ) live n",
+                        "css_classes": "ks-leaf",
+                        "html": "<p><span class=\"ks-target\" id=\"ks-t1\">Komodo dragons (<em>Varanus komodoensis</em>) live naturally on only a handful of islands: Komodo, Rinca, Gili Motang, Gili Dasami, and parts of western Flores.</span> Komodo Island holds the biggest population. As a result, seeing them here means seeing them truly wild, hunting deer and resting under tamarind trees.</p>",
+                        "_css_classes": "ks-leaf"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "000001a",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "_title": "H3 · A UNESCO World Heritage Landscape",
+                        "title": "A UNESCO World Heritage Landscape",
+                        "header_size": "h3",
+                        "css_classes": "ks-leaf",
+                        "_css_classes": "ks-leaf"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "000001b",
+                      "elType": "widget",
+                      "widgetType": "html",
+                      "settings": {
+                        "_title": "Paragraf · UNESCO named Komodo National Park a World Her",
+                        "css_classes": "ks-leaf",
+                        "html": "<p><span class=\"ks-target\" id=\"ks-t2\">UNESCO named Komodo National Park a <a href=\"https://whc.unesco.org/en/list/609\" rel=\"noopener\" target=\"_blank\">World Heritage Site</a> in 1991.</span> On Komodo Island, dry savanna, rocky ridges, and monsoon forest meet the sea. Besides dragons, you may spot Timor deer, wild boar, and the rare yellow-crested cockatoo.</p>",
+                        "_css_classes": "ks-leaf"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "000001c",
+                      "elType": "widget",
+                      "widgetType": "html",
+                      "settings": {
+                        "_title": "Gambar · tourists hiking with guide komodo national park",
+                        "css_classes": "ks-leaf",
+                        "html": "<figure><img alt=\"tourists hiking with guide komodo national park\" loading=\"lazy\" src=\"https://sandybrown-turkey-356844.hostingersite.com/wp-content/uploads/2026/11/tourists-hiking-with-guide-komodo-national-park-2.webp\"/></figure>",
+                        "_css_classes": "ks-leaf"
+                      },
+                      "elements": []
+                    }
+                  ],
+                  "isInner": false
+                },
+                {
+                  "id": "0000028",
+                  "elType": "container",
+                  "settings": {
+                    "_title": "Bagian · Things to Do on a Komodo Island Tour",
+                    "content_width": "full",
+                    "css_classes": "ks-node sec",
+                    "html_tag": "section",
+                    "_element_id": "section-2"
+                  },
+                  "elements": [
+                    {
+                      "id": "000001e",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "_title": "H2 · Things to Do on a Komodo Island Tour",
+                        "title": "Things to Do on a Komodo Island Tour",
+                        "header_size": "h2",
+                        "css_classes": "ks-leaf",
+                        "_css_classes": "ks-leaf"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "000001f",
+                      "elType": "widget",
+                      "widgetType": "html",
+                      "settings": {
+                        "_title": "Elemen · bar-y · 2",
+                        "css_classes": "ks-leaf",
+                        "html": "<div class=\"bar-y\"></div>",
+                        "_css_classes": "ks-leaf"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "0000020",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "_title": "H3 · 1. Guided Trekking at Loh Liang",
+                        "title": "1. Guided Trekking at Loh Liang",
+                        "header_size": "h3",
+                        "css_classes": "ks-leaf",
+                        "_css_classes": "ks-leaf"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "0000021",
+                      "elType": "widget",
+                      "widgetType": "html",
+                      "settings": {
+                        "_title": "Paragraf · Every visit starts at the Loh Liang ranger st",
+                        "css_classes": "ks-leaf",
+                        "html": "<p>Every visit starts at the Loh Liang ranger station. You cannot walk alone, because an official guide with a forked stick leads every group. Guides usually offer routes of different lengths, so pick the one that fits your group:</p>",
+                        "_css_classes": "ks-leaf"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "0000022",
+                      "elType": "widget",
+                      "widgetType": "html",
+                      "settings": {
+                        "_title": "Tabel · Route Approx. distance Good for Short trek ab",
+                        "css_classes": "ks-leaf",
+                        "html": "<figure class=\"wp-block-table trek-table\"><table aria-label=\"Loh Liang trekking route comparison\"><thead><tr><th>Route</th><th>Approx. distance</th><th>Good for</th></tr></thead><tbody><tr><td>Short trek</td><td>about 600 m</td><td>Families and first-timers</td></tr><tr><td>Medium trek (to Sulphurea Hill)</td><td>about 700 m, with a gentle climb</td><td>Views over the bay</td></tr><tr><td>Long trek (to Banu Nggulung)</td><td>about 1.5 km</td><td>Wildlife lovers with more time</td></tr></tbody></table></figure>",
+                        "_css_classes": "ks-leaf"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "0000023",
+                      "elType": "widget",
+                      "widgetType": "html",
+                      "settings": {
+                        "_title": "Paragraf · In general, the trails are flat and wide. You",
+                        "css_classes": "ks-leaf",
+                        "html": "<p>In general, the trails are flat and wide. Your ranger chooses the route based on the season and on where dragons appeared that day.</p>",
+                        "_css_classes": "ks-leaf"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "0000024",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "_title": "H3 · 2. Snorkel at Pink Beach",
+                        "title": "2. Snorkel at Pink Beach",
+                        "header_size": "h3",
+                        "css_classes": "ks-leaf",
+                        "_css_classes": "ks-leaf"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "0000025",
+                      "elType": "widget",
+                      "widgetType": "html",
+                      "settings": {
+                        "_title": "Paragraf · Pink Beach (Pantai Merah) sits on the coast o",
+                        "css_classes": "ks-leaf",
+                        "html": "<p>Pink Beach (Pantai Merah) sits on the coast of Komodo Island. <span class=\"ks-target\" id=\"ks-t3\">The pink color of its sand comes from tiny fragments of red organisms mixed with white sand.</span> Just offshore, shallow reefs are home to clownfish, parrotfish, and the occasional sea turtle. Also, check the availability of the snorkeling gear provided on trips with Kapalsantai.</p>",
+                        "_css_classes": "ks-leaf"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "0000026",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "_title": "H3 · 3. Combine It With Padar, Manta Point, and Taka Makassar",
+                        "title": "3. Combine It With Padar, Manta Point, and Taka Makassar",
+                        "header_size": "h3",
+                        "css_classes": "ks-leaf",
+                        "_css_classes": "ks-leaf"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "0000027",
+                      "elType": "widget",
+                      "widgetType": "html",
+                      "settings": {
+                        "_title": "Paragraf · Komodo Island is rarely a single stop. That i",
+                        "css_classes": "ks-leaf",
+                        "html": "<p>Komodo Island is rarely a single stop. That is why most sailing itineraries pair it with the sunrise hike on Padar Island, a drift snorkel at Manta Point, and a walk around the Taka Makassar sandbank.</p>",
+                        "_css_classes": "ks-leaf"
+                      },
+                      "elements": []
+                    }
+                  ],
+                  "isInner": false
+                },
+                {
+                  "id": "000002d",
+                  "elType": "container",
+                  "settings": {
+                    "_title": "Bagian · Komodo Island Tour Safety Rules",
+                    "content_width": "full",
+                    "css_classes": "ks-node sec",
+                    "html_tag": "section",
+                    "_element_id": "section-3"
+                  },
+                  "elements": [
+                    {
+                      "id": "0000029",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "_title": "H2 · Komodo Island Tour Safety Rules",
+                        "title": "Komodo Island Tour Safety Rules",
+                        "header_size": "h2",
+                        "css_classes": "ks-leaf",
+                        "_css_classes": "ks-leaf"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "000002a",
+                      "elType": "widget",
+                      "widgetType": "html",
+                      "settings": {
+                        "_title": "Elemen · bar-y · 3",
+                        "css_classes": "ks-leaf",
+                        "html": "<div class=\"bar-y\"></div>",
+                        "_css_classes": "ks-leaf"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "000002b",
+                      "elType": "widget",
+                      "widgetType": "html",
+                      "settings": {
+                        "_title": "Paragraf · Komodo dragons are wild predators. Therefore,",
+                        "css_classes": "ks-leaf",
+                        "html": "<p>Komodo dragons are wild predators. Therefore, follow these rules on every Komodo Island tour to keep yourself and the animals safe:</p>",
+                        "_css_classes": "ks-leaf"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "000002c",
+                      "elType": "widget",
+                      "widgetType": "html",
+                      "settings": {
+                        "_title": "Daftar bernomor · Stay With Your Ranger Never leave the group o",
+                        "css_classes": "ks-leaf",
+                        "html": "<ol style=\"margin:0;padding-left:22px;line-height:1.8\"><li><strong>Stay With Your Ranger</strong><br/>Never leave the group or wander off the trail.</li><li><span class=\"ks-target\" id=\"ks-t4\"><strong>Keep Your Distance</strong><br/>Stay at least 5 meters away, even when a dragon looks asleep.</span></li><li><strong>Tell the Ranger About Wounds</strong><br/>Dragons are sensitive to the smell of blood. Let your ranger know if you have an open wound or are menstruating.</li><li><strong>No Food, No Flash</strong><br/>Never feed the animals, and turn off your camera flash.</li></ol>",
+                        "_css_classes": "ks-leaf"
+                      },
+                      "elements": []
+                    }
+                  ],
+                  "isInner": false
+                },
+                {
+                  "id": "0000032",
+                  "elType": "container",
+                  "settings": {
+                    "_title": "Bagian · When Is the Best Time for a Komodo Island Tour?",
+                    "content_width": "full",
+                    "css_classes": "ks-node sec",
+                    "html_tag": "section",
+                    "_element_id": "section-4"
+                  },
+                  "elements": [
+                    {
+                      "id": "000002e",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "_title": "H2 · When Is the Best Time for a Komodo Island Tour?",
+                        "title": "When Is the Best Time for a Komodo Island Tour?",
+                        "header_size": "h2",
+                        "css_classes": "ks-leaf",
+                        "_css_classes": "ks-leaf"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "000002f",
+                      "elType": "widget",
+                      "widgetType": "html",
+                      "settings": {
+                        "_title": "Elemen · bar-y · 4",
+                        "css_classes": "ks-leaf",
+                        "html": "<div class=\"bar-y\"></div>",
+                        "_css_classes": "ks-leaf"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "0000030",
+                      "elType": "widget",
+                      "widgetType": "html",
+                      "settings": {
+                        "_title": "Daftar · April to October (dry season): Clear skies, c",
+                        "css_classes": "ks-leaf",
+                        "html": "<ul style=\"margin:0;padding-left:22px;line-height:1.8\"><li><span class=\"ks-target\" id=\"ks-t5\"><strong>April to October (dry season):</strong> Clear skies, calm seas, and dry trails. Dragons are easier to spot on the open savanna.</span> This is also peak season, so book early.</li><li><strong>November to March (rainy season):</strong> Greener hills and fewer boats, but choppier seas and slippery paths. Some trips may change route due to weather.</li></ul>",
+                        "_css_classes": "ks-leaf"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "0000031",
+                      "elType": "widget",
+                      "widgetType": "html",
+                      "settings": {
+                        "_title": "Paragraf · Around the mating season in the middle of the",
+                        "css_classes": "ks-leaf",
+                        "html": "<p>Around the mating season in the middle of the year, dragons can be less visible near the main trails of a Komodo Island tour. However, your ranger will know where to look.</p>",
+                        "_css_classes": "ks-leaf"
+                      },
+                      "elements": []
+                    }
+                  ],
+                  "isInner": false
+                },
+                {
+                  "id": "0000038",
+                  "elType": "container",
+                  "settings": {
+                    "_title": "Bagian · Komodo National Park Fees and Visitor Quota",
+                    "content_width": "full",
+                    "css_classes": "ks-node sec",
+                    "html_tag": "section",
+                    "_element_id": "section-5"
+                  },
+                  "elements": [
+                    {
+                      "id": "0000033",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "_title": "H2 · Komodo National Park Fees and Visitor Quota",
+                        "title": "Komodo National Park Fees and Visitor Quota",
+                        "header_size": "h2",
+                        "css_classes": "ks-leaf",
+                        "_css_classes": "ks-leaf"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "0000034",
+                      "elType": "widget",
+                      "widgetType": "html",
+                      "settings": {
+                        "_title": "Elemen · bar-y · 5",
+                        "css_classes": "ks-leaf",
+                        "html": "<div class=\"bar-y\"></div>",
+                        "_css_classes": "ks-leaf"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "0000035",
+                      "elType": "widget",
+                      "widgetType": "html",
+                      "settings": {
+                        "_title": "Paragraf · All visitors on a Komodo Island tour pay a na",
+                        "css_classes": "ks-leaf",
+                        "html": "<p>All visitors on a Komodo Island tour pay a national park entrance ticket plus guide and local fees. Fees for foreign and Indonesian visitors are different and have changed several times, so always check the latest rate before you travel.</p>",
+                        "_css_classes": "ks-leaf"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "0000036",
+                      "elType": "widget",
+                      "widgetType": "html",
+                      "settings": {
+                        "_title": "Paragraf · Since 1 April 2026, the park limits visits to",
+                        "css_classes": "ks-leaf",
+                        "html": "<p><span class=\"ks-target\" id=\"ks-t6\">Since 1 April 2026, the park limits visits to 1,000 people per day, booked through the park's SiOra system.</span> On Kapalsantai trips, our team handles permits and quota booking for you, so you can relax and enjoy the trip.</p>",
+                        "_css_classes": "ks-leaf"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "0000037",
+                      "elType": "widget",
+                      "widgetType": "html",
+                      "settings": {
+                        "_title": "Gambar · tourists with komodo dragon komodo island",
+                        "css_classes": "ks-leaf",
+                        "html": "<figure><img alt=\"tourists with komodo dragon komodo island\" loading=\"lazy\" src=\"https://sandybrown-turkey-356844.hostingersite.com/wp-content/uploads/2026/11/tourists-with-komodo-dragon-komodo-island.webp\"/></figure>",
+                        "_css_classes": "ks-leaf"
+                      },
+                      "elements": []
+                    }
+                  ],
+                  "isInner": false
+                },
+                {
+                  "id": "000003f",
+                  "elType": "container",
+                  "settings": {
+                    "_title": "Bagian · Frequently Asked Questions",
+                    "content_width": "full",
+                    "css_classes": "ks-node sec",
+                    "html_tag": "section",
+                    "_element_id": "section-6"
+                  },
+                  "elements": [
+                    {
+                      "id": "0000039",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "_title": "H2 · Frequently Asked Questions",
+                        "title": "Frequently Asked Questions",
+                        "header_size": "h2",
+                        "css_classes": "ks-leaf",
+                        "_css_classes": "ks-leaf"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "000003a",
+                      "elType": "widget",
+                      "widgetType": "html",
+                      "settings": {
+                        "_title": "Elemen · bar-y · 6",
+                        "css_classes": "ks-leaf",
+                        "html": "<div class=\"bar-y\"></div>",
+                        "_css_classes": "ks-leaf"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "000003b",
+                      "elType": "widget",
+                      "widgetType": "html",
+                      "settings": {
+                        "_title": "FAQ · Is it safe to visit Komodo Island? Yes, as lo",
+                        "css_classes": "ks-leaf",
+                        "html": "<details class=\"wp-block-details\" style=\"border:1px solid rgba(0,119,182,.22);border-radius:12px;padding:14px 18px;background:#F5FAFD\"><summary style=\"font-weight:600;cursor:pointer;color:#192434\">Is it safe to visit Komodo Island?</summary><p style=\"margin:8px 0 0\">Yes, as long as you follow your ranger's instructions. Trained rangers accompany every group, and visitors must stay on the marked trails. Also, let the ranger know if you have an open wound or are menstruating, so they are aware of what can and cannot be done.</p></details>",
+                        "_css_classes": "ks-leaf"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "000003c",
+                      "elType": "widget",
+                      "widgetType": "html",
+                      "settings": {
+                        "_title": "FAQ · Will I definitely see a Komodo dragon? Sighti",
+                        "css_classes": "ks-leaf",
+                        "html": "<details class=\"wp-block-details\" style=\"border:1px solid rgba(0,119,182,.22);border-radius:12px;padding:14px 18px;background:#F5FAFD\"><summary style=\"font-weight:600;cursor:pointer;color:#192434\">Will I definitely see a Komodo dragon?</summary><p style=\"margin:8px 0 0\">Sightings are very likely, especially in the dry season, but they are never guaranteed. After all, these are wild animals that move freely.</p></details>",
+                        "_css_classes": "ks-leaf"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "000003d",
+                      "elType": "widget",
+                      "widgetType": "html",
+                      "settings": {
+                        "_title": "FAQ · How do I get to Komodo Island from Labuan Baj",
+                        "css_classes": "ks-leaf",
+                        "html": "<details class=\"wp-block-details\" style=\"border:1px solid rgba(0,119,182,.22);border-radius:12px;padding:14px 18px;background:#F5FAFD\"><summary style=\"font-weight:600;cursor:pointer;color:#192434\">How do I get to Komodo Island from Labuan Bajo?</summary><p style=\"margin:8px 0 0\">By boat only. Most travelers join a day trip or a multi-day sailing trip from Labuan Bajo. Travel time depends on the boat type and the itinerary, so check out your preferred trip on <a href=\"https://kapalsantai.com/product\">Kapalsantai</a>.</p></details>",
+                        "_css_classes": "ks-leaf"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "000003e",
+                      "elType": "widget",
+                      "widgetType": "html",
+                      "settings": {
+                        "_title": "FAQ · Can I fly a drone on Komodo Island? Drones ne",
+                        "css_classes": "ks-leaf",
+                        "html": "<details class=\"wp-block-details\" style=\"border:1px solid rgba(0,119,182,.22);border-radius:12px;padding:14px 18px;background:#F5FAFD\"><summary style=\"font-weight:600;cursor:pointer;color:#192434\">Can I fly a drone on Komodo Island?</summary><p style=\"margin:8px 0 0\">Drones need a separate permit from the park authority, so ask your operator or Kapalsantai’s customer service before your trip.</p></details>",
+                        "_css_classes": "ks-leaf"
+                      },
+                      "elements": []
+                    }
+                  ],
+                  "isInner": false
+                },
+                {
+                  "id": "0000043",
+                  "elType": "container",
+                  "settings": {
+                    "_title": "Bagian · What to Pack for a Komodo Island Tour",
+                    "content_width": "full",
+                    "css_classes": "ks-node sec",
+                    "html_tag": "section",
+                    "_element_id": "section-7"
+                  },
+                  "elements": [
+                    {
+                      "id": "0000040",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "_title": "H2 · What to Pack for a Komodo Island Tour",
+                        "title": "What to Pack for a Komodo Island Tour",
+                        "header_size": "h2",
+                        "css_classes": "ks-leaf",
+                        "_css_classes": "ks-leaf"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "0000041",
+                      "elType": "widget",
+                      "widgetType": "html",
+                      "settings": {
+                        "_title": "Elemen · bar-y · 7",
+                        "css_classes": "ks-leaf",
+                        "html": "<div class=\"bar-y\"></div>",
+                        "_css_classes": "ks-leaf"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "0000042",
+                      "elType": "widget",
+                      "widgetType": "html",
+                      "settings": {
+                        "_title": "Daftar · Closed-toe walking shoes for the trek Light,",
+                        "css_classes": "ks-leaf",
+                        "html": "<ul style=\"margin:0;padding-left:22px;line-height:1.8\"><li>Closed-toe walking shoes for the trek</li><li>Light, long-sleeved clothing and a hat</li><li>Reef-safe sunscreen</li><li>A refillable water bottle</li><li>Swimwear and a rash guard for Pink Beach</li><li>Power bank and spare camera battery</li><li>Cash for small purchases at the Loh Liang souvenir stalls</li></ul>",
+                        "_css_classes": "ks-leaf"
+                      },
+                      "elements": []
+                    }
+                  ],
+                  "isInner": false
+                },
+                {
+                  "id": "0000049",
+                  "elType": "container",
+                  "settings": {
+                    "_title": "Bagian · Ready to Walk With the Dragons?",
+                    "content_width": "full",
+                    "css_classes": "ks-node sec",
+                    "html_tag": "section",
+                    "_element_id": "section-8"
+                  },
+                  "elements": [
+                    {
+                      "id": "0000044",
+                      "elType": "widget",
+                      "widgetType": "heading",
+                      "settings": {
+                        "_title": "H2 · Ready to Walk With the Dragons?",
+                        "title": "Ready to Walk With the Dragons?",
+                        "header_size": "h2",
+                        "css_classes": "ks-leaf",
+                        "_css_classes": "ks-leaf"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "0000045",
+                      "elType": "widget",
+                      "widgetType": "html",
+                      "settings": {
+                        "_title": "Elemen · bar-y · 8",
+                        "css_classes": "ks-leaf",
+                        "html": "<div class=\"bar-y\"></div>",
+                        "_css_classes": "ks-leaf"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "0000046",
+                      "elType": "widget",
+                      "widgetType": "html",
+                      "settings": {
+                        "_title": "Paragraf · Standing a few meters from a living dinosaur",
+                        "css_classes": "ks-leaf",
+                        "html": "<p>Standing a few meters from a living dinosaur is something you will talk about for years. Pair it with Pink Beach, Padar's sunrise, and the mantas of Komodo, and you have one of the best sea journeys in Indonesia.</p>",
+                        "_css_classes": "ks-leaf"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "0000047",
+                      "elType": "widget",
+                      "widgetType": "html",
+                      "settings": {
+                        "_title": "Paragraf · Explore Kapalsantai's open trip schedules and",
+                        "css_classes": "ks-leaf",
+                        "html": "<p>Explore Kapalsantai's open trip schedules and private liveaboard charters and start planning your Komodo Island tour today. We handle the permits and the sailing; you just bring your curiosity.</p>",
+                        "_css_classes": "ks-leaf"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "0000048",
+                      "elType": "widget",
+                      "widgetType": "html",
+                      "settings": {
+                        "_title": "Tombol · Explore Komodo Trips",
+                        "css_classes": "ks-leaf",
+                        "html": "<a class=\"btn\" href=\"https://kapalsantai.com/\">Explore Komodo Trips</a>",
+                        "_css_classes": "ks-leaf"
+                      },
+                      "elements": []
+                    }
+                  ],
+                  "isInner": false
+                }
+              ],
+              "isInner": false
+            },
+            {
+              "id": "000004f",
+              "elType": "container",
+              "settings": {
+                "_title": "Bagian · aside",
+                "content_width": "full",
+                "css_classes": "ks-node side",
+                "html_tag": "aside"
+              },
+              "elements": [
+                {
+                  "id": "000004b",
+                  "elType": "widget",
+                  "widgetType": "html",
+                  "settings": {
+                    "_title": "Navigasi · ISLAND FIELD GUIDE Explore this guide Find yo",
+                    "css_classes": "ks-leaf",
+                    "html": "<nav aria-label=\"Article contents\" class=\"komodo-guide\"><div class=\"komodo-guide-head\"><span>ISLAND FIELD GUIDE</span><h4>Explore this guide</h4><p>Find your way around Komodo Island.</p></div><ul class=\"toc\"><li><a href=\"#section-1\">The island &amp; its wildlife</a></li><li><a href=\"#section-2\">Things to do</a></li><li><a href=\"#section-3\">Safety on the trail</a></li><li><a href=\"#section-4\">When to visit</a></li><li><a href=\"#section-5\">Park fees &amp; planning</a></li><li><a href=\"#section-6\">Common questions</a></li><li><a href=\"#section-7\">What to pack</a></li><li><a href=\"#section-8\">Plan your adventure</a></li></ul></nav>",
+                    "_css_classes": "ks-leaf"
+                  },
+                  "elements": []
+                },
+                {
+                  "id": "000004e",
+                  "elType": "container",
+                  "settings": {
+                    "_title": "Bagian · section",
+                    "content_width": "full",
+                    "css_classes": "ks-node field-related",
+                    "html_tag": "section"
+                  },
+                  "elements": [
+                    {
+                      "id": "000004c",
+                      "elType": "widget",
+                      "widgetType": "html",
+                      "settings": {
+                        "_title": "Label · CONTINUE EXPLORING",
+                        "css_classes": "ks-leaf",
+                        "html": "<span class=\"field-related-label\">CONTINUE EXPLORING</span>",
+                        "_css_classes": "ks-leaf"
+                      },
+                      "elements": []
+                    },
+                    {
+                      "id": "000004d",
+                      "elType": "widget",
+                      "widgetType": "html",
+                      "settings": {
+                        "_title": "Tombol · Taka Makassar: Sandbar & Snorkeling Guide Rea",
+                        "css_classes": "ks-leaf",
+                        "html": "<a href=\"https://sandybrown-turkey-356844.hostingersite.com/taka-makassar-komodo-sandbar-snorkeling-guide-2/\"><img alt=\"Taka Makassar sandbank surrounded by turquoise water\" loading=\"lazy\" src=\"https://sandybrown-turkey-356844.hostingersite.com/wp-content/uploads/2026/11/taka-makassar-komodo-aerial-sandbank.webp\"/><strong>Taka Makassar: Sandbar &amp; Snorkeling Guide</strong><span>Read the guide →</span></a>",
+                        "_css_classes": "ks-leaf"
+                      },
+                      "elements": []
+                    }
+                  ],
+                  "isInner": false
+                }
+              ],
+              "isInner": false
+            }
+          ],
+          "isInner": false
+        },
+        {
+          "id": "0000050",
+          "elType": "widget",
+          "widgetType": "html",
+          "settings": {
+            "_title": "Interaksi · Navigasi dan berbagi",
+            "css_classes": "ks-leaf",
+            "html": "<script>(function(){function init(){document.querySelectorAll('.ks-komodo').forEach(function(root){if(root.dataset.komodoReady)return;root.dataset.komodoReady='1';var dateMeta=document.querySelector('meta[property=\"article:published_time\"]'),dateBox=root.querySelector('.byline-date');if(dateMeta&&dateBox){var raw=dateMeta.content.slice(0,10).split('-');if(raw.length===3){var dt=new Date(Date.UTC(Number(raw[0]),Number(raw[1])-1,Number(raw[2])));if(!isNaN(dt)){dateBox.querySelector('b').textContent=new Intl.DateTimeFormat('en-GB',{day:'numeric',month:'short',year:'numeric',timeZone:'UTC'}).format(dt);dateBox.hidden=false}}}var source=root.querySelector('.ks-views-source'),slot=root.querySelector('.ks-views-slot');if(source&&slot){var output=source.textContent.trim();if(output&&output!=='[views]'){slot.appendChild(source);slot.hidden=false}}var progress=root.querySelector('.read-progress'),sections=Array.from(root.querySelectorAll('.main section[id^=\"section-\"]')),links=Array.from(root.querySelectorAll('.toc a'));function update(){var max=document.documentElement.scrollHeight-innerHeight;if(progress)progress.style.width=(max>0?Math.min(100,scrollY/max*100):0)+'%';var current='';sections.forEach(function(s){if(s.getBoundingClientRect().top<=innerHeight*.35)current=s.id});links.forEach(function(a){if(a.getAttribute('href')==='#'+current)a.setAttribute('aria-current','location');else a.removeAttribute('aria-current')})}addEventListener('scroll',update,{passive:true});addEventListener('resize',update);update();root.querySelectorAll('.mobile-toc a').forEach(function(a){a.addEventListener('click',function(){var d=root.querySelector('.mobile-toc');if(d)d.removeAttribute('open')})});var main=root.querySelector('.main'),time=root.querySelector('#reading-time');if(main&&time)time.textContent=Math.max(1,Math.ceil(main.innerText.trim().split(/\\s+/).length/200))+' min';var copy=root.querySelector('#copy-link');if(copy)copy.addEventListener('click',async function(){var st=root.querySelector('.share-status');try{await navigator.clipboard.writeText(location.href);if(st)st.textContent='Link copied'}catch(e){if(st)st.textContent='Copy the URL from your browser'}})})}if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init()})();</script>",
+            "_css_classes": "ks-leaf"
+          },
+          "elements": []
+        }
+      ],
+      "isInner": false
+    }
+  ]
+}

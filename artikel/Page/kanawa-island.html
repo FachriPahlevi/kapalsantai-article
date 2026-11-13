@@ -31,15 +31,15 @@ p{margin:0 0 1.4em}
 .nav{display:flex;gap:22px;align-items:center}
 .nav a{position:relative;color:var(--ink);text-decoration:none;font-size:14px;font-weight:600;transition:color .3s}
 .nav a:hover{color:var(--blue)}
-.nav a:last-child{padding:10px 20px;border-radius:99px;background:var(--blue);color:#fff;box-shadow:0 6px 16px rgba(8,123,155,.35)}
-.nav a:last-child:hover{background:#066b89;color:#fff}
+.nav a:last-child{padding:10px 20px;border-radius:99px;background:#0077b6;color:#fff;box-shadow:0 6px 16px rgba(0,119,182,.35)}
+.nav a:last-child:hover{background:#00699e;color:#fff}
 .header.solid{background:rgba(255,255,255,.96);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);animation:fade .5s var(--ease) both}
 .header.solid .shell{width:100%;max-width:none;height:60px;margin:0;padding:0 var(--pad);border:0;border-radius:0;background:transparent;box-shadow:none;justify-content:space-between}
 .header.solid .logo{width:124px}
 
 /* Hero */
 .hero{position:relative;isolation:isolate;min-height:100svh;display:flex;align-items:center;justify-content:flex-start;text-align:left;overflow:hidden;color:#fff;background:var(--deep)}
-.hero-photo{position:absolute;inset:-6% 0;z-index:-3;width:100%;height:112%;object-fit:cover;object-position:center 48%;animation:kanawa-settle 2.4s ease-out both}
+.hero-photo{position:absolute;inset:-6% 0;z-index:-3;width:100%;height:112%;object-fit:cover;object-position:center 48%;animation:kanawa-hero-drift 18s ease-in-out infinite alternate}
 .hero::before{content:"";position:absolute;inset:0;z-index:-2;background:linear-gradient(90deg,rgba(4,29,40,.84) 0%,rgba(4,29,40,.67) 30%,rgba(4,29,40,.18) 70%),linear-gradient(0deg,rgba(4,29,40,.52),transparent 45%)}
 .hero-inner{display:flex;flex-direction:column;align-items:flex-start;width:100%;max-width:1280px;margin:0 auto;padding:145px 28px 130px}
 .eyebrow{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
@@ -222,7 +222,8 @@ p{margin:0 0 1.4em}
 .js .rv.from-r{transform:translateX(44px)}
 .js .rv.in{opacity:1;transform:none}
 @keyframes fade{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
-@keyframes kanawa-settle{from{scale:1.05}to{scale:1}}
+@keyframes kanawa-hero-drift{from{scale:1.01}to{scale:1.07}}
+.hero-photo.is-paused{animation-play-state:paused}
 
 @media(max-width:980px){.months{grid-template-columns:repeat(6,1fr)}}
 @media(max-width:900px){
@@ -398,6 +399,9 @@ const reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
 const header=$('#header'),bar=$('#progress'),photo=$('#hero-photo'),hero=$('.hero');
 const links=$$('.side nav a'),secs=$$('.article section[id]:not(#closing)');
 const pimg=$('.wide img'),cimg=$('#closing>img');
+// Animate only while the hero is on screen and the tab is visible.
+let heroVisible=true;function syncHeroMotion(){photo.classList.toggle('is-paused',!heroVisible||document.hidden)}
+if('IntersectionObserver' in window){new IntersectionObserver(entries=>{heroVisible=entries[0].isIntersecting;syncHeroMotion()},{threshold:0}).observe(hero)}else{addEventListener('scroll',()=>{const r=hero.getBoundingClientRect();heroVisible=r.bottom>0&&r.top<innerHeight;syncHeroMotion()},{passive:true})}document.addEventListener('visibilitychange',syncHeroMotion);syncHeroMotion();
 let tick=false;
 function update(){
  const y=scrollY,max=document.documentElement.scrollHeight-innerHeight;

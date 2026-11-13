@@ -3,14 +3,14 @@
 <title>Pulau Padar, 1 Island 3 Colors | Kapalsantai</title>
 <meta name="description" content="Marvel at Padar’s 3 bays: black, white &amp; pink on a sunrise hike, beach-hop &amp; snorkel in crystal waters with Kapalsantai.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-:root{--paper:#f6f9fa;--ink:#0e2f40;--sea:#0077b6;--gold:#e9ba37;--mut:#44606e;--line:#cfdde3;--pad:max(24px,calc((100vw - 1200px)/2));--d:'Plus Jakarta Sans',system-ui,sans-serif;--f:'Inter',system-ui,sans-serif;--ease:cubic-bezier(.2,.7,.2,1)}
+:root{--paper:#f6f9fa;--ink:#0e2f40;--sea:#0077b6;--gold:#e9ba37;--mut:#44606e;--line:#cfdde3;--pad:max(24px,calc((100vw - 1200px)/2));--d:'Plus Jakarta Sans',system-ui,sans-serif;--f:'Plus Jakarta Sans',system-ui,sans-serif;--ease:cubic-bezier(.2,.7,.2,1)}
 *{box-sizing:border-box}html{scroll-behavior:smooth}
 body{margin:0;background:var(--paper);color:var(--ink);font:400 18px/1.7 var(--f);-webkit-font-smoothing:antialiased}
 img{display:block;max-width:100%}a{color:inherit}p{margin:0 0 1.25em;max-width:62ch;color:var(--mut)}
 a:focus-visible,input:focus-visible+.box{outline:3px solid var(--gold);outline-offset:3px}
-h1,h2,h3{margin:0;font-family:var(--d);font-weight:800;color:inherit}
+h1,h2,h3{margin:0;font-family:var(--d);font-weight:700;color:inherit}
 h2{max-width:14em;font-size:clamp(40px,6vw,76px);line-height:1;letter-spacing:-.04em;text-wrap:balance}
 h3{font-size:clamp(22px,2.2vw,30px);line-height:1.15;letter-spacing:-.025em}
 .cap{margin-top:12px;padding-left:12px;border-left:2px solid var(--gold);font-size:14px;line-height:1.5;color:var(--mut)}
@@ -22,8 +22,10 @@ h3{font-size:clamp(22px,2.2vw,30px);line-height:1.15;letter-spacing:-.025em}
 .hd nav a:last-child{padding:0 20px;border-radius:99px;background:var(--sea);color:#fff}
 
 /* Hero */
-.hero{position:relative;isolation:isolate;display:flex;align-items:flex-end;min-height:100svh;color:#fff;background:#10201f}
-.hero>img{position:absolute;inset:0;z-index:-2;width:100%;height:100%;object-fit:cover;object-position:center 40%}
+.hero{position:relative;isolation:isolate;display:flex;align-items:flex-end;min-height:100svh;overflow:hidden;color:#fff;background:#10201f}
+.hero>img{position:absolute;inset:-6% 0;z-index:-2;width:100%;height:112%;object-fit:cover;object-position:center 40%;animation:padar-hero-drift 18s ease-in-out infinite alternate}
+@keyframes padar-hero-drift{from{scale:1.01}to{scale:1.07}}
+.hero>img.is-paused{animation-play-state:paused}
 .hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(0deg,rgba(8,20,28,.88),rgba(8,20,28,.3) 50%,rgba(8,20,28,.1))}
 .hero-in{width:100%;padding:140px var(--pad) clamp(40px,8vh,88px);animation:rise 1s var(--ease) both}
 .hero h1{font-size:clamp(52px,9.5vw,136px);line-height:.92;letter-spacing:-.05em}.hero h1 span{display:block}
@@ -112,21 +114,272 @@ dt{font-size:15px;font-weight:700}dd{margin:0;color:#d3e4eb}
  .bay{min-height:140px}.season i{font-size:11px}.band{padding:0 10px;font-size:13px}.rel{grid-template-columns:110px 1fr}.rel img{height:80px}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+
+/* Signature experiences: spacious editorial rows. */
+#signature-experiences{background:#f3f8fa;color:#123446}
+#signature-experiences h2{max-width:18ch;font-size:clamp(36px,4.2vw,60px);line-height:1.1}
+#signature-experiences .exp{margin-top:0;padding:48px 0;border-bottom:1px solid #cfdfe5;gap:clamp(32px,5vw,72px)}
+#signature-experiences .exp:first-of-type{margin-top:48px;border-top:1px solid #cfdfe5}
+#signature-experiences .exp img{aspect-ratio:4/3;border-radius:14px}
+#signature-experiences .exp figure{margin:0}
+#signature-experiences .exp .n{width:auto;height:auto;display:inline-block;margin-bottom:14px;background:none;border-radius:0;color:#0077b6;font:700 13px/1.4 var(--f);letter-spacing:.08em}
+#signature-experiences .exp h3{font-size:clamp(27px,2.8vw,38px);line-height:1.2}
+#signature-experiences .exp p,#signature-experiences .cap,#signature-experiences dd{color:#405f70}
+#signature-experiences dl,#signature-experiences dl div{border-color:#d1e2e8}
+@media(max-width:900px){#signature-experiences .exp{padding:30px 0;gap:24px}#signature-experiences .exp:first-of-type{margin-top:32px}}
+
+/* Fees: clear information with balanced emphasis. */
+#entrance-fees .fees{gap:0;margin-top:40px;border-top:1px solid #c7dbe2}
+#entrance-fees .fees>div{padding:24px 28px 24px 0;border:0;border-bottom:1px solid #c7dbe2}
+#entrance-fees .fees>div+div{padding-left:28px;border-left:1px solid #c7dbe2}
+#entrance-fees .fees dt{font:700 18px/1.4 var(--d);color:var(--ink)}
+#entrance-fees .fees .price{margin:10px 0 4px;font:700 20px/1.4 var(--f);letter-spacing:normal;color:#006d9d}
+#entrance-fees .fees dd:not(.price){font-size:15px;line-height:1.6}
+@media(max-width:900px){#entrance-fees .fees>div,#entrance-fees .fees>div+div{padding:20px 0;border-left:0}}
+
+/* Entrance fees: a restrained travel-ticket treatment. */
+#entrance-fees .fees{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin-top:40px;border:0}
+#entrance-fees .fees>div,#entrance-fees .fees>div+div{position:relative;overflow:hidden;padding:26px 28px;background:#fff;border:1px solid #d9e8ed;border-radius:14px;box-shadow:0 10px 32px rgba(18,57,77,.05)}
+#entrance-fees .fees>div::before{content:"";display:block;width:28px;height:3px;margin-bottom:20px;border-radius:2px;background:#e9ba37}
+#entrance-fees .fees dt{padding-bottom:17px;border-bottom:1px dashed #c7dbe2;font:700 17px/1.4 var(--d);color:#173747}
+#entrance-fees .fees .price{margin:18px 0 4px;color:#176c90;font:700 20px/1.4 var(--f);letter-spacing:0}
+#entrance-fees .fees dd:not(.price){max-width:38ch;margin:0;color:#526d7a;font:400 15px/1.6 var(--f)}
+@media(max-width:900px){#entrance-fees .fees{grid-template-columns:1fr;gap:12px}#entrance-fees .fees>div,#entrance-fees .fees>div+div{padding:22px}}
+
+/* Travel tickets: quiet typography and subtle cut-outs. */
+#entrance-fees{background:#f4f9fa}
+.fee-intro{display:grid;grid-template-columns:1fr 1fr;align-items:end;gap:32px}.fee-intro h2{font-size:clamp(38px,4vw,58px)}.fee-intro>p{max-width:38ch;margin:0;color:#526d79;font-size:16px;line-height:1.7}.fee-kicker{margin:0 0 14px;color:#0077a9;font:700 11px/1.4 var(--f);letter-spacing:.14em}
+.fee-tickets{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin-top:48px}.fee-ticket{display:grid;grid-template-columns:minmax(0,1fr) minmax(145px,.68fr);position:relative;min-width:0;background:#fff;border:1px solid #dce9ed;border-radius:16px;box-shadow:0 14px 40px rgba(20,57,73,.06)}
+.fee-ticket-main{padding:26px 24px 30px;min-width:0}.fee-ticket-top{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;margin-bottom:34px;color:#718a94;font:700 10px/1.4 var(--f);letter-spacing:.11em}.fee-ticket-top span:first-child{color:#0077a9}.fee-ticket h3{font-size:20px;line-height:1.3}.fee-ticket-main p{margin:10px 0 0;color:#59717c;font-size:14px;line-height:1.6}
+.fee-ticket-stub{position:relative;display:flex;flex-direction:column;justify-content:center;gap:8px;padding:24px 20px;border-left:1px dashed #cbdde3}.fee-ticket-stub::before,.fee-ticket-stub::after{content:"";position:absolute;left:-9px;width:16px;height:16px;background:#f4f9fa;border:1px solid #dce9ed;border-radius:50%}.fee-ticket-stub::before{top:-9px}.fee-ticket-stub::after{bottom:-9px}.fee-ticket-stub span{color:#78919c;font:700 10px/1.4 var(--f);letter-spacing:.12em}.fee-ticket-stub strong{color:#143e50;font:700 clamp(15px,1.25vw,19px)/1.3 var(--d);white-space:nowrap}.fee-ticket-stub small{color:#617b86;font-size:12px;line-height:1.4}.fee-note{margin:22px 0 0;color:#617b86;font-size:13px;line-height:1.6}
+@media(max-width:900px){.fee-intro{grid-template-columns:1fr;gap:14px}.fee-tickets{grid-template-columns:1fr;margin-top:30px}.fee-ticket-main{padding:22px 18px}.fee-ticket-top{margin-bottom:22px}.fee-ticket-stub{padding:20px 14px}.fee-ticket-stub strong{font-size:15px}}
+@media(max-width:370px){.fee-ticket{grid-template-columns:minmax(0,1fr) minmax(125px,.7fr)}.fee-ticket h3{font-size:17px}}
+
+/* Packing list: clearly visible, animated checkboxes. */
+#packing-list .checks label{min-height:58px;gap:14px}
+#packing-list .checks .box{width:24px;height:24px;border:1.5px solid #83a4b1;border-radius:6px;background:#fff;color:transparent;transition:background .2s,border-color .2s,transform .2s}
+#packing-list .checks input:checked+.box{background:#0077b6;border-color:#0077b6;color:#fff;transform:scale(1.06)}
+#packing-list .checks input:focus-visible+.box{outline:3px solid #e9ba37;outline-offset:3px}
+@media(prefers-reduced-motion:reduce){#packing-list .checks .box{transition:none}}
+
+/* Packing: an editorial checklist with a quiet progress indicator. */
+#packing-list{background:#f2f8fa}.packing-layout{display:grid;grid-template-columns:minmax(0,.75fr) minmax(0,1fr);gap:clamp(40px,7vw,100px);align-items:start}.packing-intro{padding-top:8px}.packing-kicker,.packing-count-label,.packing-sheet-head{font:700 11px/1.4 var(--f);letter-spacing:.12em;color:#0877a4}.packing-intro h2{margin:18px 0 22px}.packing-intro>p{max-width:29ch;margin:0;color:#486675;font-size:17px;line-height:1.7}.packing-counter{margin-top:44px;max-width:240px}.packing-count-label{display:block;margin-bottom:8px;color:#63808a}.packing-counter #pcount{font-size:15px;font-weight:700;color:#163a4a}.packing-counter .bar{display:block;max-width:none;width:100%;margin-top:13px;height:4px;background:#d4e5e9}.packing-counter .bar i{background:#e8b83c}
+.packing-sheet{padding:30px 36px 24px;background:#fff;border:1px solid #dfebef;border-radius:18px;box-shadow:0 16px 45px rgba(23,63,80,.07)}.packing-sheet-head{display:flex;justify-content:space-between;gap:16px;padding-bottom:20px;color:#6c8792}.packing-sheet-head span:first-child{color:#0877a4}.packing-sheet .checks{border-color:#e2edef}.packing-sheet .checks label{min-height:59px;font-size:15px;font-weight:500;color:#254758;border-color:#e2edef}.packing-sheet .checks label:hover{color:#0077b6}.packing-sheet .checks .box{flex:none}.packing-footnote{margin:20px 0 0;color:#728a94;font-size:13px;line-height:1.5}
+@media(max-width:900px){.packing-layout{grid-template-columns:1fr;gap:28px}.packing-counter{margin-top:24px}.packing-sheet{padding:24px 20px 20px}.packing-intro h2{margin:14px 0}.packing-sheet-head{font-size:10px}}
+
+/* Insider notes: a field-guide layout. */
+#insider-hacks{background:#fff;color:#153848}.insider-layout{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1fr);gap:clamp(48px,8vw,120px);align-items:start}.insider-kicker{display:block;margin-bottom:20px;color:#0077a6;font:700 11px/1.4 var(--f);letter-spacing:.12em}.insider-heading h2{max-width:10em;font-size:clamp(36px,4vw,58px);line-height:1.1}.insider-heading>p{max-width:28ch;margin:22px 0 0;color:#526d79;font-size:16px;line-height:1.7}.insider-list{border-top:1px solid #d7e5e9}.insider-item{display:grid;grid-template-columns:40px minmax(0,1fr);gap:16px;padding:26px 0;border-bottom:1px solid #d7e5e9}.insider-number{padding-top:3px;color:#b48a24;font:700 13px/1.5 var(--f)}.insider-item h3{font-size:20px;line-height:1.3}.insider-item p{max-width:47ch;margin:9px 0 0;color:#496675;font-size:15px;line-height:1.7}
+@media(max-width:900px){.insider-layout{grid-template-columns:1fr;gap:32px}.insider-heading h2{max-width:14em}.insider-item{grid-template-columns:32px minmax(0,1fr);gap:12px;padding:22px 0}}
+
+/* Visual rhythm, depth and subtle island-inspired details. */
+.sec{padding-top:clamp(72px,7vw,112px);padding-bottom:clamp(72px,7vw,112px)}
+h2{font-size:clamp(34px,4.2vw,58px);line-height:1.12;letter-spacing:-.035em}h3{line-height:1.25}p{line-height:1.75}
+.hero h1{font-size:clamp(52px,7.8vw,112px);line-height:1;letter-spacing:-.045em}.hero .deck{line-height:1.6}.hero .meta{margin-top:18px}
+#why-padar{background:radial-gradient(circle at 94% 20%,rgba(233,186,55,.12) 0 48px,transparent 49px),radial-gradient(circle at 100% 22%,transparent 0 135px,rgba(0,119,182,.045) 136px 165px,transparent 166px)}
+.bays{gap:14px}.bay{transition:transform .3s ease,box-shadow .3s ease}.bay:hover{transform:translateY(-5px);box-shadow:0 14px 28px rgba(18,57,77,.12)}
+#signature-experiences h2,#entrance-fees h2,#packing-list h2,#insider-hacks h2{font-size:clamp(34px,4.2vw,58px);line-height:1.12}
+#signature-experiences .exp img{transition:transform .5s ease,box-shadow .5s ease}#signature-experiences .exp:hover img{transform:translateY(-3px);box-shadow:0 16px 30px rgba(18,57,77,.12)}
+#best-season{position:relative;isolation:isolate}#best-season::before{content:"";position:absolute;z-index:-1;right:var(--pad);top:60px;width:110px;height:110px;border:1px solid rgba(0,119,182,.12);border-radius:50%;box-shadow:0 0 0 22px rgba(0,119,182,.025),0 0 0 44px rgba(0,119,182,.02);pointer-events:none}
+#packing-list .packing-sheet{transition:box-shadow .3s ease}#packing-list .packing-sheet:hover{box-shadow:0 20px 50px rgba(23,63,80,.12)}
+.toc a:focus-visible{outline:3px solid #d6a521;outline-offset:-3px}
+@media(max-width:900px){.hero h1{font-size:clamp(44px,10vw,76px)}#best-season::before{width:64px;height:64px;right:28px;top:45px;opacity:.7}.sec{padding-top:64px;padding-bottom:64px}}
+@media(prefers-reduced-motion:reduce){.bay:hover,#signature-experiences .exp:hover img{transform:none}.bay,#signature-experiences .exp img{transition:none}}
+
+/* Reader navigation and checklist interactions. */
+.toc a[aria-current="location"]{color:#006b9b;border-bottom-color:#e5b534}.read-progress{height:3px;background:#e2eef1}.read-progress span{display:block;width:0;height:100%;background:#0077b6}.toc ul{overscroll-behavior-inline:contain}.packing-actions{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:20px}.packing-actions .packing-footnote{margin:0}#packing-reset{flex:none;padding:10px 12px;border:1px solid #c9dfe6;border-radius:8px;background:#fff;color:#006d9c;font:600 13px/1.4 var(--f);cursor:pointer}#packing-reset:hover{background:#edf7fa}#packing-reset:focus-visible{outline:3px solid #e9ba37;outline-offset:2px}@media(max-width:520px){.packing-actions{align-items:flex-start;flex-direction:column}.toc a{min-height:48px}}
+
+/* Weather note: understated and easy to scan. */
+#best-season .weather-note{display:flex;align-items:baseline;gap:12px;max-width:650px;margin:32px 0 0;padding:0 0 0 16px;border-left:2px solid var(--gold);background:none}
+.weather-note strong{flex:none;color:var(--ink);font:700 14px/1.6 var(--d)}
+#best-season .weather-note p{margin:0;color:var(--mut);font-size:14px;line-height:1.6}
+@media(max-width:600px){#best-season .weather-note{gap:10px;margin-top:24px}}
+
+/* Packing list: one coherent editorial block, aligned with the article. */
+#packing-list{background:#f6f9fa}
+#packing-list .packing-layout{display:block}
+#packing-list .packing-intro{display:flex;justify-content:space-between;align-items:end;gap:28px;padding:0 0 26px;border-bottom:1px solid #cfdde3}
+#packing-list .packing-intro h2{margin:0}
+#packing-list .packing-counter{display:flex;align-items:center;gap:14px;width:auto;max-width:none;margin:0 0 5px;white-space:nowrap}
+#packing-list .packing-counter #pcount{font-size:14px;color:#406473}
+#packing-list .packing-counter .bar{width:90px;margin:0;background:#d5e4e9}
+#packing-list .packing-sheet{padding:0;background:transparent;border:0;border-radius:0;box-shadow:none}
+#packing-list .packing-sheet:hover{box-shadow:none}
+#packing-list .checks{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:48px;margin:0;padding:0;list-style:none;border:0}
+#packing-list .checks li{min-width:0}
+#packing-list .checks label{display:flex;align-items:center;gap:16px;min-height:76px;padding:15px 0;border-bottom:1px solid #d7e5ea;color:#173b4b;font:500 16px/1.5 var(--f);cursor:pointer}
+#packing-list .checks label:hover{color:#0077b6}
+#packing-list .checks .box{width:26px;height:26px;border:1.5px solid #94b4bf;border-radius:7px;transition:background .2s,border-color .2s,transform .2s}
+#packing-list .checks input:checked+.box{background:#0077b6;border-color:#0077b6;transform:scale(1.04)}
+#packing-list .checks input:checked~.t{color:#4c6c79;text-decoration:none}
+#packing-list .packing-actions{margin-top:22px}
+#packing-list .packing-footnote{color:#57727d;font-size:14px}
+#packing-list #packing-reset{border:0;border-bottom:1px solid #a7c8d3;border-radius:0;background:transparent;padding:9px 0;color:#006f9f}
+@media(max-width:700px){#packing-list .packing-intro{align-items:flex-start;flex-direction:column;gap:16px;padding-bottom:20px}#packing-list .packing-counter{margin:0}#packing-list .checks{grid-template-columns:1fr}#packing-list .checks label{min-height:60px;font-size:15px}#packing-list .packing-actions{align-items:flex-start;gap:12px}}
+@media(prefers-reduced-motion:reduce){#packing-list .checks .box{transition:none}}
+
+/* Checklist completion: percentage dial replaces the bar. */
+#packing-list .packing-counter{gap:12px}#packing-list .packing-ring{--packed:0%;position:relative;display:grid;place-items:center;width:54px;height:54px;flex:none;border-radius:50%;background:conic-gradient(#0077b6 var(--packed),#dcebef 0)}#packing-list .packing-ring::before{content:"";position:absolute;inset:4px;border-radius:50%;background:#f6f9fa}#packing-list .packing-ring span{position:relative;color:#075f84;font:700 12px/1 var(--f)}#packing-list .packing-status-text{display:flex;flex-direction:column;gap:2px;line-height:1.4}#packing-list .packing-status-text strong{color:#173b4b;font-size:14px}#packing-list .packing-counter #pcount{color:#57727d;font-size:13px;font-weight:400}
+
+/* Three-dot readiness indicator and context-aware checklist advice. */
+#packing-list .packing-counter{align-items:center;white-space:normal}.packing-dots{display:flex;gap:7px;align-items:center;flex:none}.packing-dots i{display:block;width:12px;height:12px;border-radius:50%;background:#d6e2e5}.packing-dots[data-state="start"] i:nth-child(1){background:#ca5656}.packing-dots[data-state="middle"] i:nth-child(-n+2){background:#d4a029}.packing-dots[data-state="done"] i{background:#28875f}.packing-status-text{display:flex;flex-direction:column;gap:2px}.packing-status-text strong{color:#173b4b;font-size:14px}.packing-advice{margin-top:22px;padding:14px 16px;border-left:2px solid #e9ba37;background:#edf6f8;color:#355969;font-size:14px;line-height:1.6}.packing-advice:empty{display:none}
+
+.packing-advice>strong{display:block;color:#173b4b;font-size:15px}.packing-advice ul{margin:10px 0 0;padding-left:20px}.packing-advice li+li{margin-top:7px}.packing-advice li b{color:#173b4b}.packing-advice p{margin:6px 0 0;color:inherit;font-size:14px}
+
+
+/* Packing list follows the article's open editorial layout. */
+#packing-list{background:#f6f9fa}
+#packing-list .packing-layout{max-width:none;margin:0}
+#packing-list .packing-sheet{background:transparent;border:0;border-radius:0;box-shadow:none}
+#packing-list .packing-advice{margin-top:28px;padding:20px 0 0;border:0;border-top:1px solid #d7e5ea;background:transparent;color:#486675}
+#packing-list .packing-advice>strong{font:700 16px/1.4 var(--d);color:#153b4a}
+#packing-list .packing-advice ul{margin:12px 0 0;padding-left:20px}
+#packing-list .packing-advice li{font-size:14px;line-height:1.65}
+#packing-list .packing-advice li+li{margin-top:8px}
+
+/* Packing: restrained hierarchy and a quieter reminder list. */
+#packing-list .packing-intro{display:grid;grid-template-columns:1fr auto;align-items:end;padding-bottom:30px;border-bottom:1px solid #ccdee4}
+#packing-list .packing-intro h2{max-width:none}
+#packing-list .packing-counter{gap:10px;margin:0 0 5px}
+#packing-list .packing-status-text{gap:0}
+#packing-list .packing-status-text strong{font-size:13px}
+#packing-list .checks{column-gap:56px}
+#packing-list .checks label{min-height:70px;font-size:15px}
+#packing-list .checks .box{width:22px;height:22px;border-radius:5px}
+#packing-list .packing-advice{margin-top:36px;padding:22px 0 0;border-top:1px solid #ccdee4}
+#packing-list .packing-advice>strong{display:block;font-size:15px}
+#packing-list .packing-advice ul{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 36px;margin:16px 0 0;padding:0;list-style:none}
+#packing-list .packing-advice li{position:relative;margin:0;padding-left:15px;color:#526e79;font-size:14px;line-height:1.6}
+#packing-list .packing-advice li::before{content:"";position:absolute;left:0;top:.68em;width:5px;height:5px;border-radius:50%;background:#dbb23f}
+#packing-list .packing-advice li b{color:#204653;font-weight:600}
+@media(max-width:700px){#packing-list .packing-intro{grid-template-columns:1fr;gap:16px;padding-bottom:22px}#packing-list .packing-advice ul{grid-template-columns:1fr;gap:9px}#packing-list .checks label{min-height:60px}}
+
+/* Checklist states: animated check and strike-through. */
+#packing-list .checks label{position:relative;gap:16px;transition:color .2s ease}
+#packing-list .checks .box{width:24px;height:24px;display:grid;place-items:center;border:1.5px solid #88aab7;border-radius:7px;background:#fff;color:#fff;transition:background .22s ease,border-color .22s ease,transform .22s ease}
+#packing-list .checks .box svg{width:15px;height:15px;stroke-dasharray:24;stroke-dashoffset:24;opacity:0;transition:stroke-dashoffset .3s ease,opacity .15s ease}
+#packing-list .checks input:checked+.box{background:#0077b6;border-color:#0077b6;transform:scale(1.05)}
+#packing-list .checks input:checked+.box svg{stroke-dashoffset:0;opacity:1}
+#packing-list .checks .t{position:relative;display:inline;color:#244657;transition:color .25s ease;text-decoration:none}
+#packing-list .checks .t::after{content:"";position:absolute;left:0;right:0;top:50%;height:1px;background:#77939d;transform:scaleX(0);transform-origin:left;transition:transform .3s ease}
+#packing-list .checks input:checked~.t{color:#8299a1;text-decoration:none}
+#packing-list .checks input:checked~.t::after{transform:scaleX(1)}
+#packing-list .checks input:focus-visible+.box{outline:3px solid #e9ba37;outline-offset:3px}
+@media(prefers-reduced-motion:reduce){#packing-list .checks .box,#packing-list .checks .box svg,#packing-list .checks .t,#packing-list .checks .t::after{transition:none}}
+
+/* Keep the floating header and article navigation in separate rows. */
+.toc{top:84px}.sec{scroll-margin-top:150px}
+#packing-list{padding-top:clamp(56px,6vw,88px);padding-bottom:clamp(56px,6vw,88px)}
+#packing-list .packing-intro{display:flex;align-items:center;gap:18px;flex-wrap:wrap;padding-bottom:22px}
+#packing-list .packing-counter{display:flex;align-items:center;gap:12px;margin:0}
+#packing-list #packing-reset{margin-left:8px;min-height:44px;padding:9px 12px;border:1px solid #bfd4dc;border-radius:8px}
+#packing-list .checks{grid-template-columns:1fr;column-gap:0}
+#packing-list .checks label{min-height:72px;align-items:flex-start;padding:17px 0}
+#packing-list .checks .box{margin-top:2px}
+#packing-list .packing-item-copy{display:flex;flex-direction:column;gap:4px;min-width:0}
+#packing-list .checks .t{display:inline;align-self:flex-start}
+#packing-list .packing-item-hint{color:#526e79;font:400 14px/1.55 var(--f)}
+#packing-list .checks input:checked~.packing-item-copy .t{color:#526f7b}
+#packing-list .checks input:checked~.packing-item-copy .t::after{transform:scaleX(1)}
+#packing-list .checks input:focus-visible+.box{outline:2px solid #0077b6;outline-offset:3px}
+@media(max-width:700px){.toc{top:78px}.sec{scroll-margin-top:145px}#packing-list .packing-intro{align-items:flex-start;flex-direction:column;gap:14px}#packing-list .packing-counter{flex-wrap:wrap}#packing-list .checks label{min-height:64px;padding:14px 0}}
+
+/* Mobile: compact navigation and a readable checklist. */
+@media(max-width:700px){
+ :root{--pad:20px}
+ .hd{top:10px;max-width:calc(100% - 24px);gap:10px;padding:5px 6px 5px 14px}
+ .hd img{width:96px}.hd nav{gap:10px;font-size:12px}.hd nav a{min-height:42px}.hd nav a:last-child{padding:0 13px;white-space:nowrap}
+ .toc{top:72px}.toc ul{padding-left:20px;padding-right:20px;gap:24px}.toc a{min-height:46px;font-size:13px}.sec{scroll-margin-top:130px}
+ #packing-list{padding-top:56px;padding-bottom:56px}
+ #packing-list .packing-intro{display:flex;flex-direction:column;align-items:flex-start;gap:18px;padding-bottom:20px}
+ #packing-list .packing-intro h2{font-size:38px;line-height:1.12}
+ #packing-list .packing-counter{display:flex;align-items:center;gap:10px;flex-wrap:wrap;width:100%;margin:0}
+ #packing-list #packing-reset{margin-left:auto;min-height:44px}
+ #packing-list .checks{display:grid;grid-template-columns:minmax(0,1fr)}
+ #packing-list .checks label{gap:14px;min-height:72px;padding:16px 0}
+ #packing-list .checks .box{width:24px;height:24px;margin-top:2px}
+ #packing-list .packing-item-copy{flex:1;min-width:0}
+ #packing-list .checks .t{font-size:15px;line-height:1.5}
+ #packing-list .packing-item-hint{font-size:13px;line-height:1.55}
+}
+@media(max-width:360px){.hd{gap:7px}.hd img{width:84px}.hd nav{gap:7px}.hd nav a:last-child{padding:0 10px}#packing-list .packing-counter{gap:7px}}
+
+/* Header follows Kanawa's floating-to-full-width behavior. */
+.hd{height:58px;top:14px;padding:0 8px 0 20px;gap:30px;background:rgba(255,255,255,.88);border:1px solid rgba(255,255,255,.7);transition:background .45s ease,box-shadow .45s ease}
+.hd.solid{top:0;left:0;transform:none;width:100%;max-width:none;height:60px;padding:0 var(--pad);justify-content:space-between;border:0;border-radius:0;background:rgba(255,255,255,.97);box-shadow:0 2px 16px rgba(3,30,42,.1)}
+.hd nav a:last-child{background:#0077b6}.hd nav a:last-child:hover{background:#00699e}.toc{top:60px}.sec{scroll-margin-top:120px}
+@media(max-width:700px){.hd{gap:12px;padding:0 6px 0 14px;height:56px}.hd.solid{height:56px;padding:0 20px}.toc{top:56px}.sec{scroll-margin-top:112px}}
+@media(prefers-reduced-motion:reduce){.hd{transition:none}}
+
+/* Navbar copied from Kanawa, with selectors scoped to Padar. */
+.padar-header{position:fixed;top:0;left:0;width:100%;z-index:50}
+.padar-header .padar-shell{width:fit-content;max-width:calc(100% - 24px);height:58px;margin:14px auto 0;padding:0 8px 0 20px;gap:30px;display:flex;align-items:center;justify-content:space-between;border-radius:99px;background:rgba(255,255,255,.88);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.7);box-shadow:0 14px 36px rgba(3,30,42,.22);transition:background .45s var(--ease)}
+.padar-header .padar-shell>a{display:flex;align-items:center}
+.padar-logo{width:140px}
+.padar-nav{display:flex;gap:22px;align-items:center}
+.padar-nav a{position:relative;color:var(--ink);text-decoration:none;font-size:14px;font-weight:600;transition:color .3s}
+.padar-nav a:hover{color:#087b9b}
+.padar-nav a:last-child{padding:10px 20px;border-radius:99px;background:#0077b6;color:#fff;box-shadow:0 6px 16px rgba(0,119,182,.35)}
+.padar-nav a:last-child:hover{background:#00699e;color:#fff}
+.padar-header.solid{background:rgba(255,255,255,.96);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);animation:fade .5s var(--ease) both}
+.padar-header.solid .padar-shell{width:100%;max-width:none;height:60px;margin:0;padding:0 var(--pad);border:0;border-radius:0;background:transparent;box-shadow:none;justify-content:space-between}
+.padar-header.solid .padar-logo{width:124px}
+
+@media(max-width:900px){.padar-header .padar-shell{padding:0 8px 0 14px;gap:14px}.padar-logo{width:110px}.padar-nav{gap:12px}.padar-nav a:last-child{padding:8px 14px}}
+@media(max-width:370px){.padar-header .padar-shell{gap:8px}.padar-logo{width:94px}.padar-nav{gap:8px}.padar-nav a{font-size:12px}.padar-nav a:last-child{padding:8px 11px}}
+.toc{top:60px}@media(max-width:700px){.toc{top:60px}}
+
+/* Packing list: compact, balanced and easy to scan. */
+#packing-list .packing-intro{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-bottom:20px}
+#packing-list .packing-intro h2{margin:0;font-size:clamp(32px,3.5vw,48px)}
+#packing-list .packing-counter{gap:10px}
+#packing-list .packing-dots{gap:5px}
+#packing-list .packing-dots i{width:8px;height:8px}
+#packing-list #packing-reset{min-height:44px;margin-left:4px;padding:8px 4px;border:0;border-radius:0;background:transparent;text-decoration:underline;text-underline-offset:4px}
+#packing-list .checks{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:40px}
+#packing-list .checks label{min-height:74px;padding:16px 0;gap:14px}
+#packing-list .checks .box{width:22px;height:22px;border-radius:6px}
+#packing-list .packing-item-copy{gap:3px}
+#packing-list .checks .t{font-size:15px;line-height:1.5}
+#packing-list .packing-item-hint{font-size:13px;line-height:1.5}
+@media(max-width:700px){
+ #packing-list .packing-intro{align-items:flex-start;gap:12px}
+ #packing-list .packing-intro h2{font-size:34px}
+ #packing-list .packing-counter{width:100%;justify-content:flex-start}
+ #packing-list #packing-reset{margin-left:auto}
+ #packing-list .checks{grid-template-columns:minmax(0,1fr)}
+ #packing-list .checks label{min-height:68px;padding:14px 0}
+}
+
+/* Hero: readable editorial type with a clearer view of the island. */
+.hero::before{background:linear-gradient(90deg,rgba(5,25,34,.58) 0%,rgba(5,25,34,.22) 55%,rgba(5,25,34,.08) 100%),linear-gradient(0deg,rgba(5,25,34,.82) 0%,rgba(5,25,34,.24) 48%,transparent 75%)}
+.hero-in{padding-bottom:clamp(48px,8vh,90px)}
+.hero h1{max-width:900px;font-size:clamp(46px,6vw,88px);font-weight:700;line-height:1.08;letter-spacing:-.04em;text-wrap:balance;text-shadow:0 2px 24px rgba(0,0,0,.2)}
+.hero h1{margin-bottom:22px}
+.hero-row{justify-content:flex-start;align-items:flex-start;flex-direction:column;gap:22px}
+.hero .deck{max-width:40em;font-size:clamp(16px,1.2vw,19px);line-height:1.65}
+.hero .meta{margin-top:14px}
+@media(max-width:600px){.hero-in{padding-top:120px;padding-bottom:48px}.hero h1{font-size:clamp(38px,10vw,54px);line-height:1.1}.hero h1{margin-bottom:18px}.hero-row{gap:18px}}
+
+/* Consistent space between section titles, subheadings and their content. */
+#why-padar .bays,#signature-experiences .exp:first-of-type,#entrance-fees .fee-tickets,#best-season .season{margin-top:40px}
+#why-padar .why h3,#signature-experiences .exp h3,#best-season .seasons h3,#entrance-fees .fee-ticket h3,#insider-hacks .insider-item h3{margin:0 0 12px}
+#why-padar .why p,#signature-experiences .exp p,#best-season .seasons p,#entrance-fees .fee-ticket p,#insider-hacks .insider-item p{margin-top:0}
+@media(max-width:900px){#why-padar .bays,#signature-experiences .exp:first-of-type,#entrance-fees .fee-tickets,#best-season .season{margin-top:28px}}
 </style></head>
 <body>
-<header class="hd"><a href="https://kapalsantai.com/en" aria-label="Kapalsantai home"><img src="../gambar/kapalsantai-logo.svg" alt="Kapalsantai" width="156" height="48"></a><nav aria-label="Main navigation"><a href="https://kapalsantai.com/about-us">About Us</a><a href="https://kapalsantai.com/en/product">Book a Boat</a></nav></header>
+<header class="padar-header" id="padar-header"><div class="padar-shell"><a aria-label="Kapalsantai home" href="https://kapalsantai.com/"><img alt="Kapalsantai by GuideSantai" class="padar-logo" src="../gambar/kapalsantai-logo.svg"/></a><nav aria-label="Main navigation" class="padar-nav"><a href="https://kapalsantai.com/en/about-us">About Us</a><a href="https://kapalsantai.com/en/product">Book a Boat</a></nav></div></header>
 <main>
 <div class="hero"><img src="../gambar/padar-island-aerial-bays.jpg" width="2048" height="1365" alt="Aerial view of Padar Island’s three bays between rugged ridges" fetchpriority="high">
-<div class="hero-in"><h1><span>Pulau Padar,</span><span>1 Island 3 Colors</span></h1><div class="tri" aria-hidden="true"><i></i><i></i><i></i></div>
+<div class="hero-in"><h1><span>Pulau Padar,</span><span>1 Island 3 Colors</span></h1>
 <div class="hero-row"><div><p class="deck">Marvel at Padar’s 3 bays: black, white &amp; pink on a sunrise hike, beach-hop &amp; snorkel in crystal waters with Kapalsantai.</p><p class="meta">By Kapalsantai &nbsp;|&nbsp; <span id="rt">Travel guide</span></p></div><a class="btn" href="#article">Read the guide</a></div></div></div>
 
-<nav class="toc" aria-label="Article sections"><ul><li><a href="#why-padar">Why Padar?</a></li><li><a href="#signature-experiences">Experiences</a></li><li><a href="#entrance-fees">Entrance fees</a></li><li><a href="#best-season">Best season</a></li><li><a href="#packing-list">Packing list</a></li><li><a href="#insider-hacks">Insider hacks</a></li></ul></nav>
+<nav class="toc" aria-label="Article sections"><ul><li><a href="#why-padar">Why Padar?</a></li><li><a href="#signature-experiences">Experiences</a></li><li><a href="#entrance-fees">Entrance fees</a></li><li><a href="#best-season">Best season</a></li><li><a href="#packing-list">Packing list</a></li><li><a href="#insider-hacks">Insider hacks</a></li></ul><div class="read-progress" aria-hidden="true"><span id="read-progress-fill"></span></div></nav>
 
 <article id="article">
 <div class="sec intro"><p class="lead">Yes! You read that right: Pulau Padar really is an island in three colors.</p><p>White, pink, and black sands sweep around its bays, framed by golden savanna hills and backed by volcanic ridges. Just 800 steps up a winding trail brings you to a 360° panorama of turquoise seas and jagged peaks that feels straight out of a dream. Ready to stand atop the ridge, dip your toes in candy‑colored coves, and snap the kind of photos that stop scrolls? Let Kapalsantai take you there.</p></div>
 
 <section class="sec" id="why-padar" style="padding-top:0">
- <h2>Why Padar Island Is Worth the Climb</h2>
+ <h2>Why Padar Stops your from Scrolling Your Phone</h2>
  <div class="bays"><div class="bay b1"><small>West</small><strong>White‑sand bay</strong></div><div class="bay b2"><small>East</small><strong>Blush‑pink cove</strong></div><div class="bay b3"><small>South</small><strong>Charcoal‑grey curve</strong></div></div>
  <div class="why">
   <div><h3>One Island, Three Colors</h3><p>A white‑sand bay to the west, a blush‑pink cove to the east, and a charcoal‑grey curve to the south—nature’s own gradient tool.</p></div>
@@ -138,51 +391,68 @@ dt{font-size:15px;font-weight:700}dd{margin:0;color:#d3e4eb}
 <section class="sec dark" id="signature-experiences">
  <h2>3 Signature Experiences You Don't Want to Miss</h2>
  <article class="exp"><figure><img src="../gambar/padar-island-bay-and-boats.jpg" alt="View of the bay and boats from Padar’s ridge" loading="lazy"><figcaption class="cap">Boats rest in a bay beneath Padar Island’s ridges.</figcaption></figure>
-  <div><span class="n">1</span><h3>Sunrise Stair‑Climb</h3><dl><div><dt>Timing</dt><dd>Start hiking by 05:00 to catch first light at the summit.</dd></div><div><dt>Effort</dt><dd>30–45 min up, 20 min down; switchbacks are dusty, so sturdy shoes are a must.</dd></div><div><dt>Pay‑off</dt><dd>A 360° glow that turns the savanna hills gold and paints the bays black, white, and pink.</dd></div></dl></div></article>
+  <div><h3>Sunrise Stair‑Climb</h3><dl><div><dt>Timing</dt><dd>Start hiking by 05:00 to catch first light at the summit.</dd></div><div><dt>Effort</dt><dd>30–45 min up, 20 min down; switchbacks are dusty, so sturdy shoes are a must.</dd></div><div><dt>Pay‑off</dt><dd>A 360° glow that turns the savanna hills gold and paints the bays black, white, and pink.</dd></div></dl></div></article>
  <article class="exp"><figure><img src="../gambar/padar-island-aerial-bays.jpg" alt="Padar’s coves seen from above" loading="lazy" style="object-position:75% 70%"><figcaption class="cap">An aerial view of Padar Island’s curved bays.</figcaption></figure>
-  <div><span class="n">2</span><h3>Beach‑Hopping the Color Wheel</h3><p>After the descent, the tender zips you to each cove: snorkel the pink shallows, kayak the powder‑white lagoon, and picnic on the moody black‑sand shore. Visibility often tops 20 m, and gentle currents make it beginner‑friendly.</p></div></article>
+  <div><h3>Beach‑Hopping the Color Wheel</h3><p>After the descent, the tender zips you to each cove: snorkel the pink shallows, kayak the powder‑white lagoon, and picnic on the moody black‑sand shore. Visibility often tops 20 m, and gentle currents make it beginner‑friendly.</p></div></article>
  <article class="exp"><figure><img src="../gambar/taka-makassar-aerial-wide.webp" alt="Aerial view of the Taka Makassar sandbar and reef" loading="lazy"><figcaption class="cap">The Taka Makassar sandbar and surrounding reef.</figcaption></figure>
-  <div><span class="n">3</span><h3>Manta &amp; Turtle Drift</h3><p>Manta Point lies 30 minutes south‑east. Slip into plankton‑rich water and watch 3‑m giants barrel‑roll beneath you. Reef turtles frequent nearby Taka Makassar’s coral gardens—mask, fins, and life‑vests are on the house with every Kapalsantai trip.</p></div></article>
+  <div><h3>Manta &amp; Turtle Drift</h3><p>Manta Point lies 30 minutes south‑east. Slip into plankton‑rich water and watch 3‑m giants barrel‑roll beneath you. Reef turtles frequent nearby Taka Makassar’s coral gardens—mask, fins, and life‑vests are on the house with every Kapalsantai trip.</p></div></article>
 </section>
 
-<section class="sec blush" id="entrance-fees">
- <h2>Entrance Fees</h2>
- <dl class="fees"><div><dt>Komodo National Park</dt><dd class="price">IDR 750,000</dd><dd>per person (cash only)</dd></div><div><dt>Drone Permit</dt><dd class="price">IDR 2,350,000</dd><dd>Available for private trips. Make sure to book yours at least 7 days prior to your trip.</dd></div></dl>
- <p class="after">With Kapalsantai, you get a hassle-free experience! We ensure all your bookings are handled with ease.</p>
+<section class="sec" id="entrance-fees">
+ <div class="fee-intro"><div><p class="fee-kicker">YOUR VISIT · THE DETAILS</p><h2>Entrance fees</h2></div></div>
+ <div class="fee-tickets">
+  <article class="fee-ticket"><div class="fee-ticket-main"><div class="fee-ticket-top"><span>01 / PARK ENTRY</span><span>PADAR ISLAND</span></div><h3>Komodo National Park</h3><p>Entrance fee per person</p></div><div class="fee-ticket-stub"><span>ADMISSION</span><strong>IDR 750,000</strong><small>Cash only</small></div></article>
+  <article class="fee-ticket"><div class="fee-ticket-main"><div class="fee-ticket-top"><span>02 / OPTIONAL</span><span>PRIVATE TRIPS</span></div><h3>Drone permit</h3><p>Available for private trips for IDR 2,350,000. Make sure to book yours at least 7 days prior to your trip.</p></div><div class="fee-ticket-stub"><span>PERMIT</span><strong>IDR 2,350,000</strong><small>Advance booking</small></div></article>
+ </div>
+ <p class="fee-note">With Kapalsantai, you get a hassle-free experience! We ensure all your bookings are handled with ease.</p>
 </section>
 
 <section class="sec" id="best-season">
  <h2>Best Season</h2>
- <div class="season" role="img" aria-label="April to September is the peak season. September to December has fewer crowds."><i>Jan</i><i>Feb</i><i>Mar</i><i>Apr</i><i>May</i><i>Jun</i><i>Jul</i><i>Aug</i><i>Sep</i><i>Oct</i><i>Nov</i><i>Dec</i><span class="band a">April – September</span><span class="band b">September – December</span></div>
- <div class="seasons"><div><h3>April – September</h3><p>Peak perfection. Expect sunny skies and calm seas, perfect for snorkeling with Mantas!</p></div><div><h3>September – December</h3><p>Fewer crowds and a laid-back atmosphere, perfect for a relaxing experience.</p></div></div>
- <p class="tip"><b>Tip:</b> Rain or shine, be ready! Pack a raincoat or umbrella just in case.</p>
+ <div class="season" role="img" aria-label="April to September is the peak season. September to December has fewer crowds."><i>Jan</i><i>Feb</i><i>Mar</i><i>Apr</i><i>May</i><i>Jun</i><i>Jul</i><i>Aug</i><i>Sep</i><i>Oct</i><i>Nov</i><i>Dec</i><span class="band a">April - September</span><span class="band b">September - December</span></div>
+ <div class="seasons"><div><h3>April - September</h3><p>Peak perfection. Expect sunny skies and calm seas, perfect for snorkeling with Mantas!</p></div><div><h3>September - December</h3><p>Fewer crowds and a laid-back atmosphere, perfect for a relaxing experience.</p></div></div>
+ <aside class="weather-note"><strong>Tip</strong><p>Rain or shine, be ready! Pack a raincoat or umbrella just in case.</p></aside>
 </section>
 
-<section class="sec blush" id="packing-list">
- <div class="two"><div class="sticky"><h2>Packing List</h2><div class="count"><span id="pcount">0 / 7 packed</span><div class="bar"><i id="pbar"></i></div></div></div>
- <ul class="checks">
-  <li><label><input type="checkbox"><span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m6 12.5 4 4 8-9"/></svg></span><span class="t">Breathable long sleeves &amp; quick‑dry shorts</span></label></li>
-  <li><label><input type="checkbox"><span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m6 12.5 4 4 8-9"/></svg></span><span class="t">2L refillable bottle (free refills on board)</span></label></li>
-  <li><label><input type="checkbox"><span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m6 12.5 4 4 8-9"/></svg></span><span class="t">Sunscreen &amp; hat</span></label></li>
-  <li><label><input type="checkbox"><span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m6 12.5 4 4 8-9"/></svg></span><span class="t">Headlamp (for pre‑dawn stairs)</span></label></li>
-  <li><label><input type="checkbox"><span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m6 12.5 4 4 8-9"/></svg></span><span class="t">Sturdy trainers</span></label></li>
-  <li><label><input type="checkbox"><span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m6 12.5 4 4 8-9"/></svg></span><span class="t">Dry bag for gadgets</span></label></li>
-  <li><label><input type="checkbox"><span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m6 12.5 4 4 8-9"/></svg></span><span class="t">Motion‑sickness tablets if you’re new to boats</span></label></li>
- </ul></div>
+<section class="sec" id="packing-list">
+ <div class="packing-layout"><div class="packing-intro"><h2>Packing List</h2><div class="packing-counter"><span class="packing-dots" id="packing-dots" data-state="start" aria-hidden="true"><i></i><i></i><i></i></span><span class="packing-status-text"><span id="pcount" aria-live="polite">0% packed</span></span><button type="button" id="packing-reset">Reset list</button></div></div>
+ <div class="packing-sheet"><ul class="checks"><li><label><input type="checkbox"><span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m6 12.5 4 4 8-9"/></svg></span><span class="packing-item-copy"><span class="t">Breathable long sleeves &amp; quick‑dry shorts</span><span class="packing-item-hint">Comfortable coverage for the trail and time on the boat.</span></span></label></li><li><label><input type="checkbox"><span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m6 12.5 4 4 8-9"/></svg></span><span class="packing-item-copy"><span class="t">2L refillable bottle (free refills on board)</span><span class="packing-item-hint">Bring water to stay hydrated during the walk.</span></span></label></li><li><label><input type="checkbox"><span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m6 12.5 4 4 8-9"/></svg></span><span class="packing-item-copy"><span class="t">Sunscreen &amp; hat</span><span class="packing-item-hint">Help protect your skin from sun exposure.</span></span></label></li><li><label><input type="checkbox"><span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m6 12.5 4 4 8-9"/></svg></span><span class="packing-item-copy"><span class="t">Headlamp (for pre‑dawn stairs)</span><span class="packing-item-hint">Useful for seeing the trail if you start before sunrise.</span></span></label></li><li><label><input type="checkbox"><span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m6 12.5 4 4 8-9"/></svg></span><span class="packing-item-copy"><span class="t">Sturdy trainers</span><span class="packing-item-hint">Help support your footing on the trail.</span></span></label></li><li><label><input type="checkbox"><span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m6 12.5 4 4 8-9"/></svg></span><span class="packing-item-copy"><span class="t">Dry bag for gadgets</span><span class="packing-item-hint">Helps keep gadgets protected from splashes.</span></span></label></li><li><label><input type="checkbox"><span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m6 12.5 4 4 8-9"/></svg></span><span class="packing-item-copy"><span class="t">Motion‑sickness tablets if you’re new to boats</span><span class="packing-item-hint">Consider these if you are prone to motion sickness; ask a pharmacist or clinician if unsure.</span></span></label></li></ul></div></div>
 </section>
 
-<section class="sec dark" id="insider-hacks">
- <h2>Insider Hacks from Kapalsantai</h2>
- <div class="tips"><div><h3>Skip the crowd</h3><p>Opt for our partner that visits Padar Island as the final stop of the day for a quieter, hassle-free experience.</p></div><div><h3>Leave no trace</h3><p>Keep it pristine! Leave nothing but footprints, take nothing but pictures, and always obey the rules.</p></div><div><h3>Drone etiquette</h3><p>Permits are required. Check in with your guide, stay away from crowds, and follow all regulations. Stop flying your drone immediately if requested by a ranger.</p></div></div>
+<section class="sec" id="insider-hacks">
+ <div class="insider-layout"><div class="insider-heading"><span class="insider-kicker">A NOTE FROM KAPALSANTAI</span><h2>Insider Hacks from Kapalsantai</h2></div>
+ <div class="insider-list"><article class="insider-item"><span class="insider-number">01</span><div><h3>Skip the crowd</h3><p>Opt for our partner that visits Padar Island as the final stop of the day for a quieter, hassle-free experience.</p></div></article><article class="insider-item"><span class="insider-number">02</span><div><h3>Leave no trace</h3><p>Keep it pristine! Leave nothing but footprints, take nothing but pictures, and always obey the rules.</p></div></article><article class="insider-item"><span class="insider-number">03</span><div><h3>Drone etiquette</h3><p>Permits are required. Check in with your guide, stay away from crowds, and follow all regulations. Stop flying your drone immediately if requested by a ranger.</p></div></article></div></div>
 </section>
 
-<section class="closing"><img src="../gambar/padar-island-bay-and-boats.jpg" alt="" aria-hidden="true" loading="lazy"><div><h2>Ready to Cast Off?</h2><p>Whether you crave a quick highlight reel or a laid‑back live‑aboard, Kapalsantai has a cabin with your name on it. Drop us a message, pack light, and let Flores’ most photogenic island do the heavy lifting.</p><p>Tag us <a href="https://www.instagram.com/kapalsantai" rel="noopener noreferrer" target="_blank"><b>@Kapalsantai</b></a>, share your best ridge‑top shot, and tell the world you’ve officially unlocked Pulau Padar with us!</p><a class="btn" href="https://kapalsantai.com/en/product">Book a Boat</a></div></section>
+
 </article></main>
-<footer class="foot"><a class="rel" href="https://sandybrown-turkey-356844.hostingersite.com/taka-makassar-komodo-sandbar-snorkeling-guide-2/"><img src="../gambar/taka-makassar-aerial-wide.webp" width="600" height="400" loading="lazy" alt=""><span><small>Continue exploring</small><strong>Taka Makassar: Sandbar &amp; Snorkeling Guide</strong></span></a><p class="copy">Kapalsantai · Travel guides for Komodo and Labuan Bajo</p></footer>
+
 <!-- ELEMENTOR: pisahkan hero, menu section, tiga teluk, pengalaman, biaya, musim, checklist, hacks, dan CTA jadi container berlabel. Verifikasi sebelum publish: biaya, izin drone, jadwal, URL tautan terkait (ganti staging dengan produksi). -->
 <script>
-(()=>{const b=[...document.querySelectorAll('.checks input')],c=document.getElementById('pcount'),p=document.getElementById('pbar');
-b.forEach(x=>x.addEventListener('change',()=>{const n=b.filter(y=>y.checked).length;c.textContent=n===b.length?'All packed':n+' / '+b.length+' packed';p.style.width=n/b.length*100+'%'}));
+(()=>{const b=[...document.querySelectorAll('.checks input')],c=document.getElementById('pcount'),dots=document.getElementById('packing-dots'),reset=document.getElementById('packing-reset');
+function packingUpdate(){const n=b.filter(y=>y.checked).length;const value=Math.round(n/b.length*100);c.textContent=value+'% packed';dots.dataset.state=n===b.length?'done':n>=4?'middle':'start'}
+b.forEach(x=>x.addEventListener('change',packingUpdate));document.getElementById('packing-reset').addEventListener('click',()=>{b.forEach(x=>x.checked=false);packingUpdate()});packingUpdate();
+const article=document.getElementById('article'),fill=document.getElementById('read-progress-fill'),navLinks=[...document.querySelectorAll('.toc a')];let pending=false;function readingUpdate(){document.getElementById('padar-header').classList.toggle('solid',scrollY>60);const top=article.getBoundingClientRect().top+scrollY,end=top+article.offsetHeight-innerHeight;fill.style.width=(Math.max(0,Math.min(1,(scrollY-top)/Math.max(1,end-top)))*100)+'%';let active='';navLinks.forEach(a=>{const section=document.querySelector(a.getAttribute('href'));if(section&&section.getBoundingClientRect().top<innerHeight*.35)active=a.getAttribute('href')});navLinks.forEach(a=>a.getAttribute('href')===active?a.setAttribute('aria-current','location'):a.removeAttribute('aria-current'));pending=false}addEventListener('scroll',()=>{if(!pending){pending=true;requestAnimationFrame(readingUpdate)}},{passive:true});readingUpdate();
+// Kanawa-inspired scroll reveals; content stays visible without JavaScript.
+if('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches && Element.prototype.animate){
+ const reveal=new IntersectionObserver(entries=>entries.forEach(entry=>{if(!entry.isIntersecting)return;const el=entry.target;
+ el.animate([{opacity:0,transform:'translateY(22px)'},{opacity:1,transform:'translateY(0)'}],{duration:900,easing:'cubic-bezier(.2,.7,.2,1)'});
+ const img=el.querySelector('figure img');if(img)img.animate([{clipPath:'inset(0 0 12% 0 round 14px)',transform:'scale(1.035)'},{clipPath:'inset(0 0 0 0 round 14px)',transform:'scale(1)'}],{duration:1100,easing:'cubic-bezier(.2,.7,.2,1)'});
+ reveal.unobserve(el)}),{threshold:.12,rootMargin:'0px 0px -4% 0px'});
+ document.querySelectorAll('.sec > h2, .intro, .bay, .exp, .fee-ticket, .seasons > div, .packing-intro, .packing-sheet, .insider-heading, .insider-item').forEach(el=>reveal.observe(el));
+}
 const w=document.getElementById('article').textContent.trim().split(/\s+/).length;document.getElementById('rt').textContent=Math.max(1,Math.ceil(w/200))+' min read'})();
+</script>
+<script>
+// Pause the hero animation when it is off screen or the browser tab is hidden.
+(()=>{
+ const hero=document.querySelector('.hero'),photo=hero?.querySelector('img');
+ if(!hero||!photo)return;
+ let visible=true;
+ const sync=()=>photo.classList.toggle('is-paused',!visible||document.hidden);
+ if('IntersectionObserver' in window){new IntersectionObserver(entries=>{visible=entries[0].isIntersecting;sync()},{threshold:0}).observe(hero)}
+ else{const check=()=>{const r=hero.getBoundingClientRect();visible=r.bottom>0&&r.top<innerHeight;sync()};addEventListener('scroll',check,{passive:true});check()}
+ document.addEventListener('visibilitychange',sync);sync();
+})();
 </script>
 </body></html>
