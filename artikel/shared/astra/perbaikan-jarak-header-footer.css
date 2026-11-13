@@ -1,0 +1,43 @@
+/* Tambahkan SETELAH CSS Kapalsantai yang sudah ada. */
+:root { --ks-shell: 1320px; --ks-gutter: 28px; }
+
+/* Area logo dan footer memakai lebar serta jarak sisi yang sama. */
+#masthead .site-primary-header-wrap.ast-container {
+  max-width: calc(var(--ks-shell) + 2 * var(--ks-gutter));
+  margin-inline: auto;
+  padding-inline: var(--ks-gutter);
+}
+
+/* Hapus jarak yang ditambahkan pembungkus Astra untuk footer ini saja. */
+#colophon:has(.ks-astra-footer) { margin: 0; padding: 0; }
+#colophon .site-primary-footer-wrap:has(.ks-astra-footer),
+#colophon .site-primary-footer-wrap:has(.ks-astra-footer) .ast-builder-grid-row-container-inner,
+#colophon .site-primary-footer-wrap:has(.ks-astra-footer) .site-primary-footer-inner-wrap,
+#colophon .site-primary-footer-wrap:has(.ks-astra-footer) .site-footer-section,
+#colophon .ast-footer-html-1:has(.ks-astra-footer) {
+  max-width: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+#colophon .ks-astra-footer {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: none;
+  left: auto;
+  margin: 0;
+  padding: 60px var(--ks-gutter) 24px;
+  text-align: left;
+}
+#colophon .ks-astra-footer > .wrap {
+  max-width: var(--ks-shell);
+  width: 100%;
+  margin-inline: auto;
+  padding: 0;
+}
+#colophon .ks-astra-footer .ks-foot-bottom { margin-bottom: 0; }
+
+@media (max-width: 921px) {
+  :root { --ks-gutter: 20px; }
+  #colophon .ks-astra-footer { padding: 40px var(--ks-gutter) 24px; }
+}

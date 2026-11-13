@@ -59,6 +59,10 @@ Gunakan checklist ini saat diminta menyiapkan atau melengkapi SEO. Sesuaikan den
 Untuk setiap artikel sediakan daftar siap salin: focus keyphrase, SEO title, slug, meta description, social title/description jika dibutuhkan, saran alt text per gambar, tautan internal yang benar-benar tersedia, dan jenis schema yang disarankan. Bila data atau akses belum tersedia, buat rekomendasi dan tandai sebagai belum diterapkan.
 
 ## Lokasi file yang disimpan di repository
-- Template versi v2, v3, dan v4 tersedia di `artikel/komodo-island-tour/templates/`; gunakan v3 sebagai acuan struktur yang disetujui pengguna. V4 adalah revisi terbaru yang belum diuji visual di situs.
-- Gambar WebP tersedia di `artikel/komodo-island-tour/gambar/`; nilai Yoast siap salin ada di `artikel/komodo-island-tour/seo/`.
+- Template versi v2, v3, dan v4 tersedia di `artikel/templates/`; gunakan v3 sebagai acuan struktur yang disetujui pengguna. V4 adalah revisi terbaru yang belum diuji visual di situs.
+- Gambar WebP tersedia di `artikel/gambar/`; nilai Yoast siap salin ada di `artikel/seo/`.
 - Utamakan jalur relatif repository ini dibandingkan jalur Downloads yang dicatat dalam riwayat di atas.
+
+## Panduan desain artikel
+
+Sebelum merancang atau membuat artikel, baca `docs/PANDUAN-DESAIN-ARTIKEL.md` untuk tujuan proyek, identitas Kapalsantai, arahan desain, struktur Elementor, dan prioritas SEO.
