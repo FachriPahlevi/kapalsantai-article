@@ -61,6 +61,13 @@ Untuk setiap artikel sediakan daftar siap salin: focus keyphrase, SEO title, slu
 ## Lokasi file yang disimpan di repository
 - Template versi v2, v3, dan v4 tersedia di `artikel/templates/`; gunakan v3 sebagai acuan struktur yang disetujui pengguna. V4 adalah revisi terbaru yang belum diuji visual di situs.
 - Gambar WebP tersedia di `artikel/gambar/`; nilai Yoast siap salin ada di `artikel/seo/`.
+
+## Gambar preview dan template Elementor
+- Untuk preview HTML dan JSON Elementor, gunakan URL gambar yang benar-benar tersedia di Media Library situs tujuan. Pilih attachment EN atau ID sesuai bahasa artikel dan pertahankan metadata yang sesuai.
+- Hindari gambar yang disematkan sebagai `data:image/...;base64` di HTML maupun JSON; base64 adalah pengkodean gambar yang membuat file sangat panjang, bukan enkripsi. Jangan mengganti gambar lengkap dengan placeholder hanya untuk mengecilkan file.
+- Untuk Elementor, utamakan widget Image dengan URL dan attachment ID Media Library yang telah diverifikasi pada situs tujuan. URL saja tidak membuktikan gambar sudah terhubung sebagai attachment yang bisa dipilih di Media Library; ID bisa berubah antar situs atau saat impor, jadi periksa dan hubungkan ulang bila perlu.
+- Verifikasi setiap URL dan kecocokan foto sebelum digunakan; jangan menebak URL dari nama file karena WordPress dapat mengubah nama atau menghasilkan versi `-scaled`. Jika aset belum tersedia, laporkan dan lengkapi sesuai otorisasi, jangan mengarang URL.
+- URL pada staging tidak otomatis berlaku di domain produksi. Saat migrasi, perbarui referensi ke Media Library situs tujuan dan uji gambar, ukuran responsif, alt text, dan tampilan Elementor. Simpan salinan aset lokal untuk pengembangan bila diperlukan.
 - Utamakan jalur relatif repository ini dibandingkan jalur Downloads yang dicatat dalam riwayat di atas.
 
 ## Panduan desain artikel

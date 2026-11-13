@@ -1,0 +1,28 @@
+{
+  "version": "0.4",
+  "title": "Header · Floating to Full",
+  "type": "section",
+  "page_settings": {},
+  "content": [
+    {
+      "id": "a197b01",
+      "elType": "container",
+      "settings": {
+        "_title": "Header · Floating to Full",
+        "content_width": "full"
+      },
+      "elements": [
+        {
+          "id": "a197b02",
+          "elType": "widget",
+          "widgetType": "html",
+          "settings": {
+            "_title": "Navigasi · Header · Floating to Full",
+            "html": "<style>\n.ks-header-reserve{height:86px}.ks-header{position:fixed;left:0;right:0;top:0;z-index:1000;font-family:Inter,Arial,sans-serif;transition:background .35s}.ks-header *{box-sizing:border-box}.ks-header-shell{height:58px;display:flex;align-items:center;justify-content:space-between;gap:30px;padding:0 8px 0 20px;margin:14px auto 0;width:fit-content;max-width:calc(100% - 24px);border-radius:99px;background:rgba(255,255,255,.88);border:1px solid rgba(255,255,255,.7);box-shadow:0 14px 36px rgba(3,30,42,.22);backdrop-filter:blur(16px)}.ks-header-logo{display:flex;align-items:center;flex:none}.ks-header-logo img{width:140px;height:auto}.ks-header-nav{display:flex;align-items:center;gap:22px;white-space:nowrap}.ks-header-nav a{font-size:14px;line-height:1.4;font-weight:600;color:#143b48;text-decoration:none}.ks-header-nav a:hover{color:#0077b6}.ks-header-nav a:last-child{padding:10px 20px;border-radius:99px;background:#0077b6;color:#fff;box-shadow:0 6px 16px rgba(0,119,182,.35)}.ks-header-nav a:last-child:hover{background:#00699e}.ks-header a:focus-visible{outline:3px solid #e6bd4c;outline-offset:4px}.ks-header.ks-full{background:rgba(255,255,255,.96);backdrop-filter:blur(14px)}.ks-header.ks-full .ks-header-shell{width:100%;max-width:none;height:60px;margin:0;padding:0 28px;border:0;border-radius:0;background:transparent;box-shadow:none}.ks-header.ks-full img{width:124px}@media(max-width:900px){.ks-header-shell{padding:0 8px 0 14px;gap:14px}.ks-header-logo img{width:110px}.ks-header-nav{gap:12px}.ks-header-nav a:last-child{padding:8px 14px}.ks-header.ks-full .ks-header-shell{height:56px;padding:0 20px}}@media(max-width:380px){.ks-header-logo img,.ks-header.ks-full img{width:88px}.ks-header-nav{gap:8px}.ks-header-nav a{font-size:12px}.ks-header-nav a:last-child{padding:8px 10px}}body.admin-bar .ks-header{top:32px}@media(max-width:782px){body.admin-bar .ks-header{top:46px}}@media(max-width:600px){body.admin-bar .ks-header{top:0}}@media(prefers-reduced-motion:reduce){.ks-header{transition:none}}\n</style><div class=\"ks-header-reserve\" aria-hidden=\"true\"></div><header class=\"ks-header \"><div class=\"ks-header-shell\"><a class=\"ks-header-logo\" aria-label=\"Kapalsantai home\" href=\"https://kapalsantai.com/\"><img src=\"https://sandybrown-turkey-356844.hostingersite.com/wp-content/uploads/2026/11/logo.svg\" alt=\"Kapalsantai by GuideSantai\" width=\"140\" height=\"40\"></a><nav class=\"ks-header-nav\" aria-label=\"Main navigation\"><a href=\"https://kapalsantai.com/en/about-us\">About Us</a><a href=\"https://kapalsantai.com/en/product\">Book a Boat</a></nav></div></header><script>(function(){function setup(){document.querySelectorAll('.ks-header[data-ready]').forEach(function(){});document.querySelectorAll('.ks-header:not([data-ready])').forEach(function(h){h.dataset.ready='1';function update(){h.classList.toggle('ks-full',window.scrollY>60)}window.addEventListener('scroll',update,{passive:true});update()})}if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',setup);else setup()})();</script>"
+          },
+          "elements": []
+        }
+      ]
+    }
+  ]
+}

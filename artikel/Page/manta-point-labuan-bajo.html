@@ -469,6 +469,12 @@ body{background:#fff;color:#30495c}
 </style><style>
 /* Aksi melayang berjajar agar tidak tersusun atas-bawah. */
 .floating-actions{flex-direction:row-reverse;align-items:center;gap:12px}
+
+/* Navbar mengikuti preview Kanawa. */
+.kanawa-header{position:fixed;top:0;left:0;width:100%;z-index:100}
+.kanawa-header-shell{width:fit-content;max-width:calc(100% - 24px);height:58px;margin:14px auto 0;padding:0 8px 0 20px;gap:30px;display:flex;align-items:center;justify-content:space-between;border-radius:99px;background:rgba(255,255,255,.88);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.7);box-shadow:0 14px 36px rgba(3,30,42,.22);transition:background .45s ease}
+.kanawa-header-shell>a{display:flex;align-items:center}.kanawa-logo{width:140px;height:auto}.kanawa-nav{display:flex;gap:22px;align-items:center}.kanawa-nav a{display:inline-flex;align-items:center;min-height:44px;color:#192434;text-decoration:none;font-size:14px;font-weight:600;white-space:nowrap;transition:color .3s,background .3s}.kanawa-nav a:hover{color:#0077b6}.kanawa-nav a:last-child{padding:10px 20px;border-radius:99px;background:#0077b6;color:#fff;box-shadow:0 6px 16px rgba(0,119,182,.35)}.kanawa-nav a:last-child:hover{background:#00699e;color:#fff}.kanawa-header.solid{background:rgba(255,255,255,.96);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}.kanawa-header.solid .kanawa-header-shell{width:100%;max-width:none;height:60px;margin:0;padding:0 max(28px,calc((100vw - 1320px)/2));border:0;border-radius:0;background:transparent;box-shadow:none;justify-content:space-between}.kanawa-header.solid .kanawa-logo{width:124px}.head{padding-top:110px}
+@media(max-width:700px){.kanawa-header-shell{padding:0 8px 0 14px;gap:14px}.kanawa-logo{width:110px}.kanawa-nav{gap:12px}.kanawa-nav a:last-child{padding:8px 14px}.kanawa-header.solid .kanawa-header-shell{height:56px;padding:0 20px}.head{padding-top:100px}}
 </style></head>
 <!-- AGENT ELEMENTOR · UKURAN GAMBAR RESPONSIF
 - Gunakan CSS preview sebagai acuan ukuran sebenarnya, termasuk override dan media query terakhir;
@@ -509,9 +515,9 @@ Bangun container dan widget terpisah dengan _title unik dan deskriptif; pertahan
 gambar Media Library, satu H1, responsivitas, dan metadata Yoast yang disiapkan terpisah.
 Header/footer tema tidak perlu diduplikasi di isi template. -->
 <div aria-hidden="true" class="read-progress"></div>
-<header class="site-header"><div class="bar"><a aria-label="Kapalsantai home" href="https://kapalsantai.com/"><img alt="Kapalsantai" class="site-logo" src="../gambar/kapalsantai-logo.svg"/></a><nav class="nav"><a href="https://kapalsantai.com/en">Home</a><a href="https://kapalsantai.com/en/product">Explore</a><a href="https://kapalsantai.com/en/about-us">About Us</a></nav><details class="mobile-nav"><summary aria-label="Open navigation">Menu</summary><nav aria-label="Mobile navigation"><a href="https://kapalsantai.com/en">Home</a><a href="https://kapalsantai.com/en/product">Explore</a><a href="https://kapalsantai.com/en/about-us">About Us</a></nav></details></div></header>
+<header class="kanawa-header" id="manta-header"><div class="kanawa-header-shell"><a aria-label="Kapalsantai home" href="https://kapalsantai.com/"><img alt="Kapalsantai by GuideSantai" class="kanawa-logo" src="../gambar/kapalsantai-logo.svg"/></a><nav aria-label="Main navigation" class="kanawa-nav"><a href="https://kapalsantai.com/en/about-us">About Us</a><a href="https://kapalsantai.com/en/product">Book a Boat</a></nav></div></header>
 <div class="wrap head">
-<div class="crumb">Home / Travel Guides / Manta Point</div>
+
 <h1>Manta Point Labuan Bajo: The 2026 Guide</h1>
 <p class="stand">A closer look at the gentle giants of Komodo. Snorkeling, diving, and sharing their ocean.</p>
 <!-- Meta: nilai di bawah hanya contoh. Di WordPress diisi dinamis (author, tanggal terbit, tanggal diperbarui, jumlah dibaca) -->
@@ -603,4 +609,5 @@ Jangan mengklaim fungsi berjalan di WordPress hanya karena preview HTML berfungs
  });
 })();
 </script>
+<script>(function(){var h=document.getElementById('manta-header');if(!h)return;function update(){h.classList.toggle('solid',window.scrollY>60)}window.addEventListener('scroll',update,{passive:true});update()})();</script>
 </body></html>

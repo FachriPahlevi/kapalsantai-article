@@ -1,0 +1,337 @@
+body #masthead.site-header{position:sticky;top:0;z-index:100}body.admin-bar #masthead.site-header{top:32px}@media screen and (max-width:782px){body.admin-bar #masthead.site-header{top:46px}}@media screen and (max-width:600px){body.admin-bar #masthead.site-header{top:0}}
+
+.ks-astra-nav,.ks-astra-footer,.ks-astra-mobile{font-family:Inter,Arial,sans-serif;color:#12263a}.ks-astra-nav{display:flex;align-items:center;gap:24px}.ks-astra-links{list-style:none!important;display:flex;align-items:center;gap:4px;margin:0!important;padding:0!important}.ks-astra-links li{position:relative;list-style:none}.ks-astra-nav a,.ks-astra-nav summary{color:#12263a;text-decoration:none;font-size:14px;padding:10px 13px;cursor:pointer}.ks-astra-nav a:hover,.ks-astra-nav summary:hover{color:#0077bb}.ks-drop summary{list-style:none}.ks-panel{position:absolute;z-index:100;top:100%;left:0;width:245px;padding:8px;border:1px solid #dbe6ee;border-radius:12px;background:white;box-shadow:0 15px 35px #12263a22}.ks-panel a{display:block;border-radius:8px}.ks-panel small{display:block;color:#5b6b7b;font-size:12px}.ks-astra-actions{display:flex;align-items:center;gap:12px}.ks-astra-button{background:#0077bb;color:white!important;border-radius:99px;padding:11px 22px!important;white-space:nowrap}.ks-astra-search{position:relative}.ks-astra-search summary{border:1px solid #dbe6ee;border-radius:50%;width:40px;height:40px;text-align:center;list-style:none}.ks-astra-search form{position:absolute;right:0;top:48px;background:white;padding:12px;display:flex;box-shadow:0 8px 28px #12263a22}.ks-astra-search input,.ks-astra-mobile input{min-width:150px;padding:8px;border:1px solid #dbe6ee}.ks-astra-search button,.ks-astra-mobile button{border:0;background:#0077bb;color:#fff;padding:8px 12px}.ks-astra-mobile>a,.ks-astra-mobile summary{display:block;padding:12px;color:#12263a}.ks-astra-mobile details a{display:block;padding:8px 20px}.ks-astra-mobile small{display:block}.ks-astra-footer{background:#eff7fb;padding:60px max(28px,calc((100vw - 1320px)/2)) 24px}.ks-astra-footer .ks-foot-grid{display:grid;grid-template-columns:1.45fr .8fr .9fr 1.25fr;gap:45px}.ks-astra-footer img{width:150px;height:auto}.ks-astra-footer h4{font-size:15px;margin:0 0 20px}.ks-astra-footer p,.ks-astra-footer li,.ks-astra-footer .ks-contact{font-size:14px;line-height:1.65;color:#5b6b7b}.ks-astra-footer ul{list-style:none;padding:0;margin:0;display:grid;gap:12px}.ks-astra-footer a{color:inherit;text-decoration:none}.ks-astra-footer a.btn{display:inline-block;background:#0077bb;color:white;padding:10px 18px;border-radius:99px}.ks-astra-footer .ks-foot-bottom{border-top:1px solid #dbe6ee;margin-top:45px;padding-top:22px;display:flex;justify-content:space-between;gap:20px;font-size:13px}.ks-astra-footer .ks-foot-bottom nav{display:flex;gap:20px}.ks-astra-footer .ks-social{display:flex;gap:12px;margin-top:16px}.ks-astra-footer .ks-social svg{width:18px;height:18px;fill:#0077bb}.ks-astra-footer .ks-foot-brand p{margin:16px 0}.ks-astra-footer .ks-contact b{display:block;color:#12263a}.ks-astra-footer .ks-contact>div{margin-bottom:14px}@media(max-width:900px){.ks-astra-footer .ks-foot-grid{grid-template-columns:1fr 1fr;gap:32px}.ks-astra-footer .ks-foot-brand,.ks-astra-footer .ks-foot-contact{grid-column:1/-1}.ks-astra-footer .ks-foot-bottom{flex-wrap:wrap}}@media(max-width:520px){.ks-astra-footer{padding:40px 20px 24px}.ks-astra-footer .ks-foot-grid{gap:26px}.ks-astra-footer .ks-foot-bottom nav{flex-wrap:wrap}}
+
+/* Penyesuaian terhadap pembungkus footer dan header Astra. */
+.ks-astra-footer {
+  box-sizing: border-box;
+  width: 100vw;
+  max-width: none;
+  position: relative;
+  left: 50%;
+  margin-left: -50vw;
+  text-align: left;
+}
+.ks-astra-footer .wrap {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0;
+  text-align: left;
+}
+.ks-astra-footer .ks-foot-grid,
+.ks-astra-footer .ks-foot-grid > div,
+.ks-astra-footer .ks-foot-bottom {
+  text-align: left;
+}
+.ks-astra-footer .ks-foot-brand img { margin-left: 0; margin-right: 0; }
+.ks-astra-footer .ks-contact, .ks-astra-footer ul { justify-items: start; }
+.ks-astra-search summary {
+  box-sizing: border-box;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  line-height: 1;
+  font-size: 20px;
+}
+.ks-astra-links summary::-webkit-details-marker,
+.ks-astra-search summary::-webkit-details-marker { display: none; }
+@media (max-width: 900px) {
+  .ks-astra-footer { width: 100%; left: auto; margin-left: 0; }
+}
+
+/* Menu HTML 1: satu baris pada desktop. */
+.ks-astra-nav .ks-astra-menu {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.ks-astra-nav .ks-astra-menu > a,
+.ks-astra-nav .ks-astra-menu > details > summary {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+.ks-astra-nav .ks-drop { position: relative; }
+.ks-astra-nav .ks-drop summary { list-style: none; }
+.ks-astra-nav .ks-drop summary::-webkit-details-marker { display: none; }
+
+/* Menu mobile dropdown dan footer. */
+.ks-mobile-dropdown { position: relative; }
+.ks-mobile-dropdown summary {
+  list-style: none;
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+  color: #12263a;
+  font-size: 22px;
+  border: 1px solid #dbe6ee;
+  border-radius: 10px;
+  background: #fff;
+}
+.ks-mobile-dropdown summary::-webkit-details-marker { display: none; }
+.ks-mobile-dropdown nav {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 8px);
+  z-index: 110;
+  width: 190px;
+  padding: 8px;
+  background: #fff;
+  border: 1px solid #dbe6ee;
+  border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(18,38,58,.15);
+}
+.ks-mobile-dropdown nav a {
+  display: block;
+  padding: 10px 12px;
+  color: #12263a;
+  text-decoration: none;
+  font: 500 14px/1.5 Inter, Arial, sans-serif;
+}
+.ks-mobile-dropdown nav a:hover { background: #f1f7fb; }
+@media (max-width: 900px) {
+  .ks-astra-footer {
+    width: 100vw;
+    max-width: none;
+    left: 50%;
+    margin-left: -50vw;
+    padding: 38px 24px 28px;
+  }
+  .ks-astra-footer .wrap { width: 100%; }
+  .ks-astra-footer .ks-foot-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 20px; }
+  .ks-astra-footer .ks-foot-brand, .ks-astra-footer .ks-foot-contact { grid-column: 1 / -1; }
+  .ks-astra-footer .ks-foot-bottom { margin-top: 30px; gap: 14px; }
+  .ks-astra-footer .ks-foot-bottom nav { flex-wrap: wrap; gap: 10px 18px; }
+}
+
+/* HTML 1: dua link di desktop dan dropdown di mobile. */
+.ks-mobile-dropdown { display: none; }
+@media (max-width: 921px) {
+  .ks-desktop-nav { display: none !important; }
+  .ks-mobile-dropdown { display: block; }
+}
+
+/* Pisahkan tampilan navbar desktop dan mobile. */
+@media (min-width: 922px) {
+  #masthead .ks-mobile-dropdown { display: none !important; }
+  #masthead .ks-desktop-nav { display: flex !important; align-items: center; }
+}
+@media (max-width: 921px) {
+  #masthead .ks-desktop-nav { display: none !important; }
+  #masthead .ks-mobile-dropdown { display: block !important; }
+}
+
+/* Menyamakan batas isi header dan footer tanpa menghapus gaya footer. */
+@media (min-width: 922px) {
+  #masthead .site-primary-header-wrap.ast-container {
+    width: 100%;
+    max-width: 1376px;
+    margin-inline: auto;
+    padding-inline: 28px;
+  }
+}
+#colophon .ks-astra-footer .wrap {
+	display: none !important;
+  box-sizing: border-box;
+  max-width: 1320px;
+  margin-inline: auto;
+}
+#colophon:has(.ks-astra-footer) {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+/* Mobile: tombol menu tanpa border, panel selebar layar. */
+@media (max-width: 921px) {
+  #masthead .ks-mobile-dropdown { position: static; }
+  #masthead .ks-mobile-dropdown summary {
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+  #masthead .ks-mobile-dropdown nav {
+    position: fixed;
+    top: auto;
+    left: 0;
+    right: 0;
+    width: 100%;
+    border-radius: 0 0 12px 12px;
+    padding: 8px 20px;
+  }
+  #masthead .ks-mobile-dropdown nav a { padding: 13px 4px; }
+}
+
+/* Dropdown mobile: tombol tutup dan area klik di luar panel. */
+@media (max-width: 921px) {
+  #masthead .ks-mobile-dropdown summary {
+    position: relative;
+    z-index: 112;
+    font-size: 0;
+  }
+  #masthead .ks-mobile-dropdown summary::after {
+    content: "☰";
+    position: relative;
+    z-index: 112;
+    font-size: 22px;
+    line-height: 1;
+    color: #12263a;
+  }
+  #masthead .ks-mobile-dropdown[open] summary::after { content: "×"; font-size: 28px; }
+  #masthead .ks-mobile-dropdown[open] summary::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: 109;
+    cursor: default;
+  }
+  #masthead .ks-mobile-dropdown nav { z-index: 111; }
+  #masthead .ks-mobile-dropdown nav p { margin: 0 !important; padding: 0; }
+  #masthead .ks-mobile-dropdown nav br { display: none; }
+  #masthead .ks-mobile-dropdown nav a {
+    display: block;
+    margin: 0;
+    padding: 9px 12px;
+    border-radius: 6px;
+    color: #12263a;
+  }
+  #masthead .ks-mobile-dropdown nav a:hover,
+  #masthead .ks-mobile-dropdown nav a:focus-visible {
+    color: #0077b6;
+    background: #eaf5fb;
+  }
+}
+
+/* Penyempurnaan menu mobile dan batas bawah footer Astra. */
+@media (max-width: 921px) {
+  #masthead .ks-mobile-dropdown summary {
+    display: grid !important;
+    place-items: center;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 44px;
+    height: 44px;
+    line-height: 1;
+    border: 0 !important;
+    box-shadow: none !important;
+    z-index: auto;
+  }
+  #masthead .ks-mobile-dropdown summary::after {
+    display: block;
+    line-height: 1;
+    text-align: center;
+  }
+  #masthead .ks-mobile-dropdown nav { z-index: 111; }
+  #masthead .ks-mobile-dropdown nav a:hover,
+  #masthead .ks-mobile-dropdown nav a:focus-visible {
+    color: #0077b6 !important;
+    background-color: #eaf5fb !important;
+  }
+  #masthead .ks-mobile-dropdown summary:focus-visible {
+    outline: 2px solid #0077b6;
+    outline-offset: 2px;
+  }
+}
+#colophon:has(.ks-astra-footer) {
+  background-color: #eff7fb;
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+#colophon .site-primary-footer-wrap:has(.ks-astra-footer) {
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+/* Posisi ikon dan respons sentuhan pada menu mobile. */
+@media (max-width: 921px) {
+  #masthead .ks-mobile-dropdown summary::after {
+    transform: translateY(-6px);
+  }
+  #masthead .ks-mobile-dropdown nav a:hover,
+  #masthead .ks-mobile-dropdown nav a:focus,
+  #masthead .ks-mobile-dropdown nav a:active {
+    color: #0077b6 !important;
+    background-color: #eaf5fb !important;
+  }
+}
+
+/* Pemisah navbar: bayangan halus mengikuti navbar situs Kapalsantai. */
+body #masthead.site-header {
+  background-color: #fff;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.10),
+              0 2px 4px -2px rgba(0, 0, 0, 0.10);
+}
+
+/* Header Classic: gunakan dengan HTML 1 berkelas ks-classic-nav. */
+#masthead .ks-classic-nav {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  white-space: nowrap;
+}
+#masthead .ks-classic-nav a {
+  color: #143b48;
+  font: 600 14px/1.4 Inter, Arial, sans-serif;
+  text-decoration: none;
+}
+#masthead .ks-classic-nav a:hover { color: #0077b6; }
+#masthead .ks-classic-nav .ks-classic-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  border-radius: 999px;
+  background: #0077b6;
+  color: #fff;
+  box-shadow: 0 6px 16px rgba(0,119,182,.25);
+}
+#masthead .ks-classic-nav .ks-classic-button:hover { background: #00699e; color: #fff; }
+#masthead .ks-classic-nav a:focus-visible { outline: 3px solid #e6bd4c; outline-offset: 4px; }
+@media (max-width: 921px) {
+  #masthead .ks-classic-nav { gap: 12px; }
+  #masthead .ks-classic-nav .ks-classic-button { padding: 8px 14px; }
+}
+@media (max-width: 380px) {
+  #masthead .ks-classic-nav { gap: 8px; }
+  #masthead .ks-classic-nav a { font-size: 12px; }
+  #masthead .ks-classic-nav .ks-classic-button { padding: 8px 10px; }
+}
+
+/* Ratakan tautan jika WordPress menambahkan paragraf atau baris baru. */
+#masthead .ks-classic-nav p { display: contents; }
+#masthead .ks-classic-nav br { display: none; }
+#masthead .ks-classic-nav a {
+  display: inline-flex;
+  align-items: center;
+  margin: 0;
+}
+
+/* Ukuran logo Header Classic pada tablet dan ponsel. */
+@media (max-width: 921px) {
+  #masthead .custom-logo-link img.custom-logo {
+    width: 120px;
+    max-width: 120px;
+    height: auto;
+  }
+}
+@media (max-width: 544px) {
+  #masthead .custom-logo-link img.custom-logo {
+    width: 100px;
+    max-width: 100px;
+    height: auto;
+  }
+}
+
+/* Kurangi tinggi bar header Astra pada tablet dan ponsel. */
+@media (max-width: 921px) {
+  #masthead .ast-mobile-header-wrap .ast-primary-header-bar,
+  #masthead .ast-mobile-header-wrap .site-primary-header-wrap {
+    min-height: 56px;
+  }
+  #masthead .ast-mobile-header-wrap .ast-primary-header-bar {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}

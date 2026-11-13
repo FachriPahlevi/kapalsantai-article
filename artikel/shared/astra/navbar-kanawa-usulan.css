@@ -1,0 +1,57 @@
+/* Usulan untuk Additional CSS Astra. Belum diterapkan atau diuji di situs. */
+body:not(:has(.kw-page)) #masthead.site-header {
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: 100;
+  background: transparent;
+  transition: background .35s ease;
+}
+body:not(:has(.kw-page)) { padding-top: 86px; }
+body:not(:has(.kw-page)) #masthead .ast-primary-header-bar {
+  width: fit-content;
+  max-width: calc(100% - 24px);
+  min-height: 58px;
+  margin: 14px auto 0;
+  padding: 0 8px 0 20px;
+  border: 1px solid rgba(255,255,255,.7);
+  border-radius: 99px;
+  background: rgba(255,255,255,.88);
+  box-shadow: 0 14px 36px rgba(3,30,42,.22);
+  backdrop-filter: blur(16px);
+}
+body:not(:has(.kw-page)) #masthead .ast-builder-grid-row { gap: 30px; }
+body:not(:has(.kw-page)) #masthead .custom-logo { width: 140px; height: auto; }
+body:not(:has(.kw-page)) #masthead.ks-scrolled { background: rgba(255,255,255,.96); backdrop-filter: blur(14px); }
+body:not(:has(.kw-page)) #masthead.ks-scrolled .ast-primary-header-bar {
+  width: 100%; max-width: none; min-height: 60px; margin: 0;
+  padding: 0 28px; border: 0; border-radius: 0; background: transparent; box-shadow: none;
+}
+body:not(:has(.kw-page)) #masthead.ks-scrolled .custom-logo { width: 124px; }
+@media (max-width: 921px) {
+  body:not(:has(.kw-page)) #masthead .ast-primary-header-bar { padding: 0 8px 0 14px; }
+  body:not(:has(.kw-page)) #masthead .ast-builder-grid-row { gap: 14px; }
+  body:not(:has(.kw-page)) #masthead .custom-logo { width: 110px; }
+  body:not(:has(.kw-page)) #masthead.ks-scrolled .ast-primary-header-bar { min-height: 56px; padding: 0 20px; }
+}
+@media (prefers-reduced-motion: reduce) { body:not(:has(.kw-page)) #masthead.site-header { transition: none; } }
+
+/* Tautan meniru navbar preview Kanawa, termasuk di layar kecil. */
+body:not(:has(.kw-page)) #masthead .ks-kanawa-nav { display: flex; align-items: center; gap: 22px; white-space: nowrap; }
+body:not(:has(.kw-page)) #masthead .ks-kanawa-nav a { color: #143b48; text-decoration: none; font: 600 14px/1.4 Inter, sans-serif; }
+body:not(:has(.kw-page)) #masthead .ks-kanawa-nav a:hover { color: #0077b6; }
+body:not(:has(.kw-page)) #masthead .ks-kanawa-nav a:last-child { padding: 10px 20px; border-radius: 99px; background: #0077b6; color: #fff; box-shadow: 0 6px 16px rgba(0,119,182,.35); }
+body:not(:has(.kw-page)) #masthead .ks-kanawa-nav a:last-child:hover { background: #00699e; }
+body:not(:has(.kw-page)) #masthead .ks-kanawa-nav a:focus-visible { outline: 3px solid #e6bd4c; outline-offset: 3px; }
+@media(max-width: 921px) {
+  body:not(:has(.kw-page)) #masthead .ks-kanawa-nav { gap: 12px; }
+  body:not(:has(.kw-page)) #masthead .ks-kanawa-nav a:last-child { padding: 8px 14px; }
+}
+@media(max-width: 380px) {
+  body:not(:has(.kw-page)) #masthead .custom-logo { width: 88px; }
+  body:not(:has(.kw-page)) #masthead .ks-kanawa-nav { gap: 8px; }
+  body:not(:has(.kw-page)) #masthead .ks-kanawa-nav a { font-size: 12px; }
+  body:not(:has(.kw-page)) #masthead .ks-kanawa-nav a:last-child { padding: 8px 10px; }
+}
+body.admin-bar:not(:has(.kw-page)) #masthead.site-header { top: 32px; }
+@media(max-width: 782px) { body.admin-bar:not(:has(.kw-page)) #masthead.site-header { top: 46px; } }
+@media(max-width: 600px) { body.admin-bar:not(:has(.kw-page)) #masthead.site-header { top: 0; } }

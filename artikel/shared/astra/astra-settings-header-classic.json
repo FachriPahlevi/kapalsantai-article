@@ -1,0 +1,129 @@
+{
+  "customizer-settings": {
+    "astra-settings": {
+      "header-desktop-items": {
+        "popup": {
+          "popup_content": [
+            "mobile-menu"
+          ]
+        },
+        "above": {
+          "above_left": [],
+          "above_left_center": [],
+          "above_center": [],
+          "above_right_center": [],
+          "above_right": []
+        },
+        "primary": {
+          "primary_left": [
+            "logo"
+          ],
+          "primary_left_center": [],
+          "primary_center": [],
+          "primary_right_center": [],
+          "primary_right": [
+            "html-1"
+          ]
+        },
+        "below": {
+          "below_left": [],
+          "below_left_center": [],
+          "below_center": [],
+          "below_right_center": [],
+          "below_right": []
+        },
+        "flag": false
+      },
+      "header-mobile-items": {
+        "popup": {
+          "popup_content": []
+        },
+        "above": {
+          "above_left": [],
+          "above_center": [],
+          "above_right": []
+        },
+        "primary": {
+          "primary_left": [
+            "logo"
+          ],
+          "primary_center": [],
+          "primary_right": [
+            "html-1"
+          ]
+        },
+        "below": {
+          "below_left": [],
+          "below_center": [],
+          "below_right": []
+        },
+        "flag": true
+      },
+      "ast-header-responsive-logo-width": {
+        "desktop": 124,
+        "tablet": 110,
+        "mobile": 110,
+        "desktop-svg-height": 30,
+        "tablet-svg-height": 32,
+        "mobile-svg-height": 30
+      },
+      "hb-header-height": {
+        "desktop": 60,
+        "tablet": 56,
+        "mobile": 56
+      },
+      "hb-header-bg-obj-responsive": {
+        "desktop": {
+          "background-color": "#ffffff",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll",
+          "background-type": "color"
+        },
+        "tablet": {
+          "background-color": "",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll"
+        },
+        "mobile": {
+          "background-color": "",
+          "background-image": "",
+          "background-repeat": "repeat",
+          "background-position": "center center",
+          "background-size": "auto",
+          "background-attachment": "scroll"
+        }
+      },
+      "hb-header-main-sep": 0,
+      "section-primary-header-builder-padding": {
+        "desktop": {
+          "top": "0",
+          "right": "24",
+          "bottom": "0",
+          "left": "24"
+        },
+        "tablet": {
+          "top": "0",
+          "right": "40",
+          "bottom": "0",
+          "left": "40"
+        },
+        "mobile": {
+          "top": "0",
+          "right": "16",
+          "bottom": "0",
+          "left": "16"
+        },
+        "desktop-unit": "px",
+        "tablet-unit": "px",
+        "mobile-unit": "px"
+      },
+      "header-html-1": "<nav class=\"ks-kanawa-classic\" aria-label=\"Main navigation\" style=\"display:flex;align-items:center;gap:12px;white-space:nowrap\"><a href=\"https://kapalsantai.com/en/about-us\" style=\"color:#143b48;text-decoration:none;font-size:14px;font-weight:600;padding:10px 8px\">About Us</a><a href=\"https://kapalsantai.com/en/product\" style=\"background-color:#0077b6;color:#ffffff;text-decoration:none;font-size:14px;font-weight:600;padding:10px 18px;border-radius:99px;white-space:nowrap\">Book a Boat</a></nav>"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+<!-- Usulan untuk HTML 1 Header Builder, setelah navigasi yang ada. Belum diuji di situs. -->
+<script>
+(() => {
+  const header = document.getElementById('masthead');
+  if (!header) return;
+  const update = () => header.classList.toggle('ks-scrolled', window.scrollY > 60);
+  window.addEventListener('scroll', update, { passive: true });
+  update();
+})();
+</script>
